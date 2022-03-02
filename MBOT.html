@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+This page hold my eecs442 final project
+-->
+<html>
+	<head>
+		<title>MBot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo">Main Page</a>
+                </header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+								</header>
+                                <p>In the first part, we want to be able to control the robot's position. 
+                                    To implement this part, we use encoder data to control the wheel speed using a feedback controller - PID control. 
+                                    After we are able to control the robot, we move to build a more sophisticated algorithm for mapping and localizing the environment. 
+                                    We first constructed an occupancy grid using known poses. 
+                                    Following that, we implemented Monte Carlo Localization in a known map. 
+                                    Finally, putting together the mapping and localization parts, 
+                                    we have created a full SLAM system. With the knowledge of where the robot is and what is in the environment, 
+                                    we implemented planning and exploration with the A* algorithm. </p>
+							</section>
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
