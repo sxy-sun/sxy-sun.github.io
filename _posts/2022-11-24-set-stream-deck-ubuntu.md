@@ -36,12 +36,12 @@ poweroff
 ```
 
 #### My setup:
-![stream-deck-setup](/assets/figures/2022-11-24-set-stream-deck-ubuntu01.jpg)
+![stream-deck-setup1](/assets/figures/2022-11-24-set-stream-deck-ubuntu01.jpg)
 
 I think everyone has their preferred settings. My first page has my to-do list and google calendar,
 with a turn-off button and lock screen. Most importantly, four headshots from my favorite C-pop girl group.
 What kswl means? if you know, you know.
 
-![stream-deck-setup](/assets/figures/2022-11-24-set-stream-deck-ubuntu01.jpg)
+![stream-deck-setup2](/assets/figures/2022-11-24-set-stream-deck-ubuntu01.jpg)
 
 My second page is for entertainment. It only has buttons for youtube, Netflix, and bilibili by now. Just couldn't bother to type those addresses.
