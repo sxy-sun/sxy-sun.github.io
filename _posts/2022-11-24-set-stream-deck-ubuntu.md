@@ -2,7 +2,7 @@
 title: Set up a Elgato Stream Deck for Ubuntu 20.04
 date: 2022-11-24 00:03:00 -0500
 categories: [Side_Project, Battlestation]
-tags: [stream deck]     # TAG names should always be lowercase
+tags: [streamdeck]     # TAG names should always be lowercase
 ---
 
 Many thanks to my friend Aaron, I now have a stream deck on my desk. 
