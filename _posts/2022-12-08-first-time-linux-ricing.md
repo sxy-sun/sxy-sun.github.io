@@ -1,5 +1,5 @@
 ---
-title: First time Linux ricing
+title: First Time Linux Ricing
 date: 2022-12-08 02:03:00 -0500
 categories: [Life, hobby]
 tags: [linux ricing]     # TAG names should always be lowercase

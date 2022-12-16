@@ -1,5 +1,5 @@
 ---
-title: First time speedcubing
+title: First Time Speedcubing
 date: 2022-12-06 00:22:04:00 -0500
 categories: [Life, hobby]
 tags: [rubik's cube]     # TAG names should always be lowercase
@@ -9,7 +9,6 @@ Rubik's cube might seem like a hobby for some teenage nerds, but it is never too
 
 Picking up Rubik's cube was also inspired by reading Andrej Karpathy's [website](https://karpathy.ai/), just like how I started this blog. He linked a [Youtube channel](https://www.youtube.com/@badmephisto) on his website, bringing me to this million views Rubik's cube-solving [video](https://youtu.be/609nhVzg-5Q) he made a decade ago. And then the first time in my life, I learned how to solve a Rubik's cube. The photos below were taken on 11/2.
 
- |  
 :-------------------------:|:-------------------------:
 ![unsolved cube](/assets/figures/2022-12-06-first-time-speedcubing01.JPG)  |  ![solved cube](/assets/figures/2022-12-06-first-time-speedcubing02.JPG)
 

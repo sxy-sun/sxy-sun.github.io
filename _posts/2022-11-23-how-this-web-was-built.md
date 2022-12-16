@@ -1,5 +1,5 @@
 ---
-title: How this website was built
+title: How This Website Was Built
 date: 2022-11-23 04:16:17 -0500
 categories: [Side_Project, Portfolio]
 tags: [Jekyll]     # TAG names should always be lowercase
