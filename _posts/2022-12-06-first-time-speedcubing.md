@@ -1,7 +1,7 @@
 ---
 title: First Time Speedcubing
 date: 2022-12-06 00:22:04:00 -0500
-categories: [Life, hobby]
+categories: [Life, Hobby]
 tags: [rubik's cube]     # TAG names should always be lowercase
 ---
 

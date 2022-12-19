@@ -1,7 +1,7 @@
 ---
 title: Set up a Elgato Stream Deck for Ubuntu 20.04
 date: 2022-11-24 00:03:00 -0500
-categories: [Side_Project, Battlestation]
+categories: [Side Project, Battlestation]
 tags: [stream deck]     # TAG names should always be lowercase
 ---
 
