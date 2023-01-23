@@ -1,8 +1,9 @@
 ---
 title: Resistive Sensors
-date: 2023-01-22 00:18:30 -0500
+date: 2023-01-22 18:30:00 -0500
 categories: [Notes, Infrastructure Sensing]
-tags: [sensing]     # TAG names should always be lowercase
+tags: [sensing] 
+math: true
 ---
 
 > This will be the first post of a series of my notes for the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Notes`->`Infrastructure Sensing`. 
