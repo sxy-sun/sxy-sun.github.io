@@ -12,7 +12,7 @@ math: true
 
 > For our purposes, a sensor is a  device that receives a stimulus and responds with a signal. 
 
-# Measuring Temperature
+## Measuring Temperature
 [Thermistor](https://en.wikipedia.org/wiki/Thermistor): a temperature-dependent resistor, changing resistance with changes in temperature. Since for some materials, resistance is a function of temperature, we have:
 
 $$ R = f(T) \rightarrow T=f^{-1}(R) $$
@@ -34,7 +34,7 @@ Using both thermistor and thermocouple we will be able to measure the absolute t
 
 Here in the image, we use thermistor to measure the block's temperature we call it `Temp(cold)`. Then we have two material stick out of the block to measure the temperature we are investing and we call it `Temp(hot)` here. The thermocouple will give the relatvie temperature $\Delta T$ and the thermistor will give $T_0$, and we can derive absolute temperature from them.
 
-# Measuring Force
+## Measuring Force
 > How to measure force? You cannot directly measure the force but you can calculate it.
 
 $$
@@ -111,17 +111,17 @@ $$
 F = \frac{AE}{G}(\frac{\Delta R}{R})
 $$
 
-# Measuring Resistance
+## Measuring Resistance
 > We use changes in resistance to measure temperature and force. However, we cannot directly measure the resistance R, but we can measure voltage.
 
 $$
 R = \frac{V}{I}
 $$
 
-#### Option #1 Constant known current source
+### Option #1 Constant known current source
 If we know the exact voltage and current, we can always calculate the resistance based on Rx = V/i. 
 
-#### Option #2 Unknown current
+### Option #2 Unknown current
 However, since the sensor's resistance is changing, the current of the circuit will change as well. Thus, we have two unknown variables *R* and *i*, but only one equation Rx = V/i.
 
 **Voltage Divider**: To solve this, we can use a math trick - transact resistance into measuring voltage by putting 2 resistors into series. 
@@ -132,7 +132,7 @@ Since current is constant everywhere, $V = iR = i(R_x+R_2) \rightarrow i = \frac
 
 From equation above, we can solve for $R_x = \frac{R_2(V-V_0)}{V_0}$ by measuring $V_0$. Usually $R_2, R_x$ are matched at equilibrium. $(R_2 \approx R_x)$
 
-#### Option #3
+### Option #3 Wheatstone bridge
 However, when sensors getting noisy, we want to create linearity. We can upgrade to [**Wheatstone Bridge**](https://en.wikipedia.org/wiki/Wheatstone_bridge). It is basically 2 voltage dividers.
 
 ![](/assets/figures/2023-images/2023-01-22-resistive-sensors-03.png)
@@ -144,7 +144,7 @@ $$ V_0=V\cdot \frac{R_2}{R_2+R_1}-V\cdot \frac{R_4}{R_x+R_4} $$
 Then, WHY is a wheatstone bridge better than a voltage divider? 
 - Because when the $\Delta R$ is too small, $R_x \approx R_2 \rightarrow V_2 \approx \frac{1}{2} V$, we will always have an offset at 1/2 V even when the resistance doesn't change. We want V0 to be at 0 namely with no offset at equilibrium because in a practical way, we want to see that, say, when the strain gage is pressed the value goes down, and when the gage is strained, the value goes up. Also because the relation is not linear, which could cause problem when the sensors getting noisy.
 
-##### Single point wheatstone bridge
+#### Single point wheatstone bridge
 Making all the resistor's resistance matched the sensor's resistance in equilibrium $R_1=R_2=R_3=R_x$. Then, we could have
 
 $$
@@ -155,12 +155,12 @@ $$
 
 
 
-##### Half bridge
+#### Half bridge
 By adding one more sensor, namely replacing one of the resistors to be strain gage, this puts out twice of the voltage V0, and we can twice the sensitivity as one point bridge.
 
 ![](/assets/figures/2023-images/2023-01-22-resistive-sensors-04.png)
 
-##### Full bridge
+#### Full bridge
 To further improve the measurement, we could replace all the resistors to be strain gage and place them as the image shown below. Two on the top surface and two on the bottom surface.
 
 ![](/assets/figures/2023-images/2023-01-22-resistive-sensors-05.png)
