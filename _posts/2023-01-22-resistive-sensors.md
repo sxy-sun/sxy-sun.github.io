@@ -142,6 +142,10 @@ $$
 
 where G is gage factor, $G=(1+2\nu) $ where $\nu$ is Poisson’s ratio. 
 
+Note:
+- Meauring $\frac{\Delta R}{R}$ we can get any variable on the RHS
+- This is how we build a moment sensor
+
 ## Measuring Resistance
 > We use changes in resistance to measure temperature and force. However, we cannot directly measure the resistance R, but we can measure voltage.
 
