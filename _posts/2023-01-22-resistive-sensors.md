@@ -114,12 +114,12 @@ $$
 
 The force (F) is being applied which generates a moment (M) there.
 - moment of inertia of a rectangle: $I = \frac{bt^3}{12}$
-- $C = \frac{t}{2}$
+- distance to beam center: $c = \frac{t}{2}$
 
 Then we have stress $\sigma$:
 
 $$
-\sigma = \frac{M \cdot C}{I}=\frac{F\cdot x \cdot C}{I}
+\sigma = \frac{M \cdot c}{I}=\frac{F\cdot x \cdot c}{I}
 $$
 
 Substitute inertia I we have:
