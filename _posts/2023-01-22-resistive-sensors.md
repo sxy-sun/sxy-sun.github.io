@@ -79,7 +79,7 @@ $$
 \frac{dR}{R}=(1+2\nu)\varepsilon_L+\frac{d\rho}{\rho}
 $$
 
-- Since we have a content in the equation, we could have $\frac{\Delta R}{R}=G \varepsilon_L + \frac{d\rho}{\rho}$ where **G** is called **"gage factor"** which is a material property.
+- Since we have a constant in the equation, we could have $\frac{\Delta R}{R}=G \varepsilon_L + \frac{d\rho}{\rho}$ where **G** is called **"gage factor"** which is a material property.
 
 Such result, namely the change in resistance has linear relation with the strain, is used in products such as strain gage.
 
@@ -88,14 +88,12 @@ A **load cell** converts a force such as tension, compression, pressure, or torq
 
 What is the difference between *load cell* and *strain gage*? - A strain gage is a single transducer used to convert the mechanical deformation into readable electrical output. Whereas, a load cell comprises an array of strain gages that convert the mechanical load into readable units.
 
-EX: Load Cells
+### EX: Load Cells
 
 $$
 \sigma = \frac{F}{A} \qquad \varepsilon = \frac{F}{AE} 
 $$
-- $\sigma$ is stress
-- $\varepsilon$ is strain
-- E is called young's modulus 
+- $\sigma$ is stress, $\varepsilon$ is strain, E is young's modulus 
 
 
 Then we have:
@@ -110,6 +108,39 @@ How to relate force F to the change in resistance? Combine formulas we have abov
 $$
 F = \frac{AE}{G}(\frac{\Delta R}{R})
 $$
+
+### EX: Cantilever
+![](/assets/figures/2023-images/2023-01-22-resistive-sensors-06.png)
+
+The force (F) is being applied which generates a moment (M) there.
+- moment of inertia of a rectangle: $I = \frac{bt^3}{12}$
+- $C = \frac{t}{2}$
+
+Then we have stress $\sigma$:
+
+$$
+\sigma = \frac{M \cdot C}{I}=\frac{F\cdot x \cdot C}{I}
+$$
+
+Substitute inertia I we have:
+
+$$
+\sigma = \frac{M t}{2 \frac{bt^3}{12}}=\frac{6M}{bt^2}=\frac{6Fx}{bt^2}
+$$
+
+Since $\varepsilon=\frac{\sigma}{E}$:
+
+$$
+\varepsilon = \frac{6Fx}{Ebt^2}
+$$
+
+=>
+
+$$
+\frac{\Delta R}{R}=G \cdot \varepsilon = G\frac{6Fx}{Ebt^2}
+$$
+
+where G is gage factor, $G=(1+2\nu) $ where $\nu$ is Poisson’s ratio. 
 
 ## Measuring Resistance
 > We use changes in resistance to measure temperature and force. However, we cannot directly measure the resistance R, but we can measure voltage.
@@ -148,7 +179,7 @@ Then, WHY is a wheatstone bridge better than a voltage divider?
 Making all the resistor's resistance matched the sensor's resistance in equilibrium $R_1=R_2=R_3=R_x$. Then, we could have
 
 $$
-V_0 = V \cdot(\frac{R_1}{R_x+R_1}-\frac{R_1}{R_1+R_1}) = V \cdot(\frac{R_1}{R_x+R_1}-\frac{1}{2}) 
+V_0 = V \cdot(\frac{R}{R+R}-\frac{R}{R_x+R}) = V \cdot(\frac{1}{2}-\frac{R}{R_x+R}) 
 $$
 
 - When the sensor is unstrained, we would have reading 0. The relation is still non-linear but we get rid of offset.
@@ -159,6 +190,27 @@ $$
 By adding one more sensor, namely replacing one of the resistors to be strain gage, this puts out twice of the voltage V0, and we can twice the sensitivity as one point bridge.
 
 ![](/assets/figures/2023-images/2023-01-22-resistive-sensors-04.png)
+
+##### Proof
+We know that for Wheatstone bridge circuit, we have the formula:
+
+$$
+V_G = V\cdot (\frac{R_1}{R_1+R_2}-\frac{R_3}{R_3+R_4})
+$$
+
+For the quarter bridge case, use Rx to represent sensor we have:
+
+$$
+V_{quarter} = V\cdot (\frac{R}{R+R}-\frac{R_x}{R_x+R}) = V\cdot (\frac{1}{2}-\frac{R_x}{R_x+R}) = V\cdot\frac{R-R_x}{2(R_x+R)}
+$$
+
+For the half bridge case, use Rx to represent sensor we have:
+
+$$
+V_{half} = V\cdot (\frac{R}{R+R_x}-\frac{R_x}{R_x+R}) = V\cdot\frac{R-R_x}{R_x+R}
+$$
+
+Based on the equations above, we can tell that $V_{half}  = 2 V_{quarter}$, half bridge has twice output of the quarter bridge.
 
 #### Full bridge
 To further improve the measurement, we could replace all the resistors to be strain gage and place them as the image shown below. Two on the top surface and two on the bottom surface.
