@@ -1,12 +1,12 @@
 ---
 title: Dynamics and Numerical Integration
 date: 2023-02-16 21:49:00 -0500
-categories: [Notes, Advanced Robot Operating System]
+categories: [Robotics, Control]
 tags: [dynamics] 
 math: true
 ---
 
-> This belongs to a series of my notes for the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Notes`->`Advanced Robot Operating System`.
+> This post is my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Control`.
 
 ## Terminology
 Most engineering fields make use of the concepts of [classical mechanics](https://en.wikipedia.org/wiki/Classical_mechanics) very frequently, and it is often referred to as *Newtonian mechanics*. In this post, we are going to discuss topics based on the **Rigid body mechanics**.

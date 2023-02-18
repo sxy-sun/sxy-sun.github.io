@@ -1,12 +1,12 @@
 ---
-title: Path Planning
+title: Graph Search Algorithms in Path Planning
 date: 2023-02-07 17:55:00 -0500
-categories: [Notes, Advanced Robot Operating System]
+categories: [Robotics, Path Planning]
 tags: [path planning] 
 math: true
 ---
 
-> This will be the first post of a series of my notes for the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Notes`->`Advanced Robot Operating System`.
+> This post is my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Path Planning`.
 
 To build a robot that can go to a desired destination, we need to teach it how to plan the path. Path planning is about the best way to get from A to B. It allows robots to navigate the environments from previously constructed maps autonomously. A path planner finds a set of waypoints (or setpoints) for the robot to traverse and reach its goal location without collision, and there are many ways to do so.
 
@@ -40,7 +40,7 @@ DFS is *complete* if the search tree is finite, meaning for a given finite searc
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-path-planning/dfs_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-path-planning/dfs_obstacles.gif)|
+|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dfs_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dfs_obstacles.gif)|
 |path length: 45.20 |path length: 150.20 |
 |visited nodes: 453|visited nodes: 1560 |
 
@@ -56,7 +56,7 @@ BFS is *complete* and *optimal*.
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-path-planning/bfs_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-path-planning/bfs_obstacles.gif)|
+|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/bfs_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/bfs_obstacles.gif)|
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 3501|visited nodes: 3235 |
 
@@ -73,7 +73,7 @@ Greedy best-first search is [different](https://stackoverflow.com/questions/8374
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-path-planning/greedy_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-path-planning/greedy_obstacles.gif)|
+|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/greedy_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/greedy_obstacles.gif)|
 |path length: 8.00 |path length: 17.80 |
 |visited nodes: 81|visited nodes: 2074|
 
@@ -92,7 +92,7 @@ Depth-first search, Breadth-first search, and Dijkstra's are all uninformed sear
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-path-planning/dijkstra_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-path-planning/dijkstra_obstacles.gif)|
+|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dijkstra_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dijkstra_obstacles.gif)|
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 3495|visited nodes: 3230|
 
@@ -116,7 +116,7 @@ The famous A\* algorithm is build upon this one. A\* achieves better performance
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-path-planning/Astar_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-path-planning/Astar_obstacles.gif)|
+|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/Astar_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/Astar_obstacles.gif)|
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 2242|visited nodes: 2693|
 

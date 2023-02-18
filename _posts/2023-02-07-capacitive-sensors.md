@@ -1,12 +1,12 @@
 ---
 title: Capacitive Sensors
 date: 2023-02-07 01:02:00 -0500
-categories: [Notes, Infrastructure Sensing]
+categories: [Robotics, Sensing]
 tags: [sensing] 
 math: true
 ---
 
-> This belongs to a series of my notes for the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Notes`->`Infrastructure Sensing`.
+> This post is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Robotics`->`Sensing`.
 
 ---
 
