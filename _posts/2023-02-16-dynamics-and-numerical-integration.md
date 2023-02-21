@@ -27,7 +27,7 @@ Coordinate system in Robotics:
 
 > In this post, we are going to use Motorized Pendulum as an example to further discuss numerical integration.
 
-![](/assets/figures/2023-images/2023-02-16-dynamics-and-numerical-integration-01.png)
+![](/assets/figures/2023-images/2023-02-16-dynamics-and-numerical-integration/01.png)
   - where $\ddot{\theta} = \frac{d\dot{\theta}}{dt}$ as the rate of change of the velocity of the pendulum angle 
   - or $\ddot{\theta} = \frac{d\ddot{\theta}}{dt^2}$ as the rate of change of the rate of change of the pendulum angle
  

@@ -14,7 +14,7 @@ math: true
 
 Capacitor is a circuit element that stores charges, sometimes called "charge buckets."
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-1.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-1.png)
 
 As shown in the image, each plate receives an equal but opposite amount of charge. The amount of the charge is proportional to the `area A` and the `distance d`. When the area gets larger, or the distance gets closer, the amount of charges increase.
 
@@ -50,14 +50,14 @@ where A is area, d is distance, k is dielectric property (the thing in between t
 - Displacement is indirect indicator of other variables such as force/pressure. In other words, if you can measure displacement, you can measure force.
 
 #### Lateral movement 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-3.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-3.png)
 - C = f(*A*, d, k)
 - Motion of top plate causes linear change in capacitance.
 - From $C_0=\frac{k\varepsilon_0 A}{d}$ to $C=\frac{k\varepsilon_0 W(L-x)}{d}$
 - However, we have to guarantee that lateral motion does not affect the separation between plates, such design is not good for small displacements and hard to implement.
 
 #### Plate separation
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-4.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-4.png)
 
 - C = f(A, *d*, k)
 - Most sensors are based on a change in the plate separation d.
@@ -68,7 +68,7 @@ where A is area, d is distance, k is dielectric property (the thing in between t
 - The non-linearity appears in the higher order terms: $\frac{x^2}{d^2}$, etc., and could be a concern if we want high accuracy for displacement.
 
 ##### Improvement: differential displacements
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-5.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-5.png)
 - We change the design to 2 fixed plates and the middle plate is free to move.
 
 If we are able to measure $\Delta C=C_2-C_1$, then:
@@ -79,13 +79,13 @@ $$
 
 - The non-linearity is subtracted away, and this design is good for accuracy purpose.
 - However, how do we measure $\Delta C$, how do we subtract one capacitor from another?
-  - ![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-6.png)
+  - ![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-6.png)
   - The circuit above has two capacitors in parallel. When connect to the power, the change of the total capacitance would be $\Delta C = C_1+C_2$, which is not subtraction we are looking for.
 
 **Solution #1 opposing D.C. voltage**
 > DC stands for direct current. In direct current, the voltage is always constant, and the electricity flows in a certain direction.
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-7.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-7.png)
 
 - Charges cancel -> $V_x =0 $ when plate does not move
 - When middle plate moves -> $V_x$ changes sign depending on direction if the place move up or down. Now we have the subtraction we want.
@@ -94,7 +94,7 @@ $$
 **Solution #2 A.C. source**
 > AC stands for alternating voltage. In alternating current, the voltage periodically changes from positive to negative and from negative to positive, and the direction of the current also periodically changes accordingly.
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-8.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-8.png)
 
 - Set $\omega \approx 1$MHz very FAST because we don't want the capacitors to settle down.
 - If middle plate is centered, then currents cancel -> $V_x=0$
@@ -120,7 +120,7 @@ $$
 ### Spring mass damper system
 > Now we relate voltage changes with the displacement changes linearly, how do we build an accelerometer from it?
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-9.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-9.png)
 - A mass m is attached to a spring and a damper
 - Hook's law: spring force $F_s=-kx$, damping force $F_d=-c \frac{dx}{dt}=-c \dot{x}$
   - k is spring constant, c is damping constant.
@@ -147,7 +147,7 @@ $$
 
 Now we can build something to measure acceleration. We hook the middle plate to a mass on a spring like in the image.
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-10.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-10.png)
 - Ignoring damping we have $\ddot{x}+\frac{k}{x}x = 0$. Then $a=-\ddot{x}=\frac{F_k}{m}=\frac{kx}{m}=\frac{kd}{m}\frac{V_x}{V_0}$
 - Now we have a relation between output voltage $V_x$ and the acceleration $a$. Meaning that we have built an accelerometer.
 
@@ -155,7 +155,7 @@ Now we can build something to measure acceleration. We hook the middle plate to 
 > We have explored how capacitance can be used to measure movement, but how do we measure capacitance?
 
 #### Method #1 RC-based
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-2.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-2.png)
 
 When a capacitor is placed in series with a resistor, we can get some useful relationships. It can be shown that the voltage across a capacitor in an RC (resistor+capacitor) circuit is given by:
 
@@ -169,7 +169,7 @@ $$
 
 #### Method #2 Charge-based
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-11.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-11.png)
 
 - Rely on the ability of capacitor to hold charge
 - $C = \frac{Q}{V}$
@@ -192,12 +192,12 @@ $$
 **RC-Impedance**
 - In AC circuits we have an analog for $V = iR$
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-12.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-12.png)
   - $V = z \cdot i$ where complex impedance $z = R-\frac{j}{\omega C}$
 
 **Measuring capacitance**
 
-![](/assets/figures/2023-images/2023-02-07-capacitive-sensors-13.png)
+![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-13.png)
 - Here we have a series R-C bridge
 - When $V_0=0$ it can be shown that $z_1\cdot z_3=z_2\cdot z_x$
 - Then substitute $z = R-\frac{j}{\omega C}$ into the equation above, we have 
