@@ -31,5 +31,6 @@ The response of piezoelectric elements is highly directionally dependent (anisot
 
 ## Piezoelectric sensors
 There are 2 common types of piezoelectric sensors: 1) Axial 2) [Flexural](https://en.wikipedia.org/wiki/Flexural_strength) 
+
 ![](/assets/figures/2023-images/2023-02-20-piezoeletric-sensors/05.png)
 
