@@ -126,3 +126,22 @@ V_0=\Phi l e=\Phi D \frac{4Q}{\pi D^2}=\frac{4\Phi Q}{\pi D}
 $$
 
 - Measuring the voltage can help us to measure the flow, although it is very difficult to build flow meter.
+
+### Inductive-loop traffic detectors (RLC circuit)
+[Vehicle detection loops](https://en.wikipedia.org/wiki/Induction_loop) can detect vehicles passing or arriving at a certain point. When no car is present, the inductance of the loop is a steady, known value. When a car passes over the loop, the inductance changes. We can simplify it to a circuit like in the figure below, which is a common tool for measuring the change of
+an unknown inductor.
+
+![](/assets/figures/2023-images/2023-02-19-inductive-sensors/08.png) 
+
+**Definition**: [Impedance](https://en.wikipedia.org/wiki/Electrical_impedance) is the opposition to alternating current presented by the combined effect of resistance and reactance in a circuit.
+
+- Impedance for a pure resistor is its resistance
+- Let the capacitance of a capacitor is C and the alternating current passing through the capacitor circuit have the angular frequency $\omega$. Then the impedance experiences by the current passing through the capacitor is $z = \frac{1}{j\omega C}$
+- If L is the inductance of an inductor operating by an alternating voltage of angular frequency $\omega$, then the impedance offered by the pure inductor to the alternating current is, $z=j\omega L$. 
+- [Source](https://electronicsphysics.com/formula-for-impedance-in-electronics-rlc-lc-circuit/)
+
+To obtain the value $L_3$, a variable capacitor $C_2$ is digitally adjusted until the bridge circuit is balanced ($V_0 = 0$). Then, it can be [shown](https://www.allaboutcircuits.com/textbook/alternating-current/chpt-12/ac-bridge-circuits/) that $z_1 \cdot z_4 = z_3 \cdot z_2 $. Thus, 
+
+$R_1\cdot R_4 = (j\omega L_3)(\frac{1}{j\omega C_2})$
+
+$ L_3 = R_1\cdot R_4 \cdot C_2 $

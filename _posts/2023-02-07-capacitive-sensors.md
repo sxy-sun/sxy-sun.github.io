@@ -189,11 +189,14 @@ $$
 
 
 #### Method #3 Series R-C bridge
+
+**Definition**: [Impedance](https://en.wikipedia.org/wiki/Electrical_impedance) is the opposition to alternating current presented by the combined effect of resistance and reactance in a circuit.
+
 **RC-Impedance**
-- In AC circuits we have an analog for $V = iR$
+- A series RC circuit will offer the opposition to the current flow due to both the resistor and capacitor. Let, the alternating voltage of angular frequency $\omega$ is applied across the series RC combination. Then the formula of the impedance of RC circuit is $z = R+\frac{1}{j\omega C}$ or $z = R-\frac{j}{\omega C}$.
 
 ![](/assets/figures/2023-images/2023-02-07-capacitive-sensors/2023-02-07-capacitive-sensors-12.png)
-  - $V = z \cdot i$ where complex impedance $z = R-\frac{j}{\omega C}$
+  - $V = z \cdot i$ 
 
 **Measuring capacitance**
 
