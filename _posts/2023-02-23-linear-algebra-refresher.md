@@ -79,3 +79,9 @@ Finger sweeping rule to help calculation:
 Notes:
 1. Multiplying (MxK) matrix with a (KxN) matrix will produce an (MxN) matrix
 2. Matrix multiplication is not commutative: AB != BA
+
+
+## Resource
+Great tutorial series on [Linear Algebra](https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B) by [3blue1brown](https://www.youtube.com/@3blue1brown).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kjBOesZCoqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
