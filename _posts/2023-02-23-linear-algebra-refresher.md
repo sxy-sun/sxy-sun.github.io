@@ -1,18 +1,20 @@
 ---
 title: Linear Algebra Refresher
-categories: [Robotics, Control]
+date: 2023-02-23 23:43:00 -0500
+categories: [Robotics, Misc]
 tags: [math, kinematics] 
 math: true
 ---
 
-> This post is my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Control`.
+
+> This post is part my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Misc`.
 
 
-Coordinate system in Robotics:
-- Each body has its own coordinate system, and we call the body `link`, and the coordinate system `frame`. **Matrix transformations** are used to transform coordinate systems between the bodies and joints. And here is where linear algebra kicks in.
+
+In Robotics, each part of the robot's body might has its own coordinate system. **Matrix transformations** are used to transform coordinate systems between the bodies and joints. And here is where linear algebra kicks in.
 
 
-**Linear algebra**, which deals with linear equations and linear mappings in the [vector space](https://en.wikipedia.org/wiki/Vector_space), is used for modern presentations of geometry. It is essential for representing frames of reference, rotation, translation, and general 3D homogeneous transforms.
+**Linear algebra**, which deals with linear equations and linear mappings in the [vector space](https://en.wikipedia.org/wiki/Vector_space), is used for modern presentations of geometry. It is essential for representing frames of reference, rotation, translation, and general 3D homogeneous transforms. 
 
 ![](/assets/figures/2023-images/2023-02-23-linear-algebra-refresher/01.png)
 - If #unknowns > #equations, it is an *underdetermined* system, usually with infinite solutions
@@ -71,11 +73,7 @@ Given two linearly independent vectors $a$ and $b$, the cross product, $a \times
 ![](/assets/figures/2023-images/2023-02-23-linear-algebra-refresher/08.png)
 ### Matrix multiplication
 ![](/assets/figures/2023-images/2023-02-23-linear-algebra-refresher/09.png)
-
-Finger sweeping rule to help calculation:
-- Left finger sweeps left to right
-- Right finger sweeps top to bottom
-
+ 
 Notes:
 1. Multiplying (MxK) matrix with a (KxN) matrix will produce an (MxN) matrix
 2. Matrix multiplication is not commutative: AB != BA
