@@ -6,10 +6,6 @@ tags: [sensing]
 math: true
 ---
 
-> This is my notes from the class I am taking “CEE 575 Infrastructure Sensing” offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Robotics` -> `Sensing`.
-
----
-
 ## Piezoelectric Effect
 [Piezoelectric Effect](https://en.wikipedia.org/wiki/Piezoelectricity) is the ability of certain materials to generate an electric charge in response to applied mechanical stress. The word Piezoelectric is derived from the Greek piezein, which means to squeeze or press, and piezo, which is Greek for “push”.
 - When subjected to a mechanical force, some crystalline materials become electrically polarized.
@@ -34,3 +30,6 @@ There are 2 common types of piezoelectric sensors: 1) Axial 2) [Flexural](https:
 
 ![](/assets/figures/2023-images/2023-02-20-piezoeletric-sensors/05.png)
 
+---
+
+*This is my notes from the class I am taking “CEE 575 Infrastructure Sensing” offered by Prof. Branko Kerkez at University of Michigan.*

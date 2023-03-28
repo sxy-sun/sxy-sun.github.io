@@ -6,10 +6,6 @@ tags: [sensing]
 math: true
 ---
 
-> This is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Robotics`->`Sensing`.
-
----
-
 ## Electromagnetic Induction
 
 [Electromagnetic induction](https://en.wikipedia.org/wiki/Electromagnetic_induction): We know that a current flowing in a wire would produce a magnetic field. To increase the measurable effect of the field we can spin the wire into a coil.
@@ -145,3 +141,7 @@ To obtain the value $L_3$, a variable capacitor $C_2$ is digitally adjusted unti
 $R_1\cdot R_4 = (j\omega L_3)(\frac{1}{j\omega C_2})$
 
 $ L_3 = R_1\cdot R_4 \cdot C_2 $
+
+---
+
+*This is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan.*

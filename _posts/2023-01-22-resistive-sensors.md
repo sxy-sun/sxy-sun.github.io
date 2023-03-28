@@ -6,11 +6,6 @@ tags: [sensing]
 math: true
 ---
 
-> This post is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Robotics`->`Sensing`.
-
----
-
-> For our purposes, a sensor is a  device that receives a stimulus and responds with a signal. 
 
 ## Measuring Temperature
 [Thermistor](https://en.wikipedia.org/wiki/Thermistor): a temperature-dependent resistor, changing resistance with changes in temperature. Since for some materials, resistance is a function of temperature, we have:
@@ -230,3 +225,7 @@ V_0 = V\cdot\frac{(R_x+\Delta R)-(R_x-\Delta R)}{2R_x}=V\cdot\frac{\Delta R}{R_x
 $$
 
 Now with full bridge, we have linearity and even higher sensitivity. But it costs more expense in labor and money.
+
+---
+
+*This post is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan.*

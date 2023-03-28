@@ -6,10 +6,6 @@ tags: [sensing]
 math: true
 ---
 
-> This post is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Robotics`->`Sensing`.
-
----
-
 ## Capacitor
 
 Capacitor is a circuit element that stores charges, sometimes called "charge buckets."
@@ -210,3 +206,7 @@ C_x = \frac{C_1 \cdot R_2}{R_3}
 $$
 
 - Adjust $C_1$ until $V_0=0$ then we can calculate $C_x$ since we know $C_1, R_2, R_3$
+
+---
+
+*This post is my notes from the class I am taking "CEE 575 Infrastructure Sensing" offered by Prof. Branko Kerkez at University of Michigan.*

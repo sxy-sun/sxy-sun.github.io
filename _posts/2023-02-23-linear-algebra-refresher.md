@@ -6,11 +6,6 @@ tags: [math, kinematics]
 math: true
 ---
 
-
-> This post is part my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Misc`.
-
-
-
 In Robotics, each part of the robot's body might has its own coordinate system. **Matrix transformations** are used to transform coordinate systems between the bodies and joints. And here is where linear algebra kicks in.
 
 
@@ -83,3 +78,4 @@ Notes:
 Great tutorial series on [Linear Algebra](https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B) by [3blue1brown](https://www.youtube.com/@3blue1brown).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kjBOesZCoqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

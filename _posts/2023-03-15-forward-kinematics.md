@@ -6,8 +6,6 @@ tags: [forward kinematics]
 math: true
 ---
 
-> This post is part of my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Control`.
-
 **Robot Kinematics**:
 - **Goal**: Given the structure of robot arm, we can compute
   - **Forward Kinematics**: inferring the pose of the [end-effector](https://en.wikipedia.org/wiki/Robot_end_effector), given the state of each joint.
@@ -140,3 +138,8 @@ We need to transform along kinematic chain bringing descendants along, such that
   - start with base link and global transform
   - for each link, recurse over all children
   - for each joint, compose rotational and translational effects and push it into the stack
+
+
+---
+
+*This post is part of my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan.*

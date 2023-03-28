@@ -6,8 +6,6 @@ tags: [dynamics]
 math: true
 ---
 
-> This post is my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Control`.
-
 ## Terminology
 Most engineering fields make use of the concepts of [classical mechanics](https://en.wikipedia.org/wiki/Classical_mechanics) very frequently, and it is often referred to as *Newtonian mechanics*. In this post, we are going to discuss topics based on the **Rigid body mechanics**.
 - In rigid body mechanics we presume that all objects are perfectly rigid. A [rigid body](https://en.wikipedia.org/wiki/Rigid_body) is an idealization of a body that does not deform or change shape. 
@@ -89,3 +87,6 @@ Express it as an integrator:
   - Tangent at trial end of interval: 
     - $k_4 = f(t_n+h, y_n+hk_3)$
 - Advance time: $t_{n+1}=t_n+h$
+
+---
+*This post is my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan.*

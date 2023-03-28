@@ -6,9 +6,6 @@ tags: [OPAMP, ADC]
 math: true
 ---
 
-> This post has part of my notes from the class I am taking “CEE 575 Infrastructure Sensing” offered by Prof. Branko Kerkez at University of Michigan. This will be archived under category `Robotics` -> `Sensing`.
-
-
 Two questions we would discuss in this post:
 1. When the sensors are working and sending out signals, in general, the signals from the sensors do not have suitable characteristic for display for analysis. They might have low amplitude or being noisy. How do we make it useful?
 2. The analog signals are continuous, how do we let the computer handle that since it is not continuous?
@@ -105,3 +102,7 @@ What unique about this type of ADC is that it uses integrator.
 Delta-sigma ADC has a more complex structure compare to the other 3 above, but it improves meausrement performance. Delta-sigma ADCs implement oversampling, decimation filtering, and quantization noise shaping to achieve high resolution and excellent antialiasing filtering.
 
 ![](https://slideplayer.com/slide/4584344/15/images/34/Comparison+of+ADC%E2%80%99s+Type+Speed+%28relative%29+Cost+%28relative%29+Resolution.jpg)
+
+---
+
+*This post has part of my notes from the class I am taking “CEE 575 Infrastructure Sensing” offered by Prof. Branko Kerkez at University of Michigan.* 

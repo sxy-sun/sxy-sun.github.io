@@ -6,8 +6,6 @@ tags: [PID control]
 math: true
 ---
 
-> Part of this post belongs to my notes from a class I have taken, "EECS 460: Control Systems Analysis and Design," offered by Prof. Peter Seiler at the University of Michigan. This will be archived under category `Robotics` -> `Control`
-
 ## Motivation
 The importance of [control system](https://en.wikipedia.org/wiki/Control_system) is apparent. The control systems are everywhere in our life: when we want the air conditioner keeps the room temperature at 70F, when we want the fridge stays cool without freezing the veggies, and when we want the car to drive at a certain speed without stepping on the accelerator all the time, we have a control system there helping us.
 
@@ -235,3 +233,7 @@ $$
 
 ## Miscellanea
 - [Servo](https://en.wikipedia.org/wiki/Servomechanism) is short for servomechanism, is an automatic device that uses error-sensing negative feedback to correct the action of a mechanism. Servos can be used to generate linear or circular motion, depending on their type.
+
+---
+
+*Part of this post belongs to my notes from a class I have taken, "EECS 460: Control Systems Analysis and Design," offered by Prof. Peter Seiler at the University of Michigan.*

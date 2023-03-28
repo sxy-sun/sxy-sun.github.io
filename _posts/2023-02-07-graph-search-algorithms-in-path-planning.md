@@ -6,7 +6,6 @@ tags: [path planning]
 math: true
 ---
 
-> This post is my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan. This will be archived under category `Robotics`->`Path Planning`.
 
 To build a robot that can go to a desired destination, we need to teach it how to plan the path. Path planning is about the best way to get from A to B. It allows robots to navigate the environments from previously constructed maps autonomously. A path planner finds a set of waypoints (or setpoints) for the robot to traverse and reach its goal location without collision, and there are many ways to do so.
 
@@ -128,3 +127,7 @@ The gifs have shown that each algorithm has different characteristics, and there
 A* can leverage both cost-to-come and cost-to-go, using heuristic value to guide the direction and use the g-value, namely cost-to-come, to correct the mistakes, unlike greedy best-first-search that doesn't have past knowledge. However, the greedy best-first search is able to outperform all others when the space is relatively empty and there is no obstacle between the start and the goal. 
 
 DFS and BFS, as the uninformed algorithm, cannot compete with the informed algorithms in tests like path planning when the map is already constructed and relatively empty. However, BFS can always give the optimal solution even though it would spend a lot of time and memory searching. And DFS is more suitable when the goal is far from the source and when the map is more complicated, such as when solving a maze.
+
+---
+
+*These gifs are generated from my coursework from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at the University of Michigan. The interface credits to the course team.*
