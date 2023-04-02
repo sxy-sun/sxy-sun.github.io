@@ -181,3 +181,7 @@ Finally perform the step direction:
 $$
 q_{n+1} = q_n + \gamma \Delta q_n
 $$
+
+---
+
+*This post is part of my notes from the class I am taking "ROB 511 Advanced Robot Operating System" offered by Prof. Chad Jenkins at University of Michigan.*

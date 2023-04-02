@@ -118,3 +118,7 @@ The [Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_tr
 % Compute FFT of x
 X = fft(x);
 ```
+
+---
+
+*This post has part of my notes from the class I am taking “CEE 575 Infrastructure Sensing” offered by Prof. Branko Kerkez at University of Michigan.* 
