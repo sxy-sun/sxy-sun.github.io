@@ -4,6 +4,7 @@ date: 2023-02-17 19:09:00 -0500
 categories: [Robotics, Control]
 tags: [PID control] 
 math: true
+img_path: /assets/figures/2023-images/2023-02-17-pid-control/
 ---
 
 ## Motivation
@@ -16,7 +17,7 @@ A Cruise Control System consists of:
 - Reference (drive at 35 mph)
 - Disturbance (slope of road)
 - Embedded processor (controller)
-![](/assets/figures/2023-images/2023-02-17-pid-control/block-diagram.png)
+![](block-diagram.png)
 
 From robotics' perspective, control is one of the most important aspects of robotics because it is the process by which a robot's behavior is regulated and optimized. Control is essential in order to ensure that the robot can perform tasks accurately, efficiently, and safely. 
 
@@ -144,7 +145,7 @@ BIBO Stability
 > The difference between open-loop and closed-loop is that open-loop doesn't have feedback.
 
 [Open-loop control](https://en.wikipedia.org/wiki/Open-loop_controller) can be effective if the plant is stable, the disturbances are small, and the model is accurate. If any of these conditions fail, then open-loop control will either fail to achieve stability (if the plant is unstable) or will not provide accurate tracking. 
-![](/assets/figures/2023-images/2023-02-17-pid-control/open-loop.png)
+![](open-loop.png)
 
 $$
 u(t)=K_{ol}r(t)
@@ -154,7 +155,7 @@ $$
 > The core of closed-loop controller is it acts based on `error = desired - measured`. 
 
 ### P Control
-![](/assets/figures/2023-images/2023-02-17-pid-control/p-control.png)
+![](p-control.png)
 
 [Proportional control](https://en.wikipedia.org/wiki/Proportional_control) sets input to be proportional to the error. <br>
 
@@ -177,7 +178,7 @@ $$
 
 
 ### PI Control
-![](/assets/figures/2023-images/2023-02-17-pid-control/pi-control.png)
+![](pi-control.png)
 
 PI controller sets input to be proportional to 1) the error and 2) the integral of the error
 1. The initial transient is dominated by the proportional term, while the steady state is dominated by the integral term. 
@@ -192,7 +193,7 @@ $$
 
 
 ### PD Control
-![](/assets/figures/2023-images/2023-02-17-pid-control/pd-control.png)
+![](pd-control.png)
 
 PD controller sets input to be proportional to 1) the error and 2) the derivative of the error
 - Some plants cannot be stabilized by P or PI control which motivates the use of PD.
@@ -215,7 +216,7 @@ $u(t)=K_p(r(t)-y(t))-K_d\dot{y}(t)$
 This implementation doesn't differentiate the reference, thus the rapid change in the reference command do not cause large control inputs. The term $-K_d\dot{y}(t)$ called rate feedback.
 
 ### PID Control
-![](/assets/figures/2023-images/2023-02-17-pid-control/pid-control.png)
+![](pid-control.png)
 
 [PID Controller](https://en.wikipedia.org/wiki/PID_controller):
 

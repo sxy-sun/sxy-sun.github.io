@@ -4,6 +4,7 @@ date: 2023-03-15 21:09:00 -0500
 categories: [Robotics, Sensing]
 tags: [OPAMP, ADC] 
 math: true
+img_path: /assets/figures/2023-images/2023-03-15-amplification-and-digitization/
 ---
 
 Two questions we would discuss in this post:
@@ -22,7 +23,7 @@ $V_{OUT} = A\cdot(V_{IN(+)}-V_{IN(-)})$
 
 **Output Saturation**
 
-![](/assets/figures/2023-images/2023-03-15-amplification-and-digitization/01.png)
+![](01.png)
 - When the output voltage implied by the circuit exceed the possible range, the op-amp is said to saturate, and it just outputs its maximum or minimum possible voltage instead. 
   - For $A\cdot(V_{IN(+)}-V_{IN(-)}) > V_{CC} \rightarrow V_{OUT}=V_{CC}$
   - For $A\cdot(V_{IN(+)}-V_{IN(-)}) < V_{EE} \rightarrow V_{OUT}=V_{EE}$
@@ -31,7 +32,7 @@ $V_{OUT} = A\cdot(V_{IN(+)}-V_{IN(-)})$
 - More in [lecture notes](https://web.stanford.edu/class/archive/engr/engr40m.1178/slides/opamps.pdf) from Stanford
 - Example: *Non-inverting Amplifiers*
   - It is called non-inverting AMP because the voltage changes in same direction as input.
-![](/assets/figures/2023-images/2023-03-15-amplification-and-digitization/02.png)
+![](02.png)
 - Since $v_{out} = A\cdot(v_{in(+)}-v_{in(-)}) \rightarrow \frac{v_{out}}{A} = v_{in(+)}-v_{in(-)}$, when A is very large, we have $v_{in(+)}=v_{in(-)}$.
 - Here consider $v_{in(+)}$ is the sensor, and the upper half is a voltage divider. Then we know that $v_{in(-)} = \frac{R_1}{R_2+R_1}v_{out} = v_{in(+)}$
 - Derive it further, we have the equation shown in the image, new gain $(1+ \frac{R_2}{R_1})$. Now we can control how much we want to amplify the input, by our choice of resistors.
@@ -51,10 +52,10 @@ Since the world is continuous but the computers can only perform operations on d
 - Recall that OPAMPs have a very narrow linear range before it saturates, such that we can think it as a "jump". And we can exploit this narrow linear range to build a [voltage comparator](https://en.wikipedia.org/wiki/Comparator).
   - Note here $V_{REF}$ is where $v_{in(+)} = v_{in(-)}$
 
-  ![](/assets/figures/2023-images/2023-03-15-amplification-and-digitization/03.png)
+  ![](03.png)
   - For example, if we want to label a signal as either being smaller or larger than 3V with a margin of error of ±0.5V. Then we will have $V_0 = 0V$ for $V_{IN}<3V$ and $V_0 = 5V$ for $V_{IN}>3V$. This voltage comparator gives us a binary response, which is a 1 bit ADC, transforms analog signal to digital.
   
-    ![](/assets/figures/2023-images/2023-03-15-amplification-and-digitization/04.png)
+    ![](04.png)
 - Now we can stack a bunch of these together to get more complex ADC architectures. 
 
 

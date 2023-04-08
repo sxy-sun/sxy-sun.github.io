@@ -4,6 +4,7 @@ date: 2023-03-15 21:51:00 -0500
 categories: [Robotics, Control]
 tags: [forward kinematics] 
 math: true
+img_path: /assets/figures/2023-images/2023-03-11-forward-kinematics/
 ---
 
 **Robot Kinematics**:
@@ -16,7 +17,7 @@ math: true
 
 Here is an example of an [articulated robot](https://en.wikipedia.org/wiki/Articulated_robot). Articulated robot is a robot with rotary joints (e.g. a legged robot or an industrial robot). Articulated robots can range from simple two-jointed structures to systems with 10 or more interacting joints and materials. 
 
-![](/assets/figures/2023-images/2023-03-11-forward-kinematics/01.png){: width="600" }
+![](01.png){: width="600" }
 
 **Forward kinematics** is many-to-one mapping of robot *configuration* to reachable *workspace* end effector poses. 
 - **Workspace** is a 3D space defined in the global frame. 
@@ -30,14 +31,14 @@ Here is an example of an [articulated robot](https://en.wikipedia.org/wiki/Artic
     - *Position*: motion along the x, y, z axis
     - *Orientation*: rotation around x(roll), y(pitch), z(yaw). 
 
- ![](/assets/figures/2023-images/2023-03-11-forward-kinematics/04.png){: width="300" }
+ ![](04.png){: width="300" }
  
 
 - **Right-hand rule**
 
 | Coordinate conventions | A rotating body|
 | ------- | ------- |
-|![](/assets/figures/2023-images/2023-03-11-forward-kinematics/02.png){: width="400"  }|![](/assets/figures/2023-images/2023-03-11-forward-kinematics/03.png){: width="200"  }|
+|![](02.png){: width="400"  }|![](03.png){: width="200"  }|
 
 - Note that different application has different coordinate convention
 - To find the rotation direction, the right thumb pointing in the positive direction of the axis, and right fingers curled in the direction of rotation
@@ -64,12 +65,12 @@ First, we want to define the kinematics of a robot. Traditionally, we have [Dena
 
 
 ### 2D space
-![](/assets/figures/2023-images/2023-03-11-forward-kinematics/07.png){: width="500" }
+![](07.png){: width="500" }
 
 **Composition of Rotation and Translation**: by modifying both rotation matrix and translation vector into homogeneous coordinates, we are able to combine them into one single homogeneous transformation matrix, or a transformation matrix for short. Read from the right to left, we first do rotate and then translate.
 - Why not translate then rotate? Because $M = R\cdot T$ is different with $M = T\cdot R$.
 
-![](/assets/figures/2023-images/2023-03-11-forward-kinematics/05.png){: width="500" }
+![](05.png){: width="500" }
 - Special Euclidean group in two dimensions SE(2), where SO(2) means the group of rotations in two dimensions
 
 **Special Euclidean group**, often denoted SE(n), whose elements are called [rigid motions](https://en.wikipedia.org/wiki/Rigid_transformation) or Euclidean motions, that preserve the Euclidean distance between every pair of points. They comprise arbitrary combinations of translations and rotations, but not reflections.
@@ -78,11 +79,11 @@ First, we want to define the kinematics of a robot. Traditionally, we have [Dena
 **Example:** Now we want to put an arm on the robot. By multiplying the transform matrix $T_{link}^{robot}$, we can find where the arm should at in the frame of the robot. If we analyze it step by step, firstly, rotate link frame by R, then translate link frame by d.
 
 
-![](/assets/figures/2023-images/2023-03-11-forward-kinematics/06.png){: width="600" }
+![](06.png){: width="600" }
 
 
 ### 3D space
-![](/assets/figures/2023-images/2023-03-11-forward-kinematics/08.png)
+![](08.png)
 - Here is the 3D homogeneous transform matrix. It consists of a translation matrix, and 3 rotation matrices relate to rotate along x,y,z axis. If you are familiar with [pinhole camera model](https://web.stanford.edu/class/cs231a/course_notes/01-camera-models.pdf), this is the extrinsic matrix to map points from the world frame to the camera frame.
 
 ## Axis-Angle Rotation and Quaternions

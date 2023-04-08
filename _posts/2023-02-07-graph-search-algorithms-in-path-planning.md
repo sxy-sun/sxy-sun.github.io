@@ -4,6 +4,7 @@ date: 2023-02-07 17:55:00 -0500
 categories: [Robotics, Path Planning]
 tags: [path planning] 
 math: true
+img_path: /assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/
 ---
 
 
@@ -11,6 +12,7 @@ To build a robot that can go to a desired destination, we need to teach it how t
 
 
 We usually have a set of tools to respond accordingly to various situations. The **common approaches** we have:
+- Bug algorithms: Bug[0-2], Tangent Bug
 - Graph Search (fixed graph)
   - Depth first search, Breadth first search, Dijkstra, A*, Greedy best-first search
 - Sampling-based Search (build graph)
@@ -39,7 +41,7 @@ DFS is *complete* if the search tree is finite, meaning for a given finite searc
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dfs_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dfs_obstacles.gif)|
+|![](dfs_empty.gif) | ![](dfs_obstacles.gif)|
 |path length: 45.20 |path length: 150.20 |
 |visited nodes: 453|visited nodes: 1560 |
 
@@ -55,7 +57,7 @@ BFS is *complete* and *optimal*.
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/bfs_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/bfs_obstacles.gif)|
+|![](bfs_empty.gif) | ![](bfs_obstacles.gif)|
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 3501|visited nodes: 3235 |
 
@@ -72,7 +74,7 @@ Greedy best-first search is [different](https://stackoverflow.com/questions/8374
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/greedy_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/greedy_obstacles.gif)|
+|![](greedy_empty.gif) | ![](greedy_obstacles.gif)|
 |path length: 8.00 |path length: 17.80 |
 |visited nodes: 81|visited nodes: 2074|
 
@@ -91,7 +93,7 @@ Depth-first search, Breadth-first search, and Dijkstra's are all uninformed sear
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dijkstra_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/dijkstra_obstacles.gif)|
+|![](dijkstra_empty.gif) | ![](dijkstra_obstacles.gif)|
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 3495|visited nodes: 3230|
 
@@ -115,7 +117,7 @@ The famous A\* algorithm is build upon this one. A\* achieves better performance
 
 |Open Space | Has Obstacles |
 | ------- |------- |
-|![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/Astar_empty.gif) | ![](\assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/Astar_obstacles.gif)|
+|![](Astar_empty.gif) | ![](Astar_obstacles.gif)|
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 2242|visited nodes: 2693|
 

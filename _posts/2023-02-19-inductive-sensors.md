@@ -4,13 +4,14 @@ date: 2023-02-19 19:54:00 -0500
 categories: [Robotics, Sensing]
 tags: [sensing] 
 math: true
+img_path: /assets/figures/2023-images/2023-02-19-inductive-sensors/
 ---
 
 ## Electromagnetic Induction
 
 [Electromagnetic induction](https://en.wikipedia.org/wiki/Electromagnetic_induction): We know that a current flowing in a wire would produce a magnetic field. To increase the measurable effect of the field we can spin the wire into a coil.
 
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/01.png)
+![](01.png)
 
 For one turn of the coil, the *magnetic flux* is:
 
@@ -43,7 +44,7 @@ L = \frac{\Psi}{i}=\frac{n^2}{\mathcal{R}}
 $$
 
 - The relationship between *inductance* and *current* is: change in current causes a measurable voltage.
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/02.png)  
+![](02.png)  
 
 $$
 V_o = L \cdot \frac{di}{dt}
@@ -57,7 +58,7 @@ $$
 
 **Mutual Inductance**
 - An alternating current flow in one coil can induce a current flow in another coil.
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/03.png) 
+![](03.png) 
 
 $$
 V_2 = - M \frac{di_1}{dt}
@@ -73,7 +74,7 @@ $$
 [Linear variable differential transformer](https://en.wikipedia.org/wiki/Linear_variable_differential_transformer) is a type of electrical transformer used for measuring linear displacement (position).
 - A [video explanation](https://www.youtube.com/watch?v=E-kDsP0wq6w)
 
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/04.png) 
+![](04.png) 
 
 The red bar is the core moving in x direction, and Vs is the source power. According to effect of mutual inductance, we know $V_1 = -M_1\frac{di_s}{dt}$ and $V_2 = -M_2\frac{di_s}{dt}$. Red bar's change $\Delta x$ in position will cause a change in $M_1$ and $M_2$ due to reluctance changes. Thus,
 
@@ -85,7 +86,7 @@ Why we need 2 secondary coils here? - It gives the linearity, ($M_2-M_1$) can sh
 
 **How do we measure?**
 
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/05.png) 
+![](05.png) 
 - At $x=0$, $V_0=0$, $M_1=M_2$
 - Connect in *open-wiring* configuration
 - As core moves, it will change $M_1, M_2$, this will change the induced voltages $V_1, V_2$, and the amplitude of $V_0$ is linear with $\Delta x$.
@@ -93,7 +94,7 @@ Why we need 2 secondary coils here? - It gives the linearity, ($M_2-M_1$) can sh
 ### Electromagnetic Flow Meter
 - [Electromagnetic flow meters](https://www.emerson.com/en-us/automation/measurement-instrumentation/flow-measurement/about-magnetic) are comprised of a transmitter and sensor that together measure water flow. 
 
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/06.png) 
+![](06.png) 
 - If a conductor of length l(m) is moving perpendicular to a magnetic field $\Phi$ at a velocity e (m/s), the voltage $V_o$ is induced: 
 
 $$
@@ -103,7 +104,7 @@ $$
 - One might more familiar with the form $V = Blv$ but they are the same.
 - With Faraday's law, we can build flow meter from it.
 
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/07.png) 
+![](07.png) 
 
 
 In the case of a flow meter, the conductor is the liquid. We know that 
@@ -127,7 +128,7 @@ $$
 [Vehicle detection loops](https://en.wikipedia.org/wiki/Induction_loop) can detect vehicles passing or arriving at a certain point. When no car is present, the inductance of the loop is a steady, known value. When a car passes over the loop, the inductance changes. We can simplify it to a circuit like in the figure below, which is a common tool for measuring the change of
 an unknown inductor.
 
-![](/assets/figures/2023-images/2023-02-19-inductive-sensors/08.png) 
+![](08.png) 
 
 **Definition**: [Impedance](https://en.wikipedia.org/wiki/Electrical_impedance) is the opposition to alternating current presented by the combined effect of resistance and reactance in a circuit.
 

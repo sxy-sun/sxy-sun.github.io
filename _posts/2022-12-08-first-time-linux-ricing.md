@@ -3,6 +3,7 @@ title: First Time Linux Ricing
 date: 2022-12-08 02:03:00 -0500
 categories: [Life, Hobby]
 tags: [linux ricing]     # TAG names should always be lowercase
+img_path: /assets/figures/2022-images/
 ---
 
 ## What brings me to the Linux world?
@@ -14,11 +15,11 @@ From a source I couldn't remember, I found the [r/unixporn](https://www.reddit.c
 ## My first ever Linux ricing
 > It is not much but it is mine
 
-![ ](/assets/figures/2022-images/2022-12-08-first-time-linux-ricing01.png)
-![ ](/assets/figures/2022-images/2022-12-08-first-time-linux-ricing02.png)
-![ ](/assets/figures/2022-images/2022-12-08-first-time-linux-ricing03.png)
-![ ](/assets/figures/2022-images/2022-12-08-first-time-linux-ricing04.jpg) 
-![ ](/assets/figures/2022-images/2022-12-08-first-time-linux-ricing05.jpg) 
+![ ](2022-12-08-first-time-linux-ricing01.png)
+![ ](2022-12-08-first-time-linux-ricing02.png)
+![ ](2022-12-08-first-time-linux-ricing03.png)
+![ ](2022-12-08-first-time-linux-ricing04.jpg) 
+![ ](2022-12-08-first-time-linux-ricing05.jpg) 
 
 
 ### Setup

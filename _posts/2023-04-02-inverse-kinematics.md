@@ -4,6 +4,7 @@ date: 2023-04-02 02:30:00 -0400
 categories: [Robotics, Control]
 tags: [inverse kinematics] 
 math: true
+img_path: /assets/figures/2023-images/2023-04-02-inverse-kinematics/
 ---
 
 **Robot Kinematics**:
@@ -40,7 +41,7 @@ To have iterative solution, our goal is to  move the endeffector to minimize err
 
 We know that when we are at x = 0m and we want to get to x = 2m, we need to move in x-direction with certain velocity to minimize the error. Now the questions is, how are linear and angular velocity related? Since the way to move the end effector in x-direction is by rotating the angle (if using revolute joint).
 
-![](/assets/figures/2023-images/2023-04-02-inverse-kinematics/01.png){: width="300" }
+![](01.png){: width="300" }
 
 $$
 \omega = \dot{\theta}k \quad v = \omega \times r  \quad  v = \dot{\theta}k \times r
@@ -54,7 +55,7 @@ $$
 
 We related the linear velocity and the angular velocity, however, what we want to know is how much change in the angle we need, now the LHS is the variable we know. To obtain joint angular velocity from endeffector linear velocity, we introduce *Jacobian Transpose* here.
 
-![](/assets/figures/2023-images/2023-04-02-inverse-kinematics/02.png){: width="300" }
+![](02.png){: width="300" }
 
 $$
 \Delta \theta = (k \times r)^T \Delta x
@@ -69,7 +70,7 @@ Such that to calculate the inverse kinematics, for each joint on the chain from 
 To minimize the error, we are going to use a method called *Gradient descent*.
 
 #### Gradient descent
-![](/assets/figures/2023-images/2023-04-02-inverse-kinematics/03.png){: width="600" }
+![](03.png){: width="600" }
 
 [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
 

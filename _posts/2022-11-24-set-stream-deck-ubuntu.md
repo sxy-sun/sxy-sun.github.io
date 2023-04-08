@@ -3,6 +3,7 @@ title: Set up a Elgato Stream Deck for Ubuntu 20.04
 date: 2022-11-24 00:03:00 -0500
 categories: [Side Project, Battlestation]
 tags: [stream deck]     # TAG names should always be lowercase
+img_path: /assets/figures/2022-images/
 ---
 
 Many thanks to my friend Aaron, I now have a stream deck on my desk. 
@@ -36,12 +37,12 @@ poweroff
 ```
 
 #### My setup:
-![stream-deck-setup1](/assets/figures/2022-images/2022-11-24-set-stream-deck-ubuntu01.jpg)
+![stream-deck-setup1](2022-11-24-set-stream-deck-ubuntu01.jpg)
 
 I think everyone has their preferred settings. My first page has my to-do list and google calendar,
 with a turn-off button and lock screen. Most importantly, four headshots from my favorite C-pop girl group.
 What kswl means? if you know, you know.
 
-![stream-deck-setup2](/assets/figures/2022-images/2022-11-24-set-stream-deck-ubuntu02.jpg)
+![stream-deck-setup2](2022-11-24-set-stream-deck-ubuntu02.jpg)
 
 My second page is for entertainment. It only has buttons for youtube, Netflix, and bilibili by now. Just couldn't bother to type those addresses.

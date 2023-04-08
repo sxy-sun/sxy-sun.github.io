@@ -4,6 +4,7 @@ date: 2023-01-22 18:30:00 -0500
 categories: [Robotics, Sensing]
 tags: [sensing] 
 math: true
+img_path: /assets/figures/2023-images/2023-01-22-resistive-sensors/
 ---
 
 
@@ -25,7 +26,7 @@ $$\Delta V=\alpha \Delta T$$
 
 Using both thermistor and thermocouple we will be able to measure the absolute temperature, since the thermistor can reflect its own temperature and the thermocouple can reflect the relatvie temperature. 
 
-![](/assets/figures/2023-images/2023-01-22-resistive-sensors/2023-01-22-resistive-sensors-01.png)
+![](2023-01-22-resistive-sensors-01.png)
 
 Here in the image, we use thermistor to measure the block's temperature we call it `Temp(cold)`. Then we have two material stick out of the block to measure the temperature we are investing and we call it `Temp(hot)` here. The thermocouple will give the relatvie temperature $\Delta T$ and the thermistor will give $T_0$, and we can derive absolute temperature from them.
 
@@ -105,7 +106,7 @@ F = \frac{AE}{G}(\frac{\Delta R}{R})
 $$
 
 ### EX: Cantilever
-![](/assets/figures/2023-images/2023-01-22-resistive-sensors/2023-01-22-resistive-sensors-06.png)
+![](2023-01-22-resistive-sensors-06.png)
 
 The force (F) is being applied which generates a moment (M) there.
 - moment of inertia of a rectangle: $I = \frac{bt^3}{12}$
@@ -156,7 +157,7 @@ However, since the sensor's resistance is changing, the current of the circuit w
 
 **Voltage Divider**: To solve this, we can use a math trick - transact resistance into measuring voltage by putting 2 resistors into series. 
 
-![](/assets/figures/2023-images/2023-01-22-resistive-sensors/2023-01-22-resistive-sensors-02.png)
+![](2023-01-22-resistive-sensors-02.png)
 
 Since current is constant everywhere, $V = iR = i(R_x+R_2) \rightarrow i = \frac{V}{R_x+R_2}$ where $R_x$ is the sensor and $R_2$ is the regular resistor. We can also calculate $V_0=iR_2=V\cdot \frac{R_2}{(R_x+R_2)}$.
 
@@ -165,7 +166,7 @@ From equation above, we can solve for $R_x = \frac{R_2(V-V_0)}{V_0}$ by measurin
 ### Option #3 Wheatstone bridge
 However, when sensors getting noisy, we want to create linearity. We can upgrade to [**Wheatstone Bridge**](https://en.wikipedia.org/wiki/Wheatstone_bridge). It is basically 2 voltage dividers.
 
-![](/assets/figures/2023-images/2023-01-22-resistive-sensors/2023-01-22-resistive-sensors-03.png)
+![](2023-01-22-resistive-sensors-03.png)
 
 $$ V_0=V\cdot \frac{R_2}{R_2+R_1}-V\cdot \frac{R_4}{R_x+R_4} $$
 
@@ -188,7 +189,7 @@ $$
 #### Half bridge
 By adding one more sensor, namely replacing one of the resistors to be strain gage, this puts out twice of the voltage V0, and we can twice the sensitivity as one point bridge.
 
-![](/assets/figures/2023-images/2023-01-22-resistive-sensors/2023-01-22-resistive-sensors-04.png)
+![](2023-01-22-resistive-sensors-04.png)
 
 ##### Proof
 We know that for Wheatstone bridge circuit, we have the formula:
@@ -214,7 +215,7 @@ Based on the equations above, we can tell that $V_{half}  = 2 V_{quarter}$, half
 #### Full bridge
 To further improve the measurement, we could replace all the resistors to be strain gage and place them as the image shown below. Two on the top surface and two on the bottom surface.
 
-![](/assets/figures/2023-images/2023-01-22-resistive-sensors/2023-01-22-resistive-sensors-05.png)
+![](2023-01-22-resistive-sensors-05.png)
 
 $$
 V_0 = V \cdot[(\frac{R_x+\Delta R}{(R_x+\Delta R)+(R_x-\Delta R)}-\frac{R_x-\Delta R}{(R_x+\Delta R)+(R_x-\Delta R)})] 
