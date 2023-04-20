@@ -9,7 +9,7 @@ img_path: /assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32
 
 In this article, I will outline the process of using the BME280 sensor module with the ESP32 as the motherboard to read temperature and humidity. At the same time, retrieve local weather using OpenWeather API. Finally, display the two sets of readings on an OLED screen. 
 
-This article is especially feasible for beginners who want to use University's WIFI but have trouble connecting.
+This article is especially feasible for beginners who want to use University's WiFi but have trouble connecting.
 
 **Room readings**
 ![](room.png){: width="500" }
@@ -71,8 +71,23 @@ One of the great learning I have from this project is I learned how to do solder
 ### IDE
 I used VS Code with PlatformIO IDE following this [tutorial](https://randomnerdtutorials.com/vs-code-platformio-ide-esp32-esp8266-arduino/). From my own experience, I think for beginners who have experience in programming, this approach is easier compared to Arduino IDE.
 
+### Features
+![](code_loop.png) 
+As the image shown above, in this project we have
+1. A button to switch the readings from the BME280 sensor and the local weather from the Internet.
+2. Room temperature and humidity from the BME280 sensor.
+3. LED indicators to show the air condition.
+4. Under the `LEDIndicator` function we have IFTTT setup to send hydration alert to slack channel when the red LED is light up.
+  ![](slack_alert.png)
+5. Using [OpenWeather API](https://openweathermap.org/api) to retrive local weather
+
+
+
+
+
 ### Code
-My code is open source and can the github repo can be found [here](https://github.com/sxy-sun/weather_station_IoT). The project is written in C++ and the code is clean and commented, hope it helps!
+The code is open source and can the github repo can be found [here](https://github.com/sxy-sun/weather_station_IoT). The project is written in C++ and the code is clean and commented, hope it helps!
+
 ### Potential problems
 
 - WPA2 Enterprise
@@ -92,6 +107,9 @@ My code is open source and can the github repo can be found [here](https://githu
   ```
   This is because the code is outdated. From this [issue case](https://github.com/esphome/issues/issues/2646) I found that the solution is in this [commit](https://github.com/esphome/esphome/pull/2815/commits/5638d96626b4418a30a27747364f6f0c7ebfbee2).
 
+  -  This is the wifi setup this project using:
+
+![](code_wifi.png){: width="700"}
 
 ## Video Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YoT-wcManlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
