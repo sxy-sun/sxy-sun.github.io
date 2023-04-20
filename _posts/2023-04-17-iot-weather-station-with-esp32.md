@@ -78,10 +78,8 @@ As the image shown above, in this project we have
 2. Room temperature and humidity from the BME280 sensor.
 3. LED indicators to show the air condition.
 4. Under the `LEDIndicator` function we have IFTTT setup to send hydration alert to slack channel when the red LED is light up.
-  ![](slack_alert.png)
+  - ![](slack_alert.png)
 5. Using [OpenWeather API](https://openweathermap.org/api) to retrive local weather
-
-
 
 
 
