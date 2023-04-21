@@ -20,7 +20,7 @@ This article is especially feasible for beginners who want to use University's W
 To build such a project, the first step we need to purchase all the components we need. The list below includes all the components I have purchased for this project.
 
 ## Items
-- **ESP32**
+- ESP32
   - [ESP32](https://catalog.us-east-1.prod.workshops.aws/workshops/5b127b2f-f879-48b9-9dd0-35aff98c7bbc/en-US/module1/esp32) is a low-cost, low-power Microcontroller with an integrated Wi-Fi and Bluetooth. 
     -  Note that ESP32 is the chip microcontroller, espressif manufactures their own development board, but there is also other company like [this one](https://a.co/d/8E2EJhQ) builds development board based on ESP32. So espressif's core product is the microcontroller, anybody can create their own board if you know how to create a PCB.
   - [This](https://a.co/d/h4Dk0s0) is what I got, I personally don't like it because the pin's name is printed on the back so you have to refer to the manual when wiring the components.
