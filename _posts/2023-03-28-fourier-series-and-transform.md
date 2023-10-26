@@ -1,7 +1,7 @@
 ---
 title: Fourier Series and Fourier Transform
 date: 2023-03-28 00:53:00 -0400
-categories: [Robotics, Misc]
+categories: [Robotics, Math]
 tags: [fourier transform] 
 math: true
 ---
