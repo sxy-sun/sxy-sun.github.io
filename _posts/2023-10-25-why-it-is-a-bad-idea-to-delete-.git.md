@@ -1,5 +1,5 @@
 ---
-title: Why it is a bad idea to delete .git file
+title: Why It Is a Bad Idea to Delete .git File Directly
 date: 2023-10-26 17:00:00 -0400
 categories: [Technotes, Git]
 tags: [git] 
