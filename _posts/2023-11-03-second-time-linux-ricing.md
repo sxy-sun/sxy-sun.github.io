@@ -6,7 +6,7 @@ tags: [ubuntu]
 img_path: /assets/figures/2023-images/2023-11-03-second-time-linux-ricing
 ---
 
-Venturing into Linux ricing [with i3](posts/2022-12-08-first-time-linux-ricing.md) was an eye-opener. While I appreciated its potential, those key bindings were a handful. So, in this post, I'm exploring a different path in Linux ricing, adding just a touch of flair. It's about giving Ubuntu a little charm, not necessarily amping up productivity.
+Venturing into Linux ricing [with i3](/posts/first-time-linux-ricing/) was an eye-opener. While I appreciated its potential, those key bindings were a handful. So, in this post, I'm exploring a different path in Linux ricing, adding just a touch of flair. It's about giving Ubuntu a little charm, not necessarily amping up productivity.
 
 ### Showcase
 ![](terminal2.png){: width="600"}
