@@ -1,13 +1,15 @@
 ---
-title: Learning C++ I - Getting Started (Finally)
+title: Diving into C++ - Beginner but Not Beginner
 date: 2024-03-08 17:35:00 -0400
 categories: [Technotes, C++]
 tags: [cpp, cmake] 
 ---
 
-I recently started working with a large C++ codebase at my job, which sparked my interest in really learning C++. Until now, I've only used C++ when necessary, without fully diving into it. Therefore, I've decided to document my learning process in this blog post, it will serve as a reference for me in the future (and might be useful for others too).
+I recently started working with a large C++ codebase at my job, which sparked my interest in really learning C++. Until now, I've only used C++ when necessary, without fully diving into it.
 
-My environment is Ubuntu 22.04, so this post might only relevant for Linux users.
+Therefore, I've decided to document the things I learn in this blog post. It will serve as a future reference for me, including all the trivial details that I previously overlooked.
+
+My environment is Ubuntu 22.04, so this post might be relevant primarily for Linux users.
 
 ## Get Started
 C++ is a compiled language, requiring a compiler to transform source code into object code that a machine can execute.
