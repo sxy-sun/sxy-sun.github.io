@@ -23,8 +23,8 @@ So in this post, I am going to discuss Sampling based Search - *Rapidly-explorin
 - What is RRT algorithm?
     - RRT stands for [Rapidly-exploring Random Tree](https://en.wikipedia.org/wiki/Rapidly-exploring_random_tree). It is an algorithm designed to efficiently search nonconvex, high-dimensional spaces by randomly building a space-filling tree.
     - An RRT grows a tree rooted at the starting configuration by using random samples from the search space. As each sample is drawn, a connection is attempted between it and the nearest state in the tree. 
-    - Original paper: [Rapidly-Exploring Random Trees: A New Tool for Path Planning](http://msl.cs.uiuc.edu/~lavalle/papers/Lav98c.pdf)
-    - Paper that presents the approach to trajectory planning for robots: [Randomized Kinodynamic Planning](http://msl.cs.uiuc.edu/~lavalle/papers/LavKuf01b.pdf)
+    - Original paper: [Rapidly-Exploring Random Trees: A New Tool for Path Planning](https://msl.cs.uiuc.edu/~lavalle/papers/Lav98c.pdf)
+    - Paper that presents the approach to trajectory planning for robots: [Randomized Kinodynamic Planning](https://msl.cs.uiuc.edu/~lavalle/papers/LavKuf01b.pdf)
 
 ### Pseudocode
 ![](RRT.png){:width="500" }

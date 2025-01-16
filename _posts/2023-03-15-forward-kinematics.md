@@ -49,7 +49,7 @@ Here is an example of an [articulated robot](https://en.wikipedia.org/wiki/Artic
 Then new questions arise, 1) how to represent the transforms? and 2) how to compute the transform to end effector?
 
 First, we want to define the kinematics of a robot. Traditionally, we have [Denavit-Hartenberg](https://en.wikipedia.org/wiki/Denavit%E2%80%93Hartenberg_parameters) Convention. In recent years, we have URDF convention.
-- [URDF](http://wiki.ros.org/urdf) stands for Unified Robot Description Format.
+- [URDF](https://wiki.ros.org/urdf) stands for Unified Robot Description Format.
   - URDF defined by its implementation in ROS (“Robot Operating System”), and ROS uses URDF to define the kinematics of an articulated structure. The structure is specified through [XML](https://www.w3schools.com/xml/xml_whatis.asp). Kinematics represented as tree with links as nodes, joint transforms as edges. 
 
 ## Homogeneous transformation matrix 
@@ -95,7 +95,7 @@ Alternatives to present rotations:
     - Example: (axis, angle) = ($[0, 0, 1]^T, \frac{\pi}{2}$), rotate along z-axis by 90 degrees
 2. [Quaternion](https://eater.net/quaternions), which is useful for describing orientation and computing rotations in 3D world for robotics.
     - It is just a different way to describe the orientation of a body, not meant to be read directly, namely not as intuitive as the Euler angle. Quaternions are more numerically robust, so if we have access to it, we should choose it over Euler angles. 
-    - ROS's tf library has [function](http://docs.ros.org/en/jade/api/tf/html/python/transformations.html#tf.transformations.quaternion_from_euler) `from tf.transformations import quaternion_from_euler` which can help us to do the conversion conveniently.
+    - ROS's tf library has [function](https://docs.ros.org/en/jade/api/tf/html/python/transformations.html#tf.transformations.quaternion_from_euler) `from tf.transformations import quaternion_from_euler` which can help us to do the conversion conveniently.
 
 ### Quaternion conversion
 
