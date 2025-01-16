@@ -4,7 +4,7 @@ date: 2023-01-22 18:30:00 -0500
 categories: [Robotics, Sensing]
 tags: [sensing] 
 math: true
-img_path: /assets/figures/2023-images/2023-01-22-resistive-sensors/
+media_subpath: /assets/figures/2023-images/2023-01-22-resistive-sensors/
 ---
 
 

@@ -4,7 +4,7 @@ date: 2023-03-15 21:09:00 -0500
 categories: [Robotics, Sensing]
 tags: [OPAMP, ADC] 
 math: true
-img_path: /assets/figures/2023-images/2023-03-15-amplification-and-digitization/
+media_subpath: /assets/figures/2023-images/2023-03-15-amplification-and-digitization/
 ---
 
 Two questions we would discuss in this post:

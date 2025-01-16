@@ -4,7 +4,7 @@ date: 2023-02-19 19:54:00 -0500
 categories: [Robotics, Sensing]
 tags: [sensing] 
 math: true
-img_path: /assets/figures/2023-images/2023-02-19-inductive-sensors/
+media_subpath: /assets/figures/2023-images/2023-02-19-inductive-sensors/
 ---
 
 ## Electromagnetic Induction

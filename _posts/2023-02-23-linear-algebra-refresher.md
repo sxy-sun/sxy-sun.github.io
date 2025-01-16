@@ -4,7 +4,7 @@ date: 2023-02-23 23:43:00 -0500
 categories: [Robotics, Math]
 tags: [math, kinematics] 
 math: true
-img_path: /assets/figures/2023-images/2023-02-23-linear-algebra-refresher/
+media_subpath: /assets/figures/2023-images/2023-02-23-linear-algebra-refresher/
 ---
 
 In Robotics, each part of the robot's body might has its own coordinate system. **Matrix transformations** are used to transform coordinate systems between the bodies and joints. And here is where linear algebra kicks in.

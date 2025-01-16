@@ -4,7 +4,7 @@ date: 2023-04-17 02:00:00 -0400
 categories: [Project]
 tags: [esp32, IoT] 
 math: true
-img_path: /assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32
+media_subpath: /assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32
 ---
 
 In this article, I will outline the process of using the BME280 sensor module with the ESP32 as the motherboard to read temperature and humidity. At the same time, retrieve local weather using OpenWeather API. Finally, display the two sets of readings on an OLED screen. 

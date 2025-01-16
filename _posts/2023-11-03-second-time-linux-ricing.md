@@ -3,7 +3,7 @@ title: Second Time Linux Ricing
 date: 2023-11-03 00:07:00 -0400
 categories: [Project]
 tags: [ubuntu] 
-img_path: /assets/figures/2023-images/2023-11-03-second-time-linux-ricing
+media_subpath: /assets/figures/2023-images/2023-11-03-second-time-linux-ricing
 ---
 
 Venturing into Linux ricing [with i3](/posts/first-time-linux-ricing/) was an eye-opener. While I appreciated its potential, those key bindings were a handful. So, in this post, I'm exploring a different path in Linux ricing, adding just a touch of flair. It's about giving Ubuntu a little charm, not necessarily amping up productivity.

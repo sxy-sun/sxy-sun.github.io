@@ -4,7 +4,7 @@ date: 2023-02-07 17:55:00 -0500
 categories: [Robotics, Path Planning]
 tags: [path planning] 
 math: true
-img_path: /assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/
+media_subpath: /assets/figures/2023-images/2023-02-07-graph-search-algorithms-in-path-planning/
 ---
 
 

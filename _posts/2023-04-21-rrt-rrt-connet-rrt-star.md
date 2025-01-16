@@ -4,7 +4,7 @@ date: 2023-04-22 04:00:00 -0400
 categories: [Robotics, Path Planning]
 tags: [rrt] 
 math: true
-img_path: /assets/figures/2023-images/2023-04-21-rrt-rrt-connet-rrt-star
+media_subpath: /assets/figures/2023-images/2023-04-21-rrt-rrt-connet-rrt-star
 ---
 
 In my first [post](/posts/graph-search-algorithms-in-path-planning/) on robotics path planning, we have discussed the graph search algorithms. As we mentioned in that post that the common approaches we have for path planning are various:

@@ -3,7 +3,7 @@ title: Credit Freeze Is All You Need
 date: 2024-05-03 20:48:00 -0400
 categories: [Life, Finance]
 tags: [credit] 
-img_path: /assets/figures/2024-images/2024-05-03-credit-freeze-is-all-you-need
+media_subpath: /assets/figures/2024-images/2024-05-03-credit-freeze-is-all-you-need
 ---
 
 I've recently been exploring finance and investing topics and stumbled upon a serious issue: **identity theft**. Essentially, someone can use your Social Security Number (SSN) to open credit cards, rack up charges, and ruin your credit score. Because this is such a serious problem, I wanted to learn how to protect my credit and share what I've found.

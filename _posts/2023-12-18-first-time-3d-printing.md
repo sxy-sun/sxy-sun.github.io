@@ -3,7 +3,7 @@ title: First Time 3D Printing
 date: 2023-12-8 19:19:00 -0400
 categories: [Project, 3D Printing]
 tags: [3d printing] 
-img_path: /assets/figures/2023-images/2023-12-18-first-time-3d-printing
+media_subpath: /assets/figures/2023-images/2023-12-18-first-time-3d-printing
 ---
 
 I was surprised to realize that, despite two years of robotics education, I hadn't been motivated to learn about 3D printing. I didn't really have a chance to print anything for my classes, and I couldn't see how it'd be useful for me. 
