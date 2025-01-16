@@ -2,7 +2,7 @@
 title: How This Website Was Built
 date: 2022-11-23 04:16:17 -0500
 categories: [Project]
-tags: [Jekyll]     # TAG names should always be lowercase
+tags: [] 
 ---
 
 After tried the templates from [HTML5UP](https://html5up.net/) and got confused with most of the fancy css settings, I gave up on writing progress with my learning very quickly.

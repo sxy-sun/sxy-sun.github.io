@@ -2,7 +2,6 @@
 title: How to Add Magnific Popup Plugin to Jekyll Theme
 date: 2023-09-09 21:00:00 -0400
 categories: [Technotes, Jekyll]
-tags: [Jekyll] 
 math: true
 media_subpath: /assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32
 ---
