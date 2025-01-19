@@ -1,6 +1,6 @@
 ---
 title: Understand Jekyll and GitHub Pages
-date: 2025-01-16 15:21:00 -0400
+date: 2025-01-18 19:21:00 -0400
 categories: [Technotes, Jekyll]
 tags: [github] 
 ---
@@ -121,11 +121,12 @@ Current Ruby version:
 use **chruby**, a version manager. 
 1. First, install the desired Ruby version: `ruby-install 3.2.3`.
 2. Then, switch between Ruby versions by typing: `chruby`. This will list available versions:
-    ```bash
-    $ chruby                                                                 
-    ruby-3.2.3
-    * ruby-3.3.5
-    ```
+   
+   ```bash
+   $ chruby                                                                 
+   ruby-3.2.3
+   * ruby-3.3.5
+   ```
     so you know that you are currently using 3.3.5, and 3.2.3 is available to switch to.
 3. To switch to a specific version, run: `chruby 3.2.3`
 

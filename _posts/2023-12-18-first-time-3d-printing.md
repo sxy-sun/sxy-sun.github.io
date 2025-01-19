@@ -11,9 +11,9 @@ I was surprised to realize that, despite two years of robotics education, I hadn
 Recently, I figured out that I could use 3D printing to resolve the issue with the annoyingly long cords of my webcam and microphone by making my own stands and mounts. So, in this post, I'm going to share my journey of diving into 3D printing for the first time.
 ## Results
 
-|Camera Stand | Microphone Stand|
-| ------- |------- |
-|![](camera.jpg){: width="300"}| ![](microphone.jpg){: width="300"}|
+| Camera Stand                   | Microphone Stand                   |
+| ------------------------------ | ---------------------------------- |
+| ![](camera.jpg){: width="300"} | ![](microphone.jpg){: width="300"} |
 
 ## What do you need to get start
 
@@ -38,22 +38,16 @@ One major issue with my microphone is the thick long cord, which is not only cum
 ![](microphone_original.jpg){: width="400" }
 
 Firstly, I decided to replace the microphone's stand, and the outcome was quite pleasing. Take a look at the results below, it already looks much better.
-<center>
-<iframe src="https://umich4087.autodesk360.com/shares/public/SHd38bfQT1fb47330c9931dd15eb34853bf4?mode=embed" width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-</center>
 
-![](microphone_progress1.jpg){: width="600" }
+![](microphone_progress1.jpg){: width="400" }
 
 
 Next, I added a cord organizer at the base of the stand, and it looks cleaner!
 
-<center>
-<iframe src="https://umich4087.autodesk360.com/shares/public/SHd38bfQT1fb47330c994ff17710b7aae043?mode=embed" width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-</center>
-![](microphone_progress2.jpg){: width="600"}
+![](microphone_progress2.jpg){: width="400"}
 
 Eventually it looks like this when we put the two pieces together.
-![](microphone_progress3.jpg){: width="600"}
+![](microphone_progress3.jpg){: width="400"}
 
 
 
@@ -62,13 +56,7 @@ My webcam came with a clip for attaching it to the monitor, but it never really 
 
 The base of the webcam stand is similar to that of the microphone, featuring a cord organizer and a cap. The standout feature of this stand is the ball joint I added, which allows the top of the stand to move and be positioned at any angle I desire.
 
-Here is the 3D model:
-
-<center>
-<iframe src="https://umich4087.autodesk360.com/shares/public/SHd38bfQT1fb47330c997d743b3c36b0c35a?mode=embed" width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-</center>
-
-![](ball-joint.jpg){: width="600" }
+![](ball-joint.jpg){: width="400" }
 
 To attach the ball joint stand to the base, I used M2.5 threaded inserts and M2.5 x 8mm Screws.
 
