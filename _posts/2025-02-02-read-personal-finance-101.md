@@ -6,7 +6,7 @@ tags: [personal finance]
 math: true
 ---
 
-I recently read Personal Finance 101 by Alfred Mill. If you’ve been exploring finance or investing for a while, you might already know about 70% of what it covers—this book is really aimed at beginners. That said, it provides a solid roadmap for learning personal finance. Using its key topics as a guide, here, I'll share all my notes on what I’ve learned so far as a 27-year-old W2 worker with no savings.
+I recently read Personal Finance 101 by Alfred Mill. If you’ve been exploring finance or investing for a while, you might already know about 70% of what it covers—this book is really aimed at beginners. That said, it provides a solid roadmap for learning personal finance. Using its key topics as a guide, here, I'll share all my notes on what I’ve learned so far as a 26-year-old W2 worker with no savings.
 
 ## Basic Concepts
 You borrow an amount of money, called the **principal**, for a set amount of time, called the **term**, at a fixed or variable **interest rate**. Most loans are **installment loans**, which require regular payments, usually every month.
@@ -36,7 +36,7 @@ Interest is calculated on both the principal and previously earned interest (a.k
   
   $$A=P \times (1+\frac{r}{n})^{n\times t}$$
   
-    - Where 𝑛 n is the number of compounding periods per year (e.g., semi-annually: n=2; quarterly: n=4; monthly: n=12).
+    - Where n is the number of compounding periods per year (e.g., semi-annually: n=2; quarterly: n=4; monthly: n=12).
 
 ### APR (Annual Percentage Rate)
 The APR (年化百分比利率) represents the total yearly cost of borrowing—including interest and fees (like origination fees and closing costs). It gives a true picture of your loan’s cost.
