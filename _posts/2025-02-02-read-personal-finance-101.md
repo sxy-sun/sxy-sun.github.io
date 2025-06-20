@@ -13,7 +13,7 @@ You borrow an amount of money, called the **principal**, for a set amount of tim
 
 ### Interest Rate
 **Interest Rate**(利率): The interest rate is the percentage charged on a loan or earned on an investment over a specific period of time (usually annually).
-- Example: You borrow $1,000 at 5% annual interest → You’d pay $50 in interest in one year (ignoring compounding).
+- Example: You borrow \$1,000 at 5% annual interest → You’d pay $50 in interest in one year (ignoring compounding).
 
 **Simple Interest (简单利息)**
 
@@ -39,13 +39,15 @@ Interest is calculated on both the principal and previously earned interest (a.k
     - Where n is the number of compounding periods per year (e.g., semi-annually: n=2; quarterly: n=4; monthly: n=12).
 
 ### APR (Annual Percentage Rate) vs APY (Annual Percentage Yield)
-The APR (年化百分比利率) represents the total yearly cost of borrowing—including interest and fees (like origination fees and closing costs). It gives a true picture of your loan’s cost.
-- A mortgage with a nominal rate of 4% might have an APR of 4.5% once fees are included.
+APR is used for borrowing costs (loans, credit cards) while APY is used for earning potential (savings, investments). 
+- APR for Borrowing
+  - The APR (年化百分比利率) represents the total yearly cost of borrowing—including interest and fees (like origination fees and closing costs). It gives a true picture of your loan’s cost. A mortgage with a nominal rate of 4% might have an APR of 4.5% once fees are included.
+  - Most loans use simple interest because regular payments prevent compounding
+  - Helps you compare different loan offers fairly
+- APY for Earning
+  - APY shows how much your money can grow with compounding. Your earnings generate their own earnings over time
+  - Shows actual annual yield you'll receive
 
-
-Key Takeaways:
-- The key difference between APR and APY is that APR does not include compounding, while APY takes compounding into account.
-- APR is mainly used for a personal loan or credit card, whereas APY is typically used for savings accounts and investments.
 
 ## Personal Finance Steps
 > The topics progress from common sense to more advanced concepts.
