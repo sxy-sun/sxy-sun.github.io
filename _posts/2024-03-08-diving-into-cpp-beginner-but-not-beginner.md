@@ -1,7 +1,7 @@
 ---
 title: Diving into C++ - Beginner but Not Beginner
 date: 2024-03-08 17:35:00 -0400
-categories: [Technotes, C++]
+categories: [Tech, C++]
 tags: [cpp, cmake] 
 ---
 

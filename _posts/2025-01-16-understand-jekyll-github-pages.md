@@ -1,7 +1,7 @@
 ---
 title: Understand Jekyll and GitHub Pages
 date: 2025-01-18 19:21:00 -0400
-categories: [Technotes, Jekyll]
+categories: [Tech, Jekyll]
 tags: [github] 
 ---
 

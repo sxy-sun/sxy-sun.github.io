@@ -11,5 +11,4 @@ I earned my Robotics Master's degree from [University of Michigan Robotics Depar
 
 After graduation, I'm working as an R&D engineer developing next-generation MBot for the robotics department of the University of Michigan. I always enjoy learning more techniques while growing with this young and thriving discipline.
 
-![me in front of robotics building](/assets/figures/me.jpg)
-_Me in front of robotics building on my graduation day_
+![](/assets/figures/me-national-part.JPG){: width="600"}
