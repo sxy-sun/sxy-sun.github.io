@@ -41,7 +41,6 @@ kramdown:
 collections:
   tabs:
     output: true
-    sort_by: order
 
 defaults:
   - scope:
@@ -57,25 +56,16 @@ defaults:
       layout: page
       permalink: /:title/
 
-sass:
-  style: compressed
-
 exclude:
   - "*.gem"
   - "*.gemspec"
-  - docs
-  - tools
   - README.md
   - LICENSE
-  - "*.config.js"
-  - "package*.json"
   - Gemfile.lock
 
 jekyll-archives:
-  enabled: [categories, tags]
+  enabled: [categories]
   layouts:
     category: category
-    tag: tag
   permalinks:
-    tag: /tags/:name/
     category: /categories/:name/
