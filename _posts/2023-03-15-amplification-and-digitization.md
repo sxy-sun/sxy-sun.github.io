@@ -1,8 +1,8 @@
 ---
 title: Amplification (OPAMP) and Digitization (ADC)
 date: 2023-03-15 21:09:00 -0500
-categories: [Robotics, Sensing]
-tags: [OPAMP, ADC] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-03-15-amplification-and-digitization/
 ---

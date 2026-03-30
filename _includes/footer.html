@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      {% if site.github.username %}
+      <a href="https://github.com/{{ site.github.username }}" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      {% endif %}
+      {% if site.social.links[1] %}
+      <a href="{{ site.social.links[1] }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      {% endif %}
+      <a href="{{ '/feed.xml' | relative_url }}" target="_blank" rel="noopener" aria-label="RSS Feed">
+        <i class="fas fa-rss"></i>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; {{ 'now' | date: "%Y" }} {{ site.social.name }}</p>
+  </div>
+</footer>

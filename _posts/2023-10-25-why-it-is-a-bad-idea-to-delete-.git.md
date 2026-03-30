@@ -1,8 +1,8 @@
 ---
 title: Why It Is a Bad Idea to Delete .git File Directly
 date: 2023-10-26 17:00:00 -0400
-categories: [Tech, Git]
-tags: [git] 
+categories: [Programming]
+
 ---
 
 Yet another lesson learned from work. The scenario was that we had a repository that stored a codebase with the commit history from the very beginning, and now, we wanted to distribute the codebase without the git history to ensure our secrets remained unexposed.

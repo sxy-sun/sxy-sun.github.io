@@ -1,8 +1,8 @@
 ---
 title: Linear Algebra Refresher
 date: 2023-02-23 23:43:00 -0500
-categories: [Robotics, Math]
-tags: [math, kinematics] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-02-23-linear-algebra-refresher/
 ---

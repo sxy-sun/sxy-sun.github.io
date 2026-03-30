@@ -1,8 +1,8 @@
 ---
 title: RRT, RRT-connect and RRT* in Path Planning
 date: 2023-04-22 04:00:00 -0400
-categories: [Robotics, Path Planning]
-tags: [rrt] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-04-21-rrt-rrt-connet-rrt-star
 ---

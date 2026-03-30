@@ -1,8 +1,8 @@
 ---
 title: Understand Jekyll and GitHub Pages
 date: 2025-01-18 19:21:00 -0400
-categories: [Tech, Jekyll]
-tags: [github] 
+categories: [Programming]
+
 ---
 
 I’ve been using Jekyll to build websites for both work and my personal site (this one) for years, but I never took the time to fully understand how it works.  In this post, I’m diving into everything I want to know—and need to know—about building a website with Jekyll and GitHub Pages.

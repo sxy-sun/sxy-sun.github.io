@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<!-- Bio section -->
+<section class="bio-section">
+  <div class="bio-inner">
+    <img src="{{ site.avatar }}" alt="{{ site.title }}" class="bio-avatar">
+    <div class="bio-text">
+      <h1 class="bio-name">{{ site.title }}</h1>
+      <p class="bio-tagline">{{ site.tagline }}</p>
+      <p class="bio-blurb">
+        Robotics Engineer at the University of Michigan. MS in Robotics from U-M, BS in CS from Rutgers.
+        I write about robotics, software, and whatever else I'm tinkering with.
+      </p>
+      <div class="bio-links">
+        {% if site.github.username %}
+        <a href="https://github.com/{{ site.github.username }}" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        {% endif %}
+        {% if site.social.links[1] %}
+        <a href="{{ site.social.links[1] }}" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Posts by category -->
+<section class="posts-section">
+  {%- assign top_categories = "" | split: "" -%}
+  {%- for post in site.posts -%}
+    {%- assign top = post.categories | first -%}
+    {%- unless top_categories contains top -%}
+      {%- assign top_categories = top_categories | push: top -%}
+    {%- endunless -%}
+  {%- endfor -%}
+  {%- assign top_categories = top_categories | sort | reverse -%}
+
+  {%- for cat in top_categories -%}
+    {%- assign cat_posts = site.posts | where_exp: "p", "p.categories contains cat" -%}
+    {%- assign cat_id = cat | slugify -%}
+
+    <div class="category-section">
+      <div class="category-header">
+        <h2 class="category-title">{{ cat }}</h2>
+        <span class="category-count">{{ cat_posts.size }} posts</span>
+        {% if cat_posts.size > 4 %}
+        <a href="{{ '/categories/' | append: cat_id | relative_url }}" class="category-more">
+          see all <i class="fas fa-arrow-right"></i>
+        </a>
+        {% endif %}
+      </div>
+
+      <ul class="post-list">
+        {%- for post in cat_posts limit: 4 -%}
+        <li class="post-item">
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+          </div>
+          <a class="post-title-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {%- endfor -%}
+</section>

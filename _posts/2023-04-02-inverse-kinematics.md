@@ -1,8 +1,8 @@
 ---
 title: Inverse Kinematics 
 date: 2023-04-02 02:30:00 -0400
-categories: [Robotics, Control]
-tags: [inverse kinematics] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-04-02-inverse-kinematics/
 ---

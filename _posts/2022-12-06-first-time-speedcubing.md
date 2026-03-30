@@ -2,7 +2,6 @@
 title: First Time Speedcubing
 date: 2022-12-06 00:22:04:00 -0500
 categories: [Life]
-tags: [rubik's cube]     # TAG names should always be lowercase
 ---
 
 Rubik's cube might seem like a hobby for some teenage nerds, but it is never too late to have fun with it.

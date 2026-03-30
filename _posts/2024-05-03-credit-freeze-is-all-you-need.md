@@ -1,8 +1,8 @@
 ---
 title: Credit Freeze Is All You Need
 date: 2024-05-03 20:48:00 -0400
-categories: [Life, Finance]
-tags: [credit] 
+categories: [Life]
+
 media_subpath: /assets/figures/2024-images/2024-05-03-credit-freeze-is-all-you-need
 ---
 

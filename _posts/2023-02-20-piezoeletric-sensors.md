@@ -1,8 +1,8 @@
 ---
 title: Piezoelectric Sensors
 date: 2023-02-20 19:37:00 -0500
-categories: [Robotics, Sensing]
-tags: [sensing] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-02-20-piezoeletric-sensors/
 ---

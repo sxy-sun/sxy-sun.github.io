@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="page">
+  <header class="page-header">
+    <div class="post-breadcrumb">
+      <a href="{{ '/archives/' | relative_url }}">Archives</a>
+      <span class="breadcrumb-sep">/</span>
+      #{{ page.title }}
+    </div>
+    <h1 class="page-title">#{{ page.title }}</h1>
+    <p class="category-post-count">{{ page.posts.size }} posts</p>
+  </header>
+
+  <ul class="archive-list">
+    {%- for post in page.posts -%}
+    <li class="archive-item">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

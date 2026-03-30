@@ -1,8 +1,8 @@
 ---
 title: My Immigration Journal - From F1 to F1 OPT
 date: 2024-02-22 19:19:00 -0400
-categories: [Life, Visa]
-tags: [OPT] 
+categories: [Life]
+
 ---
 
 > Recently, I started on the H1B visa process, which inspired me to share my journey navigating through various F1 statuses. In this post, I'll dive into my F1 experiences starting with the F1 student visa back in 2018.

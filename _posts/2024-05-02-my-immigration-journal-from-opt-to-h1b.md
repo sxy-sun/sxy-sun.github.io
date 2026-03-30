@@ -1,8 +1,8 @@
 ---
 title: My Immigration Journal - From F1 OPT to H1B
 date: 2024-05-02 22:19:00 -0400
-categories: [Life, Visa]
-tags: [H1B] 
+categories: [Life]
+
 ---
 
 > In my previous immigration journal post, I recounted my experiences with the F1 visa and concluded with the beginning of my H1B visa process. Now my H1B has been approved, this post is meant to document the timeline and the process.

@@ -2,7 +2,6 @@
 title: Second Time Linux Ricing
 date: 2023-11-03 00:07:00 -0400
 categories: [Project]
-tags: [ubuntu] 
 media_subpath: /assets/figures/2023-images/2023-11-03-second-time-linux-ricing
 ---
 

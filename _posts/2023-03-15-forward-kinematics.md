@@ -1,8 +1,8 @@
 ---
 title: Forward Kinematics
 date: 2023-03-15 21:51:00 -0500
-categories: [Robotics, Control]
-tags: [forward kinematics] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-03-11-forward-kinematics/
 ---

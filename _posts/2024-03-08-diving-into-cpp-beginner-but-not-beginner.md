@@ -1,8 +1,8 @@
 ---
 title: Diving into C++ - Beginner but Not Beginner
 date: 2024-03-08 17:35:00 -0400
-categories: [Tech, C++]
-tags: [cpp, cmake] 
+categories: [Programming]
+
 ---
 
 I recently started working with a large C++ codebase at my job, which sparked my interest in really learning C++. Until now, I've only used C++ when necessary, without fully diving into it.

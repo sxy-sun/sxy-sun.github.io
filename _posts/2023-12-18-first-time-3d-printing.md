@@ -1,8 +1,8 @@
 ---
 title: First Time 3D Printing
 date: 2023-12-8 19:19:00 -0400
-categories: [Project, 3D Printing]
-tags: [3d printing] 
+categories: [Project]
+
 media_subpath: /assets/figures/2023-images/2023-12-18-first-time-3d-printing
 ---
 

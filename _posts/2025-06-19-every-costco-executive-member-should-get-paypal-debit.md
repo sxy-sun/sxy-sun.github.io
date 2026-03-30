@@ -1,8 +1,8 @@
 ---
 title: Every Costco Executive Member Should Get Paypal Debit
 date: 2025-06-19 20:21:00 -0400
-categories: [Life, Finance]
-tags: [paypal] 
+categories: [Life]
+
 ---
 
 If you’re a Costco Executive Member and mostly shop for groceries or fill up at Costco gas stations, the PayPal debit card is a no-brainer.

@@ -1,8 +1,8 @@
 ---
 title: PID Control
 date: 2023-02-17 19:09:00 -0500
-categories: [Robotics, Control]
-tags: [PID control] 
+categories: [Robotics]
+
 math: true
 media_subpath: /assets/figures/2023-images/2023-02-17-pid-control/
 ---

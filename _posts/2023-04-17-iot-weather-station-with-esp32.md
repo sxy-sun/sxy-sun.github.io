@@ -2,7 +2,6 @@
 title: IoT Weather Station with ESP32 and BME280
 date: 2023-04-17 02:00:00 -0400
 categories: [Project]
-tags: [esp32, IoT] 
 math: true
 media_subpath: /assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32
 ---

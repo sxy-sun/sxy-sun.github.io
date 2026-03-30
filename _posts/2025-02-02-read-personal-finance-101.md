@@ -1,8 +1,8 @@
 ---
 title: Read "Personal Finance 101" by Alfred Mill
 date: 2025-02-02 11:21:00 -0400
-categories: [Life, Finance]
-tags: [personal finance] 
+categories: [Life]
+
 math: true
 ---
 
