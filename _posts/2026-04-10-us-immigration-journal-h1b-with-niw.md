@@ -20,7 +20,7 @@ I had scheduled four weeks of PTO in case of administrative processing, but it n
 
 After that, I spent time with my family in my hometown and with my partner in Shanghai.
 
-## My promised EB2 sponsorship is gone
+## The good old EB2
 
 ### What is EB2?
 > [EB2](https://www.uscis.gov/working-in-the-united-states/permanent-workers/employment-based-immigration-second-preference-eb-2) stands for Employment-Based Immigration: Second Preference EB-2. You may be eligible if you are a member of the professions holding an advanced degree or its equivalent, or a person who has exceptional ability.

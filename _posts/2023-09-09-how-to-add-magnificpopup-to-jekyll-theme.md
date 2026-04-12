@@ -1,13 +1,12 @@
 ---
 title: How to Add Magnific Popup Plugin to Jekyll Theme
 date: 2023-09-09 21:00:00 -0400
-categories: [Programming]
-
+categories: [Notes]
 math: true
 media_subpath: /assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32
 ---
 
-While I am building a documentation website for my work, I decided to use the free template [just-the-docs](https://just-the-docs.com/) as a quick solution. However, this theme doesn't have an image pop-up feature like [chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) does: when you click on the image, it would pop into a larger version, make it easier for readers to see the details of the sample images. For example, when you click the image below, it pops up.
+While I am building a documentation website for my work, I decided to use the free template [just-the-docs](https://just-the-docs.com/) as a quick solution. However, this theme doesn't have an image pop-up feature: when you click on the image, it would pop into a larger version, make it easier for readers to see the details of the sample images. For example, when you click the image below, it pops up.
 
 ![](fullview.png)
 

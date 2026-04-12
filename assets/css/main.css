@@ -11,7 +11,7 @@
   --accent:      #2563eb;
   --accent-hover:#1d4ed8;
   --header-bg:   #ffffffee;
-  --code-bg:     #f3f4f6;
+  --code-bg:     #e8eaed;
   --code-text:   #1f2937;
   --shadow:      0 1px 3px rgba(0,0,0,0.08);
 }
@@ -25,7 +25,7 @@
   --accent:      #60a5fa;
   --accent-hover:#93c5fd;
   --header-bg:   #0f1117ee;
-  --code-bg:     #1e2433;
+  --code-bg:     #161b2e;
   --code-text:   #e2e8f0;
   --shadow:      0 1px 3px rgba(0,0,0,0.4);
 }
@@ -467,10 +467,6 @@ code {
 }
 
 pre {
-  background: var(--code-bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.25rem;
   overflow-x: auto;
   margin: 1.5rem 0;
   line-height: 1.6;
@@ -483,14 +479,37 @@ pre code {
   font-size: 0.875rem;
 }
 
-/* Rouge line numbers */
+/* Rouge wraps code in div.highlighter-rouge > div.highlight > pre.highlight */
+div.highlighter-rouge {
+  background: var(--code-bg);
+  border: 1px solid #aab;
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+[data-theme="dark"] div.highlighter-rouge {
+  border-color: #445;
+  border-left-color: var(--accent);
+}
+
+div.highlighter-rouge pre.highlight {
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 1.25rem;
+}
+
+/* Rouge line numbers — hidden */
 .highlight .rouge-table {
   margin: 0;
   border: none;
 }
 .highlight .rouge-table td { border: none; padding: 0; }
-.highlight .rouge-gutter { width: 2.5rem; padding-right: 1rem; color: var(--text-muted); user-select: none; }
-.highlight .rouge-code { padding-left: 0.5rem; }
+.highlight .rouge-gutter { display: none; }
+.highlight .rouge-code { padding-left: 0; }
 .highlight pre { margin: 0; border: none; padding: 0; background: none; }
 
 /* ============================================
