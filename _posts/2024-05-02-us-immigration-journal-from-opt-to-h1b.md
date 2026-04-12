@@ -1,8 +1,7 @@
 ---
-title: My Immigration Journal - From F1 OPT to H1B
+title: US Immigration Journal - From F1 OPT to H1B
 date: 2024-05-02 22:19:00 -0400
 categories: [Life]
-
 ---
 
 > In my previous immigration journal post, I recounted my experiences with the F1 visa and concluded with the beginning of my H1B visa process. Now my H1B has been approved, this post is meant to document the timeline and the process.
@@ -27,9 +26,9 @@ The process involved numerous back-and-forth paperwork exchanges and emails amon
 
 The biggest challenge ahead is the visa interview. 
 
-It has been 4.5 years since I last came home. Despite the risk of having a prolonged waiting time due to "administrative processing" (AP), commonly known as "long check," which is particularly concerning given my "sensitive" field of study, I've scheduled an appointment at the Shanghai US consulate for the H-1B stamping interview. Hopefully everything will proceed smoothly.
+It has been 4.5 years since the last time I came home. Despite the risk of having a prolonged waiting time due to "administrative processing" (AP), commonly known as "long check," which is particularly concerning given my "sensitive" field of study, I've scheduled an appointment at the Shanghai US consulate for the H-1B stamping interview. Hopefully everything will proceed smoothly.
 
-Below are the steps to schedule an interview appointment. While I find the DS-160 website quite straightforward, the interview appointment website seems somewhat hidden. Anyway, I'm attaching those websites here:
+Below are the steps to schedule an interview appointment. While I find the DS-160 website quite straightforward, the interview appointment website seems somewhat hidden.
 - **Step 1:** Fill out the DS-160 form.
   - [DS-160: Online Nonimmigrant Visa Application](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application.html)
   - Please note that the DS-160 is a lengthy and somewhat tedious form, so be prepared to spend several hours completing it.

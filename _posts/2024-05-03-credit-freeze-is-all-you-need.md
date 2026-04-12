@@ -2,13 +2,12 @@
 title: Credit Freeze Is All You Need
 date: 2024-05-03 20:48:00 -0400
 categories: [Life]
-
 media_subpath: /assets/figures/2024-images/2024-05-03-credit-freeze-is-all-you-need
 ---
 
-I've recently been exploring finance and investing topics and stumbled upon a serious issue: **identity theft**. Essentially, someone can use your Social Security Number (SSN) to open credit cards, rack up charges, and ruin your credit score. Because this is such a serious problem, I wanted to learn how to protect my credit and share what I've found.
+I've recently been exploring finance and investing topics and stumbled upon a serious issue: **identity theft**. Essentially, someone can use your Social Security Number (SSN) to open credit cards, rack up charges, and ruin your credit score.
 
-> All the content here is learned from University of Reddit.
+> All the content here is learned from Reddit.
 
 The biggest worry about identity theft is that thieves could use your SSN to open new credit cards or even car loans without you knowing. To protect yourself, a solid strategy is to freeze your credit with the three major credit reporting agencies.
 - Freezing your credit stops banks and lenders from doing a "hard pull" on your credit report. This means credit reporting agencies will deny any new credit report inquiry, causing banks and lenders to reject fraudulent requests made by thieves.

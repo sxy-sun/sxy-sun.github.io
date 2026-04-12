@@ -2,18 +2,17 @@
 title: Read "Personal Finance 101" by Alfred Mill
 date: 2025-02-02 11:21:00 -0400
 categories: [Life]
-
 math: true
 ---
 
-I recently read Personal Finance 101 by Alfred Mill. If you’ve been exploring finance or investing for a while, you might already know about 70% of what it covers—this book is really aimed at beginners. That said, it provides a solid roadmap for learning personal finance. Using its key topics as a guide, here, I'll share all my notes on what was useful to me as a 26-year-old W2 worker with no savings.
+I recently read Personal Finance 101 by Alfred Mill. If you’ve been exploring finance or investing for a while, you might already know about 70% of what it covers. That said, it provides a solid roadmap for learning personal finance. Using its key topics as a guide, here, I'll share all my notes on what was useful to me as a 26-year-old W2 worker with no savings.
 
 ## Basic Concepts
 You borrow an amount of money, called the **principal**, for a set amount of time, called the **term**, at a fixed or variable **interest rate**. Most loans are **installment loans**, which require regular payments, usually every month.
 
 ### Interest Rate
 **Interest Rate**(利率): The interest rate is the percentage charged on a loan or earned on an investment over a specific period of time (usually annually).
-- Example: You borrow \$1,000 at 5% annual interest → You’d pay $50 in interest in one year (ignoring compounding).
+- Example: You borrow `$1,000` at 5% annual interest → You’d pay `$50` in interest in one year (ignoring compounding).
 
 **Simple Interest (简单利息)**
 
@@ -53,7 +52,7 @@ APR is used for borrowing costs (loans, credit cards) while APY is used for earn
 > The topics progress from common sense to more advanced concepts.
 
 ### 1. Budgeting
-Budgeting isn’t about guilt—it’s about ensuring you have money for the things you want. A simple formula:
+A simple formula:
 ```math
 Available Budget = Income - (Monthly Payments + Mandatory Savings)
 ```
@@ -155,6 +154,3 @@ Paying Points(支付点数)
 
 **Refinancing**:
 If interest rates drop, you can refinance—taking a new loan to pay off the old one at a lower rate or with a better term.
-
----
-This is a starting point on my personal finance journey. Remember, the key is to build a strong financial foundation by budgeting wisely, eliminating unnecessary fees, and planning for the future. Happy saving and investing!

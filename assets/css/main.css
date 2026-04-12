@@ -408,11 +408,14 @@ img { max-width: 100%; height: auto; display: block; }
 .post-body blockquote {
   border-left: 3px solid var(--accent);
   margin: 1.5rem 0;
-  padding: 0.85rem 1.25rem;
+  padding: 0.4rem 1.25rem;
   background: var(--bg-secondary);
   border-radius: 0 6px 6px 0;
   color: var(--text-muted);
   font-style: normal;
+}
+.post-body blockquote p {
+  margin-bottom: 0;
 }
 
 .post-body hr {

@@ -2,7 +2,6 @@
 title: Understanding Michigan Auto Insurance
 date: 2024-05-04 20:55:00 -0400
 categories: [Life]
-
 ---
 
 Living in Michigan as a broken graduate student and new worker, I've always tried to keep my car insurance costs low without paying attention to details. About a month ago, a friend’s car was scratched in a parking lot. Watching her argue with the other driver made me realize how little I knew about auto insurance. So I decided to research on each aspect of my auto insurance coverage to determine the best options for my situation.
