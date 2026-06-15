@@ -4,20 +4,18 @@ date: 2024-02-22 19:19:00 -0400
 categories: [Life]
 ---
 
-> Recently, I started on the H1B visa process, which inspired me to share my journey navigating through various F1 statuses. In this post, I'll dive into my F1 experiences starting with the F1 student visa back in 2018.
+> I recently started on the H1B visa process, which inspired me to share my journey navigating through various F1 statuses since 2018.
 
 ## Two Degrees on the Same F1 Visa
 > The F1 visa is a type of non-immigrant student visa.
 
-My journey began in 2018 when I applied for an F1 Visa to pursue undergraduate studies at Rutgers University. The interview took place at the U.S. Consulate General in Shanghai, and my visa was issued, valid from May 4, 2018, to May 1, 2023.
+My journey began in 2018 when I applied for an F1 Visa to pursue undergraduate studies at Rutgers University. The interview took place at the U.S. Consulate General in Shanghai, and my visa was issued there valid from May 4, 2018, to May 1, 2023.
 
-At the time of the interview, I hadn't declared a major. Being undeclared meant a smoother interview process, as STEM majors, particularly from Mainland China, often face additional checks and typically receive shorter visa terms. Though, three years later, I graduated with a major in Computer Science. 
-
-I was fortunate to receive a five-year visa, but during the five years, the COVID-19 pandemic struck. While holding this visa, I only managed to return home once during the winter break of 2019-2020. I then graduated in 2021 and was admitted to the University of Michigan.
+At the time of the interview, I hadn't declared a major yet. For STEM majors, particularly from Mainland China, often face additional checks and typically results in shorter visa terms. Back then, I was fortunate to receive a five-year visa. However, while holding this visa, COVID-19 pandemic struck and I only managed to return home once during the winter break of 2019-2020. I then graduated in 2021 with a B.S. in Computer Science, and was admitted to the University of Michigan for Robotics master's program.
 
 It's legal for students transitioning from college to graduate school to stay in the US during the summer break, all you have to do is transferring the SEVIS record (I-20) to the new institution without the mandatory departure from the US. So I stayed during the 2021 summer as a huge lockdown was still ongoing in China.
 
-Later in 2021, with a new I-20 listing the University of Michigan, I continued my educational journey on the same F1 visa.
+Later in 2021, with a new I-20 listing the University of Michigan, I continued my educational journey again.
 
 ## My First Ever Internship with F1-CPT
 > [CPT](https://internationalcenter.umich.edu/students/f1-students/cpt), or Curricular Practical Training, allows full-time students to legally work off-campus before graduation.
@@ -52,7 +50,7 @@ In 2023, USCIS introduced a $1,500 premium processing option, guaranteeing a res
 Unfortunately, my job start date was delayed from June 12 to July due to these processing delays. The robotics department was understanding, but the 90-day unemployment grace period began as soon as my I-765 was approved. This put me in a tight spot, as I was marked unemployed for 30 days, despite having a job and being eager to start.
 > As F1-OPT students, we are only allowed a 90-day grace period for unemployment. If we are unemployed for 90 days, the OPT status becomes invalid and we have to leave the US. 
 
-Not only did I lose unemployment days, but missing a month’s paycheck also plunged me into a financial crisis, as I was already financially independent from my family. Thankfully, my partner and a close friend helped me get through these tough first few months while I waited for my EAD card. I'll forever be grateful.
+Not only did I lose unemployment days, but missing a month’s paycheck also plunged me into a financial crisis, as I was already financially independent from my family. Thankfully, my partner and a close friend helped me get through these tough first few months while I waited for my EAD card.
 
 With the pandemic easing in 2023, flight prices to China fell to around $2,000, still expensive, but more manageable. However, with my F1 visa expired, I could legally remain in the U.S. but could not travel without risking a lengthy visa re-stamping process, particularly given my "sensitive" field of study. This risk made me hesitant to leave the U.S., fearing it could jeopardize my hard-won OPT status and new job.
 
