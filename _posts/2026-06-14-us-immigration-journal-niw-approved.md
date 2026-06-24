@@ -21,7 +21,7 @@ categories: [Life]
 | 1st time **mail-in** I-797 receipt date| April 10, 2026 |
 | **EB2 NIW I-140 Approved!** | June 4, 2026|
 
-I filed with I-907 Premium Processing, more details about why I got 3 rejections and filing fees, please check my last post [US Immigration Journal - H1B to EB2 NIW](../us-immigration-journal-h1b-with-niw)
+I filed with I-907 Premium Processing. For more details about why I got 3 rejections and the filing fees, please check my last post [US Immigration Journal - H1B to EB2 NIW](../us-immigration-journal-h1b-with-niw).
 
 In my case, my background helped me a lot.
 - I am very lucky that I studied robotics and started my career in robotics, a field that clearly aligns with national interest and is directly mentioned in White House documents.
