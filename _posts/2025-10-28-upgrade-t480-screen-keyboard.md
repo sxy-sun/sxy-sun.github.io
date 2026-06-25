@@ -1,7 +1,7 @@
 ---
 title: Long Overdue ThinkPad T480 Upgrades - Screen & Keyboard
 date: 2025-10-28 0:21:00 -0400
-categories: [Project]
+categories: [Tech Blog]
 media_subpath: /assets/figures/2025-images/2025-10-28-upgrade-t480-screen-keyboard
 ---
 

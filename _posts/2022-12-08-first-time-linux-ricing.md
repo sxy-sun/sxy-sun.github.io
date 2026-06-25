@@ -1,7 +1,7 @@
 ---
 title: First Time Linux Ricing
 date: 2022-12-08 02:03:00 -0500
-categories: [Project]
+categories: [Tech Blog]
 media_subpath: /assets/figures/2022-images/
 ---
 
