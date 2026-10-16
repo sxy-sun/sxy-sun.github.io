@@ -1,7 +1,7 @@
 ---
 title: US Immigration Journal - From F1 to F1 OPT
 date: 2024-02-22 19:19:00 -0400
-categories: [Life]
+categories: [Life, Immigration]
 ---
 
 > I recently started on the H1B visa process, which inspired me to share my journey navigating through various F1 statuses since 2018.

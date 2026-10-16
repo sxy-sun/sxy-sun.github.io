@@ -1,7 +1,7 @@
 ---
 title: US Immigration Journal - NIW Approved
 date: 2026-06-14 22:00:00 -0400
-categories: [Life]
+categories: [Life, Immigration]
 ---
 
 > Long story short, my EB2 NIW approved! Although didn't really change anything for now, but dobby is 0.5% free.

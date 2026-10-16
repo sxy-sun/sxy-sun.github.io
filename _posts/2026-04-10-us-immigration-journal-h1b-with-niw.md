@@ -1,7 +1,7 @@
 ---
 title: US Immigration Journal - H1B to EB2 NIW
 date: 2026-04-11 19:19:00 -0400
-categories: [Life]
+categories: [Life, Immigration]
 ---
 
 > This post records my EB2 NIW journey, as I mailed out my petition package on April 7, 2026. If you understand what the title says, I feel sorry for us.

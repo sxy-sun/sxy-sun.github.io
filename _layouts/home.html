@@ -2,68 +2,57 @@
 layout: default
 ---
 
-<!-- Bio section -->
-<section class="bio-section">
-  <div class="bio-inner">
-    <img src="{{ site.avatar }}" alt="{{ site.title }}" class="bio-avatar">
-    <div class="bio-text">
-      <h1 class="bio-name">{{ site.title }}</h1>
-      <p class="bio-tagline">{{ site.tagline }}</p>
-      <p class="bio-blurb">
-        I'm an engineer. I write about stuff.
-      </p>
-      <div class="bio-links">
-        {% if site.github.username %}
-        <a href="https://github.com/{{ site.github.username }}" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        {% endif %}
-        {% if site.social.links[1] %}
-        <a href="{{ site.social.links[1] }}" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        {% endif %}
+<div class="home-profile">
+  <section class="intro" aria-labelledby="home-name">
+    <div class="portrait-column">
+      <img class="portrait" src="{{ '/assets/figures/profile.JPG' | relative_url }}" width="720" height="1080" alt="Portrait of Shaw Sun">
+      <div class="links">
+        <a href="https://github.com/{{ site.github.username }}">GitHub</a>
+        <a href="{{ site.social.links[1] }}">LinkedIn</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Posts by category -->
-<section class="posts-section">
-  {%- assign top_categories = "" | split: "" -%}
-  {%- for post in site.posts -%}
-    {%- assign top = post.categories | first -%}
-    {%- unless top_categories contains top -%}
-      {%- assign top_categories = top_categories | push: top -%}
-    {%- endunless -%}
-  {%- endfor -%}
-  {%- assign top_categories = top_categories | sort | reverse -%}
-
-  {%- for cat in top_categories -%}
-    {%- assign cat_posts = site.posts | where_exp: "p", "p.categories contains cat" -%}
-    {%- assign cat_id = cat | slugify -%}
-
-    <div class="category-section">
-      <div class="category-header">
-        <h2 class="category-title">{{ cat }}</h2>
-        <span class="category-count">{{ cat_posts.size }} posts</span>
-        {% if cat_posts.size > 4 %}
-        <a href="{{ '/categories/' | append: cat_id | relative_url }}" class="category-more">
-          see all <i class="fas fa-arrow-right"></i>
-        </a>
-        {% endif %}
+    <div style="grid-column: 1; grid-row: 1;">
+      <h1 id="home-name">{{ site.title }}</h1>
+      <p class="role">{{ site.tagline }}</p>
+      <div class="about-copy">
+        <p>I'm a robotics engineer with a M.S. in Robotics from the <a href="https://robotics.umich.edu/">University of Michigan Robotics Department</a> (2023) and a B.S. in Computer Science from <a href="https://www.cs.rutgers.edu/">Rutgers University</a> (2021).</p>
+        <p>I build full-stack robotics systems that span embedded firmware, real-time communication, and autonomous software. My day-to-day tools include ROS 2, microROS, RViz, rqt, and Foxglove, and I work with microcontrollers and Raspberry Pi systems as well.</p>
       </div>
-
-      <ul class="post-list">
-        {%- for post in cat_posts limit: 4 -%}
-        <li class="post-item">
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-          </div>
-          <a class="post-title-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </div>
+  </section>
+  <section class="selection" aria-label="Selected posts">
+    <div class="selection-links">
+      <a href="{{ '/posts/' | relative_url }}">All tech posts &rarr;</a>
+    </div>
+    <ul class="selected-posts">
+        <li>
+          <article class="selected-post">
+            <p class="post-label">Debugging</p>
+            <h2><a href="{{ '/posts/apriltag-python-wrapper-threading-problem-on-jetson-nano/' | relative_url }}">AprilTag Python Wrapper Threading Problem on Jetson Nano</a></h2>
+            <p class="post-summary">Investigating thread creation errors in an AprilTag video stream on Jetson Nano.</p>
+          </article>
         </li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  {%- endfor -%}
-</section>
+        <li>
+          <article class="selected-post">
+            <p class="post-label">Embedded systems</p>
+            <h2><a href="{{ '/posts/iot-weather-station-with-esp32/' | relative_url }}">IoT Weather Station with ESP32 and BME280</a></h2>
+            <p class="post-summary">An ESP32 weather station combining BME280 readings, online weather data, and an OLED display.</p>
+          </article>
+        </li>
+        <li>
+          <article class="selected-post">
+            <p class="post-label">Path planning</p>
+            <h2><a href="{{ '/posts/rrt-rrt-connet-rrt-star/' | relative_url }}">RRT, RRT-connect and RRT* in Path Planning</a></h2>
+            <p class="post-summary">Notes and demos comparing RRT, RRT-Connect, and RRT*.</p>
+          </article>
+        </li>
+        <li>
+          <article class="selected-post">
+            <p class="post-label">Learning journal</p>
+            <h2><a href="{{ '/posts/beyong-code-cnc-3dprinting-welding-fabrication/' | relative_url }}">Beyond Code: CNC, 3D Printing, Soldering, Welding & Fabrication</a></h2>
+            <p class="post-summary">Ongoing notes from manufacturing training, starting with two aluminum parts and a finished pencil holder.</p>
+          </article>
+        </li>
+    </ul>
+  </section>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+  </header>
+
+  {% assign life_posts = site.posts | where_exp: "post", "post.categories contains 'Life'" %}
+  {% assign immigration_posts = life_posts | where_exp: "post", "post.categories contains 'Immigration'" %}
+
+  <div class="post-body">
+    <p>I write about everyday life:</p>
+    <ul>
+      {% for post in life_posts %}
+      {% unless post.categories contains 'Immigration' %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endunless %}
+      {% endfor %}
+    </ul>
+
+    <p>I occasionally write about my immigration journey, usually when something changes.
+    If I learned anything from this, after all, 时也，运也，命也，非吾之所能也。
+    </p>
+
+    <ul>
+      {% for post in immigration_posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

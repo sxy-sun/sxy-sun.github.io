@@ -5,7 +5,11 @@ layout: default
 <div class="page">
   <header class="page-header">
     <div class="post-breadcrumb">
-      <a href="{{ '/archives/' | relative_url }}">Archives</a>
+      {% if page.title == 'Life' or page.title == 'Immigration' %}
+      <a href="{{ '/about/' | relative_url }}">About Me</a>
+      {% else %}
+      <a href="{{ '/posts/' | relative_url }}">Posts</a>
+      {% endif %}
       <span class="breadcrumb-sep">/</span>
       {{ page.title }}
     </div>

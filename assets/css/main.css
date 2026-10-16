@@ -691,3 +691,52 @@ div.highlighter-rouge pre.highlight {
 [data-theme="dark"] .mfp-arrow:before,
 [data-theme="dark"] .mfp-arrow:after { border-top-color: #fff; border-bottom-color: #fff; }
 [data-theme="dark"] button.mfp-close { color: #fff; }
+
+/* Home introduction and selected posts */
+  .home-profile { padding-top: 1rem; }
+  .home-profile .intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 180px;
+    gap: 2.5rem;
+    align-items: start;
+    padding-bottom: 2.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .home-profile h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+    margin-bottom: 0.4rem;
+  }
+  .home-profile .role { color: var(--text-muted); margin-bottom: 1.25rem; }
+  .home-profile .about-copy { font-size: 0.95rem; line-height: 1.8; }
+  .home-profile .about-copy p { margin-bottom: 1rem; }
+  .home-profile .portrait-column { grid-column: 2; grid-row: 1; width: 180px; }
+  .home-profile .portrait { width: 180px; height: auto; border-radius: 8px; }
+  .home-profile .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; font-size: 0.875rem; margin-top: 0.85rem; }
+  .home-profile .selection { margin-top: 2.5rem; }
+  .home-profile .selection-links { text-align: right; margin-bottom: 1.25rem; font-size: 0.875rem; }
+  .home-profile .selected-posts { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .home-profile .selected-post {
+    height: 100%;
+    padding: 1.4rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .home-profile .post-label { color: var(--text-muted); font-size: 0.75rem; margin-bottom: 0.65rem; }
+  .home-profile h2 { font-size: 1rem; font-weight: 600; line-height: 1.5; margin-bottom: 0.65rem; }
+  .home-profile h2 a { color: var(--text); }
+  .home-profile h2 a:hover { color: var(--accent); }
+  .home-profile .post-summary { color: var(--text-muted); font-size: 0.875rem; line-height: 1.7; }
+  @media (max-width: 650px) {
+    .home-profile .intro { grid-template-columns: minmax(0, 1fr) 130px; gap: 1.25rem; }
+    .home-profile .portrait-column, .home-profile .portrait { width: 130px; }
+    .home-profile .selected-posts { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 450px) {
+    .home-profile .intro { display: block; }
+    .home-profile .portrait-column { float: right; width: 105px; margin: 0 0 1rem 1rem; }
+    .home-profile .portrait { width: 105px; }
+    .home-profile .intro::after { content: ""; display: block; clear: both; }
+    .home-profile h1 { font-size: 1.65rem; }
+  }
