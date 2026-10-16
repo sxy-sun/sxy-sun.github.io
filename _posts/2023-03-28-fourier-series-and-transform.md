@@ -78,7 +78,7 @@ $$
 X(\omega)= \sum^{\infty}_{n=-\infty}x[n]e^{-j\omega n}
 $$
 
-- where $x[n]$ is a discrete-time signal and $X(\omega)$ is the continuous-time Fourier transform of the signal. The DTFT produces a continuous function of frequency, and it is defined for all frequencies $\omega \in [-\pi, \pi]$.
+- where $x[n]$ is a discrete-time signal and $X(\omega)$ is the discrete-time Fourier transform of the signal. The DTFT produces a continuous function of frequency, and it is defined for all frequencies $\omega \in [-\pi, \pi]$.
 
 The inverse DTFT is used to transform a frequency-domain representation back to the time-domain. It is defined as: 
 
@@ -86,7 +86,7 @@ $$
 \frac{1}{2\pi} \int_{0}^{2\pi} X(\omega)e^{j\omega n} d\omega
 $$
 
-It is important to note that the DTFT assumes that the sequence is infinite in both directions. In practice, we are usually dealing with finite sequences, so we use the Discrete Fourier Transform (DFT) instead, which is a discrete approximation of the DTFT.
+The DTFT applies to both finite sequences and infinite sequences for which the transform is defined. In practice, we are usually dealing with finite sequences, so we use the Discrete Fourier Transform (DFT) instead, which is a discrete approximation of the DTFT.
 
 ### Discrete Fourier transform (DFT)
 The [Discrete Fourier Transform (DFT)](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) is a **mathematical formula** used to transform a discrete-time signal from the time-domain into its frequency-domain representation. It is a finite version of the Discrete-Time Fourier Transform (DTFT), and is typically used for signals that are sampled at a finite number of intervals.

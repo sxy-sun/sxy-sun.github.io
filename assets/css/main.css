@@ -35,7 +35,12 @@
    ============================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { font-size: 16px; scroll-behavior: smooth; }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  /* Leave room for the sticky header and a gap above anchor targets. */
+  scroll-padding-top: calc(3.5rem + 1px + 1rem);
+}
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -452,6 +457,29 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Flexible image sizing via markdown attributes */
 .post-body img[width] { width: attr(width px); max-width: 100%; height: auto; }
+
+.post-body table.photo-table {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  table-layout: auto;
+}
+.post-body .photo-table th, .post-body .photo-table td {
+  padding: 0.35rem;
+  vertical-align: middle;
+}
+.post-body .photo-table img, .post-body .photo-table .img-popup {
+  margin: 0;
+}
+.post-body .photo-table img {
+  box-shadow: none;
+}
+.post-body .photo-table img[width="300"] {
+  width: 300px;
+  min-width: 300px;
+  max-width: none;
+}
 
 /* ============================================
    Code Blocks

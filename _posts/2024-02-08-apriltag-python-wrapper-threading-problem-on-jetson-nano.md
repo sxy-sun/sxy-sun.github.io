@@ -39,7 +39,7 @@ Traceback (most recent call last):
 RuntimeError: Unable to create 1 threads for detector
 ```
 
-## Investgation
+## Investigation
 
 ### Checking system limits
 The error seems related to thread creation, so my first approach was to check the system limit.
@@ -53,16 +53,16 @@ $ ulimit -a
 ```
 - This command displays the limits on the resources available to individual users, including the number of processes and threads a user can run concurrently. My output showed a "Max user processes" of 13938. 
 
-By examining these limits, we can conclude that the issue is not related to the system's overall capacity to handle thread creation.
+These configured limits alone do not rule out a runtime thread creation limit.
 
 ### Checking number of thread creation of the program
-While we know the the apriltag was creating 1 thread for the task, the exact number of threads spawned by our program remained unclear. To clarify, I implemented a thread monitoring mechanism using the `threading` library. The findings indicated a total of just four threads:
+While we know the apriltag was creating 1 thread for the task, the exact number of threads spawned by our program remained unclear. To clarify, I implemented a thread monitoring mechanism using the `threading` library. The findings indicated a total of just four threads:
 - Main thread: This is the primary execution thread of the Python application.
 - Thread 1: A daemon thread, likely initiated by Flask's development server for processing incoming web requests.
 - Thread 2: This thread is specifically responsible for managing client connections to the video streaming endpoint.
 - Thread 3: Dedicated to the AprilTag detection process.
 
-Therefore, this program is not creating an excessive number of threads simultaneously.
+The Python `threading` count does not necessarily include native threads created by C extensions, so it cannot rule out excessive thread creation.
 
 ### Checking resource usage
 The `free` command displays the total amount of free and used physical and swap memory in the system.
@@ -102,7 +102,7 @@ if (N == 0 && errno == EAGAIN){
     goto done;
 }
 ```
-- `EAGAIN` indicates a resource is temporarily unavailable, typically related to the process exhausting its memory.
+- `EAGAIN` indicates a resource is temporarily unavailable, which can reflect insufficient resources or thread/process limits.
 - This check was introduced in this [pull request](https://github.com/AprilRobotics/apriltag/pull/224).
 
 Regarding the line:

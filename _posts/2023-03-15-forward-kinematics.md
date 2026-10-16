@@ -22,7 +22,7 @@ Here is an example of an [articulated robot](https://en.wikipedia.org/wiki/Artic
 **Forward kinematics** is many-to-one mapping of robot *configuration* to reachable *workspace* end effector poses. 
 - **Workspace** is a 3D space defined in the global frame. 
 - **Configuration $(q)$** is the state of all joints in the kinematics chain,  $q = \{q_1, \cdots, q_n\}$
-- **Joint $(q_i)$** relates the motion of one link (child link) with respect to another link (parent). Joint motion only affects the child link where its state. In the image above, Link 1 $\Gamma_1$ is a child of joint 1 $\theta_1$, and Link 0 $\Gamma_0$ is the parent of joint 1.
+- **Joint $(q_i)$** relates the motion of one link (child link) with respect to another link (parent). Joint motion affects the child link and all of its descendants. In the image above, Link 1 $\Gamma_1$ is a child of joint 1 $\theta_1$, and Link 0 $\Gamma_0$ is the parent of joint 1.
   - $q_i=\theta_i$ if it is a [revolute joint](https://en.wikipedia.org/wiki/Revolute_joint)
   - $q_i = d_i$ if it is a [prismatic joint](https://en.wikipedia.org/wiki/Prismatic_joint)
 - **Kinematic chain** connects `N+1` links together by `N` joints, with a coordinate frame on each link.

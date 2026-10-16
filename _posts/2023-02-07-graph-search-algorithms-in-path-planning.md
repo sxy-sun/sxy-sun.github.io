@@ -36,7 +36,7 @@ DFS is *complete* if the search tree is finite, meaning for a given finite searc
 > - If an algorithm is complete, it means that if at least one solution exists then the algorithm is guaranteed find a solution in a finite amount of time.
 
 > What does optimal mean? <br>
-> - If no other search algorithm uses less time or space or expands fewer nodes, both with a guarantee of solution quality. The optimal search algorithm would be one that picks the correct node at each choice.
+> - An optimal path-search algorithm finds a path with the lowest total cost.
 
 
 |Open Space | Has Obstacles |
@@ -53,7 +53,7 @@ Based on my implementation, my DFS always goes right first, then clockwise when 
 
 BFS needs FIFO ordering, uses [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) to keep track of the child nodes that were encountered but not yet explored.
 
-BFS is *complete* and *optimal*.
+BFS is *complete* for finite branching and *optimal* when all edges have equal cost.
 
 |Open Space | Has Obstacles |
 | ------- |------- |
@@ -61,7 +61,7 @@ BFS is *complete* and *optimal*.
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 3501|visited nodes: 3235 |
 
-BFS also goes without a sense of where it should go, but it can always find the optimal path. Unlike DFS, the optimal solution is not guaranteed.
+BFS also goes without a sense of where it should go, but it can find the optimal path when all edges have equal cost. Unlike DFS, the optimal solution is not guaranteed.
 
 ## Greedy best-first search
 
@@ -101,7 +101,7 @@ Dijkstra's is based on a greedy approach, meaning we always choose local optimal
 
 Dijkstra's is good for finding shortest path from the `source` to all the others. But if we only want to find shortest path from one point to another, then Dijkstra's might create unnecessary steps.
 
-The famous A\* algorithm is build upon this one. A\* achieves better performance by using heuristics to guide its search. Compared to Dijkstra's algorithm, the A* algorithm only finds the shortest path from a specified source to a specified goal, and not the shortest-path tree from a specified source to all possible goals. **In pathfinding, we always choose A\* over dijkstra.**
+The famous A\* algorithm is build upon this one. A\* achieves better performance by using heuristics to guide its search. Compared to Dijkstra's algorithm, the A* algorithm only finds the shortest path from a specified source to a specified goal, and not the shortest-path tree from a specified source to all possible goals. **In pathfinding, A\* can reduce exploration when a useful heuristic is available.** Dijkstra can also stop once the goal is removed from the priority queue with its final shortest-path cost.
 
 ## A*
 
@@ -128,7 +128,7 @@ The gifs have shown that each algorithm has different characteristics, and there
 
 A* can leverage both cost-to-come and cost-to-go, using heuristic value to guide the direction and use the g-value, namely cost-to-come, to correct the mistakes, unlike greedy best-first-search that doesn't have past knowledge. However, the greedy best-first search is able to outperform all others when the space is relatively empty and there is no obstacle between the start and the goal. 
 
-DFS and BFS, as the uninformed algorithm, cannot compete with the informed algorithms in tests like path planning when the map is already constructed and relatively empty. However, BFS can always give the optimal solution even though it would spend a lot of time and memory searching. And DFS is more suitable when the goal is far from the source and when the map is more complicated, such as when solving a maze.
+DFS and BFS, as the uninformed algorithm, cannot compete with the informed algorithms in tests like path planning when the map is already constructed and relatively empty. However, BFS can give the optimal solution when all edges have equal cost, even though it would spend a lot of time and memory searching. And DFS is more suitable when the goal is far from the source and when the map is more complicated, such as when solving a maze.
 
 ---
 

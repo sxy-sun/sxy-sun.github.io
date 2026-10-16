@@ -11,7 +11,7 @@ Anyway, **buying a T480 isn’t just buying a laptop, you’re buying a project.
 
 Fast forward three years, and I finally had time to give my T480 the upgrades it deserved.
 
-### RAM upagrade
+### RAM upgrade
 
 This wasn’t part of the plan, but in a sudden burst of minimalism, I stripped my old MSI laptop for useful parts and took the rest to Best Buy’s recycle center. Now my T480 is rocking 16GB of RAM, with 8GB coming from that old MSI stick.
 

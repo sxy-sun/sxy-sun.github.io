@@ -55,7 +55,7 @@ On the left-hand side, the BME280’s wiring is also directive. We need to conne
 
 For the button, as shown in the image, the solid blue lines are interior connected, such that I put the button sits on the ravine so the two sides are isolated unless you press the button. When you press the button, the dashed line will be connected, so the board will know that you have pressed the button. Then we just need to connect one side to the ground and another side to any of the GPIO pins you'd like to use.
 
-For the two LEDs. Let’s take the Green one as an example. Firstly, [polarity matters](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds/how-to-use-them#). The positive side of the LED is called the “anode” and is marked by having a longer leg. The shorter leg is the negative side, called the “cathode.” Current flows from the anode to the cathode. You should connect the longer leg to the GPIO pin you’d like to use and the shorter leg to the ground pin. You cannot see it from the image, but that's how it is connected beneath.
+For the two LEDs. Let’s take the Green one as an example. Firstly, [polarity matters](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds/how-to-use-them#). The positive side of the LED is called the “anode” and is marked by having a longer leg. The shorter leg is the negative side, called the “cathode.” Current flows from the anode to the cathode. You should connect the longer leg to the GPIO pin you’d like to use and the shorter leg to the ground pin through a 220-ohm current-limiting resistor. You cannot see it from the image, but that's how it is connected beneath.
 
 ![](wiring_left.png){: width="600"}
 

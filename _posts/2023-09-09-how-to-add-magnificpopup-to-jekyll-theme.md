@@ -15,7 +15,7 @@ Therefore, in this article, I will show you what I did to simply include the [Ma
 ## Step 1: Install Magnific Popup
 You can go to the [Magnific Popup's GitHub repository](https://github.com/dimsemenov/Magnific-Popup), follow the instruction there. 
 
-Or, if you are using Gemfile, add this line `gem 'magnific-popup-rails', '~> 1.1'` to your Gemfile as denoted from [rubygem website](https://rubygems.org/gems/magnific-popup-rails). Then run `bundle install`, it installs all the necessary gems specified in your Gemfile.
+The [magnific-popup-rails gem](https://rubygems.org/gems/magnific-popup-rails) is for Rails. For Jekyll, use the CSS and JS files as described below.
 
 ## Step 2: Add the Magnific Popup files to your Jekyll site
 You will need to add the Magnific Popup's main CSS (`magnific-popup.css`) and JS (`jquery.magnific-popup.js`) files to your Just-The-Docs repository. Both files are in the /`dist` folder in the [Magnific Popup's GitHub repository](https://github.com/dimsemenov/Magnific-Popup).
@@ -42,12 +42,10 @@ You will need to override Just-The-Docs' default layout to include references to
 ## Step 4: Include references to Magnific Popup in your template
 Now that your `default.html` is created, you need to include CSS and JS files.
 
-In `default.html`, insert this above the `<body>` section:
+In `default.html`, insert this inside the existing `<head>` section:
 
 ```html
-<head>
-    <link rel="stylesheet" href="{{ "/assets/css/magnific-popup.css" | relative_url }}">
-</head>
+<link rel="stylesheet" href="{{ "/assets/css/magnific-popup.css" | relative_url }}">
 ```
 
 Then, scroll to the end of the document and just before the `</body>` end tag, insert these two lines:
@@ -76,7 +74,7 @@ $(document).ready(function() {
 ```
 
 ## Step 6: Test with your image
-The markdown syntax that links an image with a specific class will not directly work in Jekyll. Instead, you'll have to use raw HTML in your Markdown file like below:
+You can use raw HTML in your Markdown file like below:
 ```markdown
 <a class="image-link" href="pathToYourLargeImage">
   <img src="pathToYourThumbnailImage" alt="Image Description">

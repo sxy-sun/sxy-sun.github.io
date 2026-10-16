@@ -47,7 +47,7 @@ $$
 - $\varepsilon$ is strain
 - E is called **young's modulus** which is a property of the material that tells us how easily it can stretch and deform.
 
-To calculate change in resistance, based on equation(1) we have $ dR = \frac{dR}{dL}dL-\frac{dR}{dA}dA+\frac{dR}{d\rho}d\rho $ , then:
+To calculate change in resistance, based on equation(1) we have $ dR = \frac{\partial R}{\partial L}dL+\frac{\partial R}{\partial A}dA+\frac{\partial R}{\partial \rho}d\rho $ , then:
 
 $$
 dR = \frac{\rho}{A}dL-\frac{\rho L}{A^2}dA+\frac{L}{A}d\rho
@@ -75,7 +75,7 @@ $$
 \frac{dR}{R}=(1+2\nu)\varepsilon_L+\frac{d\rho}{\rho}
 $$
 
-- Since we have a constant in the equation, we could have $\frac{\Delta R}{R}=G \varepsilon_L + \frac{d\rho}{\rho}$ where **G** is called **"gage factor"** which is a material property.
+- Since we have a constant in the equation, we could have $\frac{\Delta R}{R}=G \varepsilon_L$ where **G** is called **"gage factor"** which is a material property.
 
 Such result, namely the change in resistance has linear relation with the strain, is used in products such as strain gage.
 
@@ -136,7 +136,7 @@ $$
 \frac{\Delta R}{R}=G \cdot \varepsilon = G\frac{6Fx}{Ebt^2}
 $$
 
-where G is gage factor, $G=(1+2\nu) $ where $\nu$ is Poisson’s ratio. 
+where G is gage factor, $G\approx(1+2\nu)$ when the change in resistivity is negligible, where $\nu$ is Poisson’s ratio. 
 
 Note:
 - Meauring $\frac{\Delta R}{R}$ we can get any variable on the RHS

@@ -57,9 +57,9 @@ The paper [RRT-Connect: An Efficient Approach to Single-Query Path Planning](htt
 
 - As shown in the image above, instead of attempting to extend an RRT by a single step, the `CONNECT` heuristic iterates the `EXTEND` step until q or an obstacle is reached.
 - Under `RRT_CONNECT_PLANNER`, the two trees $T_a$ and $T_b$ are maintained at all times until they become connnected and a solution is found.
-- One tree keeps extending until
-    - Reach the goal and return the solution, or
-    - Hit obstacles and swap the two trees. For example, if it was $T_a$ extending, then it is $T_b$'s turn to grow.
+- Extend $T_a$ toward a random configuration, then try to connect $T_b$ to the new node.
+    - If the trees connect, return the solution.
+    - Otherwise, swap the trees at the end of the iteration, not only when an obstacle is hit.
 
 ### Demo
 

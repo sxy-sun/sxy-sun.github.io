@@ -27,7 +27,7 @@ Coordinate system in Robotics:
 
 ![](/assets/figures/2023-images/2023-02-16-dynamics-and-numerical-integration/01.png)
   - where $\ddot{\theta} = \frac{d\dot{\theta}}{dt}$ as the rate of change of the velocity of the pendulum angle 
-  - or $\ddot{\theta} = \frac{d\ddot{\theta}}{dt^2}$ as the rate of change of the rate of change of the pendulum angle
+  - or $\ddot{\theta} = \frac{d^2\theta}{dt^2}$ as the rate of change of the rate of change of the pendulum angle
  
 The equation of motion is derived from [Lagrangian Dynamics](https://en.wikipedia.org/wiki/Lagrangian_mechanics) for Pendulum. Lagrangian is kinetic energy minus potential energy $L = T-U$, and used to generate equation of motion as $\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta}_i}-\frac{\partial L}{\partial  \theta_i}=\tau_i$ where $\partial$ means partial derivative and $\frac{\partial L}{\partial  \theta_i}$ is the rate of change of the Lagrangian with respect to only the $i^{th}$ DOF.
 
@@ -73,7 +73,7 @@ A related, and more commonly used, algorithm is the [velocity Verlet](https://en
 - The most widely known member of the Runge–Kutta family is generally referred to as **"RK4"**, the "classic Runge–Kutta method" or simply as "the Runge–Kutta method".
 
 ##### The "RK4" - Simpson's Rule
-The widely used version of fourth order Runge-kutta implements [Simpson's rule](https://en.wikipedia.org/wiki/Simpson%27s_rule): $\int_a^bf(x)dx\approx\frac{b-a}{6}[f(a)+4f(\frac{a+b}{2})+f(b)]$
+For an ODE whose derivative depends only on time, classical RK4 reduces to [Simpson's rule](https://en.wikipedia.org/wiki/Simpson%27s_rule): $\int_a^bf(x)dx\approx\frac{b-a}{6}[f(a)+4f(\frac{a+b}{2})+f(b)]$
 
 Express it as an integrator:
 - Advance state: combination of integration trials at points with different tangents

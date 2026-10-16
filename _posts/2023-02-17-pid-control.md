@@ -26,7 +26,7 @@ In this post, we are going to discuss how to desgin a controller for a system.
 ## Terminology
 
 Specific controller design requirements:
-- Stability: The controller and the plant should be (internally and [BIBO](https://en.wikipedia.org/wiki/BIBO_stability)) stable.
+- Stability: The closed-loop system should be (internally and [BIBO](https://en.wikipedia.org/wiki/BIBO_stability)) stable.
 - Reference Tracking: System output tracks the desired reference command. In particular, the system output should follow reference commands with small overshoot and steady-state errors. In addition, the system should respond quickly, i.e. the rise and settling times should be small.
 - Disturbance Rejection: The controller should be designed so that disturbances have a small effect on tracking.
 - Actuator Effort: The input should remain within allowable levels.
@@ -58,7 +58,7 @@ $$
 > What is Initial Condition (IC)? <br>
 Initial condition refer to the value of the output and the (n-1) derivatives of the output at time t = 0. *Zero initial conditions* mean that the output and its (n-1) derivatives are 0 at t = 0. For example: $y(0)=0, \dot{y}=0, ..., y^{[n-1]}(0)=0$.
 
-Non-linear model is more accurate, linear model has properties (superposition, time-invariance) enable more direct theoretical analysis. When physical phenomena are modeled with non-linear equations, they are generally approximated by linear differential equations for an easier solution. Thus we use *linearization* to approximate non-linear ODE by linear ODE.
+Non-linear model is more accurate, linear model has properties (superposition) enable more direct theoretical analysis. When physical phenomena are modeled with non-linear equations, they are generally approximated by linear differential equations for an easier solution. Thus we use *linearization* to approximate non-linear ODE by linear ODE.
 
 ### What is Linear Time-Invariant (LTI) System? 
 LTI system satisfies:
@@ -80,8 +80,8 @@ Transfer function $ G(s) := \frac{b_ms^{m}+...+b_1s+b_0}{a_ns^n + a_{n-1}s^{n-1}
 
 - **Pole/Root** of G(s) is the solution of the characteristic equation: $a_np^n + a_{n-1}p^{n-1}+ ... + a_1p + a_0 = 0$
 - **Zero** of G(s) is the solution of: $b_mz^{m}+...+b_1z+b_0=0$
-    - A zero in [LHP](https://mathworld.wolfram.com/LeftHalf-Plane.html): 1) Increase overshoot 2) Decrease rise time 3) No effect on settling time
-    - A zero in RHP: 1) Cause undershoot 2) No effect on settling time
+    - A zero in [LHP](https://mathworld.wolfram.com/LeftHalf-Plane.html): 1) Increase overshoot 2) Decrease rise time 3) Effect on settling time depends on the system
+    - A zero in RHP: 1) Cause undershoot 2) Effect on settling time depends on the system
 - **DC gain** or steady-state gain is $G(0)=\frac{b_0}{a_0}$
 
 
@@ -107,7 +107,7 @@ For stable systems, $\ddot{y}(t)+2\zeta \omega_n \dot{y}(t)+\omega_n^2 y(t)=b_0u
 - $\zeta$ is damping ratio (unitless). <br>
 
 Two poles are given by $s_{1,2}=-\zeta \omega_n \pm \omega_n \sqrt{\zeta^2-1}$, thus there are 3 cases depending on $\zeta^2-1$: <br>
-- Overdamped, $\zeta \geq 1$: roots are real and distinct
+- Overdamped, $\zeta > 1$: roots are real and distinct
 - Critically damped, $\zeta = 1$: roots are real and $s_{1,2}=-\zeta \omega_n$
     - Over/Critically damped solutions looks similar to the first-order response. 
 - Underdamped, $\zeta < 1$: roots are a complex conjugate pair. $s_{1,2}=-\zeta \omega_n \pm j\omega_n \sqrt{1-\zeta^2}$
@@ -121,7 +121,7 @@ Features:
   - If the system is overdamped, we have to compute the poles and use the poles to calculate the time constant, like in a first-order system. And in this case, we should choose the root that is the smallest regarding the dominant pole approximation.
 - 5% Settling Time: $T_s=\frac{3}{\zeta \omega_n}$
 - Peak Overshoot: $M_p=e^{-\pi \frac{\zeta}{\sqrt{1-\zeta^2}}} \quad M_p=\frac{y(T_p)-\bar{y}}{\bar{y}}$
-  - Mp a percentage, it is the peak-final value divided by the final value. So if the final value is 2, Mp is 0.35, then the peak is actually 2.7 because 2.7-2/2 = 0.35.
+  - Mp a percentage, it is the peak-final value divided by the final value. So if the final value is 2, Mp is 0.35, then the peak is actually 2.7 because (2.7-2)/2 = 0.35.
   - Only holds for second-order functions with no zeros.
 - Rise Time: $T_r=\frac{\frac{\pi}{2}+sin^{-1}(\zeta)}{\omega_d}$
   - When there is overshoot, the time it takes to first reach the final value. If there is no overshoot, the rise time would be infinite.
@@ -174,7 +174,7 @@ $$
 - where d is disturbance
 - Since the root is $s = -(a_0+b_0K_p)$, **larger Kp yields faster response**. 
 - However, even if y(t) is close to ybar, it can never reach reference due to the disturbance. Increase Kp could have better reference tracking and disturbance rejection, however, has a chance to exceed input limit and excite unmodeled dynamics.
-- **There will always be some error in steady-state when using only P control**
+- **There may be some error in steady-state when using only P control**
 
 
 ### PI Control
@@ -206,7 +206,7 @@ $$
 - P-Term: Reacts to present (current error)
 - D-Term: Reacts to future (derivative of error) i.e. e could indicate the direction the error is headed. Has no effect on steady-state
   - If the derivative is positive, then we could expect the error would grow, if the derivative is negative, then the error would decrease.
-  - When the plant is in a steady state, the error would be 0. Such that the D-term would only affect the transient.
+  - When the plant and reference are constant in steady state, the derivative of the error would be 0. Such that the D-term would only affect the transient.
 
 
 **Rate feedback implementation** 

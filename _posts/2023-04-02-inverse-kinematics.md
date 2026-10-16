@@ -49,7 +49,7 @@ $$
 
 - $\omega$: angular velocity of points in the frame wrt. axis k
 - $\dot{\theta}$: rotation speed of frame
-- $k$: joint rotation axis, could be [0, 0, 1] if the vector represents [x, y, k]
+- $k$: joint rotation axis, could be [0, 0, 1] if the vector represents [x, y, z]
 - $v$: endeffector linear velocity
 - $r$: vector from joint origin to endeffector
 
@@ -61,7 +61,7 @@ $$
 \Delta \theta = (k \times r)^T \Delta x
 $$
 
-- $(k\times r)$: *Jabobian* for joint i
+- $(k\times r)$: *Jacobian* for joint i
 - $\Delta \theta $: Angular displacement for joint i
 - $\Delta x $: desired endeffector displacement
 
@@ -87,25 +87,25 @@ Now our question becomes: What is the derivative of robot configuration? - Geome
 Geometric Jacobian of the end effector is a 6-by-n matrix, where n is the number of degrees of freedom of the robot. The Jacobian maps the joint-space velocity to the end-effector velocity, relative to the base coordinate frame. The end-effector velocity equals:
 
 $$
-V_{EE} = \begin{vmatrix}
+V_{EE} = \begin{bmatrix}
 v_x\\ 
 v_y\\ 
 v_z\\
 \omega_x\\ 
 \omega_y\\ 
 \omega_z
-\end{vmatrix} = J\dot{q} 
-= J \begin{vmatrix}
+\end{bmatrix} = J\dot{q} 
+= J \begin{bmatrix}
 \dot{q_1} \\ 
 \vdots\\ 
 \dot{q_n} 
 
-\end{vmatrix}
+\end{bmatrix}
 $$
 
 - where $\omega$ is the angular velocity, $v$ is the linear velocity, and $\dot{q}$ is the vector of joint-space angle velocity.
 
-$J$ consists of two 3-by-n matrices $J = \|\frac{J_v}{J_w}\|$ as shwon above. To calculate $J$ for each joint i, we have equations:
+$J$ consists of two 3-by-n matrices $J = \begin{bmatrix}J_v\\J_w\end{bmatrix}$ as shown above. To calculate $J$ for each joint i, we have equations:
 
 $$
 J_{vi} = (\{k_i\}^w - \{o_i\}^w) \times (\{p_{tool}\}^w - \{o_i\}^w) 
@@ -116,7 +116,7 @@ J_{\omega i} = \{k_i\}^w - \{o_i\}^w
 $$
 
 - Endeffector: $\{p_{tool}\}^w = T^w_n\{p_{tool}\}^n$ = the position of the end effector in world frame
-- Joint axis: $\{k_i\}^w = T^w_i\{k_i\}^i$ = the axis of the joint in world frame
+- Joint-axis endpoint: $\{k_i\}^w = T^w_i\{k_i\}^i$ = a point one unit along the joint axis from its origin, expressed in the world frame.
 - Joint origin: $\{o_i\}^w = T^w_i\{o_i\}^i$ = the origin of the joint in world frame
 - All the above variables are in world frame, T is the transformation matrix.
 
@@ -142,9 +142,9 @@ $$
 ### Jacobian Pseudoinverse
 What is Pseudoinverse? - [answer](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/def_pseudo_inv.html)
 - For a matrix A with dimensions N x M with full rank
-  - Left pseudoinverse for full column rank, meaning $N \geq N$, "tall", less than 6 DOFs
+  - Left pseudoinverse for full column rank, meaning $N \geq M$, "tall" or square
     - $A^{-1}_{left} = (A^TA)^{-1}A^T$
-  - Right pseudoinverse for full row rank, meaning $N \leq N$, "wide", more than 6 DOFs
+  - Right pseudoinverse for full row rank, meaning $N \leq M$, "wide" or square
     - $A^{-1}_{right} = A^T(AA^T)^{-1}$
 
 ```javascript
@@ -174,7 +174,7 @@ $$
 Then compute the step direction:
 
 $$
-\Delta q = (J(q)^T J(q))^{-1}J(q)^T \Delta x
+\Delta q = J(q)^+ \Delta x
 $$
 
 Finally perform the step direction:

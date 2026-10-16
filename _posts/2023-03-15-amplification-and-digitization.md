@@ -84,7 +84,7 @@ To improve the accuracy of the ADC we can:
 ### Common ADCs
 **Flash ADC**
 - [MATLAB doc](https://www.mathworks.com/help/msblks/ref/flashadc.html)
-- An N-bit flash ADC comprises of a resistive ladder that contains $2^N$ resistors and $2^{N-1}$ comparators.
+- An N-bit flash ADC comprises of a resistive ladder that contains $2^N$ resistors and $2^N-1$ comparators.
 - Pro: it is simple and it is fast; Con: too many components and it is expensive so it is not so common to use
 
 **Successive Approximation ADC**

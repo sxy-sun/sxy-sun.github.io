@@ -28,14 +28,14 @@ $$
 - $\mathcal{l}$ - total length of flux path
   - A path which is followed by magnetic lines of force and in which the magnetic flux density is significant.
 - $\mu_0$ - [permeability](https://en.wikipedia.org/wiki/Permeability_(electromagnetism)) of vacuum
-- $\mu$ - permeability of core material
+- $\mu$ - relative permeability of core material
 - A - cross sectional area of the coil
 
 $$
 \Psi=n\Phi = \frac{n^2 i}{\mathcal{R}}
 $$
 
-- where $\Phi$ is magnetic flux for one turn of the coil, unit Tesla. And $\Psi$ is the total flux, unit Weber.
+- where $\Phi$ is magnetic flux for one turn of the coil, unit Weber. And $\Psi$ is the flux linkage, unit Weber-turn.
 
 **Definition:** The [inductance](https://en.wikipedia.org/wiki/Inductance) L of a coil is the total flux per unit current:
 
@@ -95,10 +95,10 @@ Why we need 2 secondary coils here? - It gives the linearity, ($M_2-M_1$) can sh
 - [Electromagnetic flow meters](https://www.emerson.com/en-us/automation/measurement-instrumentation/flow-measurement/about-magnetic) are comprised of a transmitter and sensor that together measure water flow. 
 
 ![](06.png) 
-- If a conductor of length l(m) is moving perpendicular to a magnetic field $\Phi$ at a velocity e (m/s), the voltage $V_o$ is induced: 
+- If a conductor of length l(m) is moving perpendicular to a magnetic flux density $B$ at a velocity e (m/s), the voltage $V_o$ is induced: 
 
 $$
-V_0=\Phi l e
+V_0=B l e
 $$
 
 - One might more familiar with the form $V = Blv$ but they are the same.
@@ -119,7 +119,7 @@ $$
 - D is the diameter
 
 $$
-V_0=\Phi l e=\Phi D \frac{4Q}{\pi D^2}=\frac{4\Phi Q}{\pi D}
+V_0=B l e=B D \frac{4Q}{\pi D^2}=\frac{4B Q}{\pi D}
 $$
 
 - Measuring the voltage can help us to measure the flow, although it is very difficult to build flow meter.

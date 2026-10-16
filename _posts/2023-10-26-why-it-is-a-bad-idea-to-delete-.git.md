@@ -78,7 +78,7 @@ git log
 ```
 you'll get an error since there are no commits.
 
-You've now cleared your commit history, but the files and folders from your project remain intact. To Git, it appears as if you've freshly added everything. All the files and directories from the previous branch are staged, awaiting commitment to this new orphan branch.
+The new branch has no commit history, but the old history still exists in the repository. The files and folders from your project remain intact. To Git, it appears as if you've freshly added everything. All the files and directories from the previous branch are staged, awaiting commitment to this new orphan branch.
 
 To commit the entire project, simply use the command following, and it will be the first ever commit in the current branch.
 ```bash
