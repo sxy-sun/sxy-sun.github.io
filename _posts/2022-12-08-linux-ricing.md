@@ -6,13 +6,20 @@ categories: [Tech Blog]
 media_subpath: /assets/figures/2022-images/
 ---
 
+## Table of Contents
+
+- [What brings me to the Linux world?](#what-brings-me-to-the-linux-world)
+- [What brings me to the Linux ricing world?](#what-brings-me-to-the-linux-ricing-world)
+- [i3 setup (December 8, 2022)](#i3-setup-december-8-2022)
+- [GNOME setup (Edited November 3, 2023)](#gnome-setup-edited-november-3-2023)
+
 ## What brings me to the Linux world?
 Growing up not having a chance to get into programming, meanwhile being a keyboard-mouse gamer, made me always be a windows user (pain*) and never think of other choices. Then I got into college for computer science and decided to go with the MacBook Pro since it was the easiest one to configure for a programming rookie. Then got into grad school for robotics. The first time I ever used a Linux machine was in my ROB 550 class, and it was also the first time I ever used ROS. During my first summer in Ann Arbor, I got an internship as a robotics engineer, where I used the Ubuntu machine daily. I am now fully into the Linux world and not looking back again. I still appreciate MacBook's stability, and I would love to purchase a new one with the M2 chip when I am no longer broke.
 
 ## What brings me to the Linux ricing world?
 From a source I couldn't remember, I found the [r/unixporn](https://www.reddit.com/r/unixporn/), thought the posts there were super cool, but didn't really think to implement those customizations because I was using the Macbook Pro and was happy with it. Then in my internship, I met Aaron, who is also into Linux ricing, and he introduced me to this world. I returned to the r/unixporn 3 years later and decided to give it a try.
 
-## i3 setup (2022)
+## i3 setup (December 8, 2022)
 > It is not much but it is mine
 
 ![ ](2022-12-08-first-time-linux-ricing01.png)
@@ -38,9 +45,9 @@ My dotfiles are [here](https://github.com/sxy-sun/dotfiles/) if you are interest
 
 Start with [i3](https://i3wm.org/) probably a good idea. The document is very well-written. And it not only makes your environment look fancy, but the key-bindings can make you mouse-free and rocket your productivity. Try to find a Youtube tutorial showing you how to download and set up the basic components step by step. Then from there, create your dotfiles, the config files that ultimately change how your GUI will look.
 
-## GNOME setup (Edited 2023)
+## GNOME setup (Edited November 3, 2023)
 
-Venturing into Linux ricing [with i3](#i3-setup-2022) was an eye-opener. While I appreciated its potential, those key bindings were a handful. So, in this section, I'm exploring a different path in Linux ricing, adding just a touch of flair. It's about giving Ubuntu a little charm, not necessarily amping up productivity.
+Venturing into Linux ricing [with i3](#i3-setup-december-8-2022) was an eye-opener. While I appreciated its potential, those key bindings were a handful. So, in this section, I'm exploring a different path in Linux ricing, adding just a touch of flair. It's about giving Ubuntu a little charm, not necessarily amping up productivity.
 
 ### Showcase
 ![](/assets/figures/2023-images/2023-11-03-second-time-linux-ricing/terminal2.png){: width="600"}

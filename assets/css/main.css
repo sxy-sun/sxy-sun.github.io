@@ -715,6 +715,7 @@ div.highlighter-rouge pre.highlight {
     letter-spacing: -0.035em;
     margin-bottom: 0.4rem;
   }
+  .home-profile .pronouns { font-size: 0.875rem; font-weight: 400; letter-spacing: normal; color: var(--text-muted); white-space: nowrap; }
   .home-profile .role { color: var(--text-muted); margin-bottom: 1.25rem; }
   .home-profile .about-copy { font-size: 0.95rem; line-height: 1.8; }
   .home-profile .about-copy p { margin-bottom: 1rem; }

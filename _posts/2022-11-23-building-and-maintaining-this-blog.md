@@ -1,14 +1,19 @@
 ---
 title: Building and Maintaining This Blog - Jekyll & GitHub Pages
-date: 2025-01-18 19:21:00 -0400
+date: 2022-11-23 04:16:17 -0500
 last_modified_at: 2026-10-17
 categories: [Tech Blog]
 
 ---
 
-I’ve been using Jekyll to build websites for both work and my personal site (this one) for years, but I never took the time to fully understand how it works. In this post, I’m diving into everything I learned about building a website with Jekyll and GitHub Pages.
+## Table of Contents
 
-## How this website started (2022)
+- [How this website started (November 23, 2022)](#how-this-website-started-november-23-2022)
+- [Image popups with Magnific Popup (September 9, 2023)](#image-popups-with-magnific-popup-september-9-2023)
+- [Jekyll and GitHub Pages (January 18, 2025)](#jekyll-and-github-pages-january-18-2025)
+- [New layout with AI (October 17, 2026)](#new-layout-with-ai-october-17-2026)
+
+## How this website started (November 23, 2022)
 
 After tried the templates from [HTML5UP](https://html5up.net/) and got confused with most of the fancy css settings, I gave up on writing progress with my learning very quickly.
 
@@ -17,7 +22,96 @@ Then I got inspired by two blogs and decided to build a new one. One is [Andrej 
 Thanks to Tim and his fantastic tutorial on how to build a website with Jekyll. Here is his [Youtube video](https://youtu.be/F8iOU1ci19Q)
 and [Doc](https://docs.technotim.live/posts/jekyll-docs-site/) that is super helpful. Following his tutorial and working on Ubuntu 20.04 with no issues.
 
-## Intro
+## Image popups with Magnific Popup (September 9, 2023)
+
+While I am building a documentation website for my work, I decided to use the free template [just-the-docs](https://just-the-docs.com/) as a quick solution. However, this theme doesn't have an image pop-up feature: when you click on the image, it would pop into a larger version, make it easier for readers to see the details of the sample images. For example, when you click the image below, it pops up.
+
+![](/assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32/fullview.png)
+
+Therefore, in this section, I will show you what I did to simply include the [Magnific Popup](https://github.com/dimsemenov/Magnific-Popup) plugin in this project. Specifically, for the [just-the-docs](https://just-the-docs.com/) theme.
+
+### Step 1: Install Magnific Popup
+You can go to the [Magnific Popup's GitHub repository](https://github.com/dimsemenov/Magnific-Popup), follow the instruction there.
+
+The [magnific-popup-rails gem](https://rubygems.org/gems/magnific-popup-rails) is for Rails. For Jekyll, use the CSS and JS files as described below.
+
+### Step 2: Add the Magnific Popup files to your Jekyll site
+You will need to add the Magnific Popup's main CSS (`magnific-popup.css`) and JS (`jquery.magnific-popup.js`) files to your Just-The-Docs repository. Both files are in the /`dist` folder in the [Magnific Popup's GitHub repository](https://github.com/dimsemenov/Magnific-Popup).
+
+1. Create a new folder in your repository root directory named `/assets`.
+2. Inside assets, create two more folders: `/css` and `/js`.
+3. Upload `magnific-popup.css` into the `/assets/css` folder and `jquery.magnific-popup.min.js` into the `/assets/js` folder.
+
+You might ask: why .min.js file not using the .js file?
+
+This reason is: [from ChatGPT 4.0]
+- The .min.js files are minified versions of regular JavaScript .js files.
+- Minification is the process of removing all unnecessary characters from the source codes without changing their functionality. These unnecessary characters usually include white spaces, new line characters, comments, and sometimes block delimiters, which are used to add readability to the code but are not required for execution.
+
+### Step 3: Override the theme's default layout
+You will need to override Just-The-Docs' default layout to include references to the CSS and JS files. You can do this in the `_layouts` directory.
+
+1. In your own repository, create a new folder at the root named `_layouts` if it's not there.
+2. Inside `_layouts`, create a new file and name it `default.html`.
+3. Go to Just-The-Docs theme repository on [GitHub](https://github.com/pmarsceill/just-the-docs).
+4. Find the `_layouts` directory in the Just-The-Docs theme repository, then find the `default.html` file.
+5. Copy all the content of `default.html` from the github repo to your own `/_layouts/default.html`.
+
+### Step 4: Include references to Magnific Popup in your template
+Now that your `default.html` is created, you need to include CSS and JS files.
+
+In `default.html`, insert this inside the existing `<head>` section:
+
+{% raw %}
+```liquid
+<link rel="stylesheet" href="{{ "/assets/css/magnific-popup.css" | relative_url }}">
+```
+{% endraw %}
+
+Then, scroll to the end of the document and just before the `</body>` end tag, insert these two lines:
+
+{% raw %}
+```liquid
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{ "/assets/js/jquery.magnific-popup.min.js" | relative_url }}"></script>
+```
+{% endraw %}
+
+### Step 5: Initialize the plugin
+You can either initialize the plugin in the `default.html` itself or create a new .js file
+1. Create a new main.js file in the `/assets/js` directory.
+2. In the `main.js` file, add the following JavaScript:
+```javascript
+$(document).ready(function() {
+    $('.image-link').magnificPopup({type:'image'});
+  });
+```
+
+3. Add this main.js file into your default.html, just after the previous script link:
+{% raw %}
+```liquid
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ "/assets/js/jquery.magnific-popup.min.js" | relative_url }}"></script>
+<!-- Add it here -->
+<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+```
+{% endraw %}
+
+### Step 6: Test with your image
+You can use raw HTML in your Markdown file like below:
+```markdown
+<a class="image-link" href="pathToYourLargeImage">
+  <img src="pathToYourThumbnailImage" alt="Image Description">
+</a>
+```
+
+And that's it, enjoy the new feature!
+
+## Jekyll and GitHub Pages (January 18, 2025)
+
+I’ve been using Jekyll to build websites for both work and my personal site (this one) for years, but I never took the time to fully understand how it works. In this post, I’m diving into everything I learned about building a website with Jekyll and GitHub Pages.
+
+### Intro
 
 What is Jekyll?
 - **Jekyll is a static site generator written in Ruby**. It takes plain text content (usually written in Markdown or HTML) and combines it with layouts to create a complete static website. It’s a popular choice for people building personal or professional websites.
@@ -48,16 +142,16 @@ What’s the relationship between `gem` and Bundler (`bundle`)?
 - Bundler: Works on top of RubyGems. It introduces the Gemfile and Gemfile.lock to define and lock gem versions for a project, ensuring isolated environments.
 - Bundler with Gemfile is similar to Conda with requirements.txt. Both tools ensure consistent dependency management across environments.
 
-## Get Started
-### 1. Find a Theme You Like
+### Get Started
+#### 1. Find a Theme You Like
 If you’re looking to build a blog but don’t know where to start, there are tons of free themes available online. You can find some great ones on the [jekyll website](https://jekyllrb.com/docs/themes/). For my site, I’m using the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy#quick-start) theme.
 
 Most themes include instructions and a ready-to-use template. For example, Chirpy has a detailed [getting-started](https://chirpy.cotes.page/posts/getting-started/) guide. It’s all hosted on GitHub, so setting it up is as simple as clicking through a few buttons in their instructions. After that, you’ll clone the repository to your local machine and host it locally to write your first blog post. Here’s where things start to get a bit trickier.
 
-### 2. Setting the environment
+#### 2. Setting the environment
 > Here I will include both Ubuntu and macOS (M2) since I use both.
 
-#### Ubuntu
+##### Ubuntu
 1. Follow the official Ubuntu [installation guide](https://jekyllrb.com/docs/installation/ubuntu/). By the end, you’ll have two key gems installed: *Jekyll* and *Bundler*.
     - Following the commands from the official guide, the gems will be stored in your home direcotry under a folder called `gems`, which in my opinion, annoying. I prefer to create a dedicated folder, "jekyll_ws", for better organization. Here’s how I set it up:
         ```bash
@@ -107,7 +201,7 @@ This means your Ruby version is too old (e.g., you have 3.0.2, but it requires 3
 
 Once that’s done, try running `bundle install` again. If no errors occur, you’re ready to use: `bundle exec jekyll serve` and visit your local host website.
 
-#### MacOS
+##### MacOS
 1. Follow the macOS [installation guide](https://jekyllrb.com/docs/installation/macos/).  This guide explains why you shouldn’t use the pre-installed system Ruby and provides commands for installing a newer Ruby version and version management tools.
    - For more detailed instructions, check out this [guide](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac), which covers potential issues and their solutions.
 2. Once Ruby is set up, navigate to the root directory of your cloned repository and run: `bundle install`. Bundler will install all the dependencies listed in the Gemfile. If everything works, you can host your site locally by running: `bundle exec jekyll serve`. Then, visit your site at http://127.0.0.1:4000/.
@@ -142,7 +236,7 @@ use **chruby**, a version manager.
 
 Now you’re all set! Try running bundle exec jekyll serve and visit your local site to start building your blog.
 
-### 3. How to Publish on GitHub
+#### 3. How to Publish on GitHub
 What is GitHub Pages?
 - GitHub Pages is a free web hosting service provided by GitHub. It allows you to host static websites directly from a repository, making it a great option for personal or project pages.
 
@@ -162,91 +256,6 @@ After pushing, go to the Actions tab to check if the deployment workflow was suc
 
 Creating a static website for personal use is easier than you might think, especially with such a vibrant community. I hope this post has been helpful—happy writing!
 
-## Image popups with Magnific Popup (2023)
-
-While I am building a documentation website for my work, I decided to use the free template [just-the-docs](https://just-the-docs.com/) as a quick solution. However, this theme doesn't have an image pop-up feature: when you click on the image, it would pop into a larger version, make it easier for readers to see the details of the sample images. For example, when you click the image below, it pops up.
-
-![](/assets/figures/2023-images/2023-04-17-iot-weather-station-with-esp32/fullview.png)
-
-Therefore, in this section, I will show you what I did to simply include the [Magnific Popup](https://github.com/dimsemenov/Magnific-Popup) plugin in this project. Specifically, for the [just-the-docs](https://just-the-docs.com/) theme.
-
-### Step 1: Install Magnific Popup
-You can go to the [Magnific Popup's GitHub repository](https://github.com/dimsemenov/Magnific-Popup), follow the instruction there.
-
-The [magnific-popup-rails gem](https://rubygems.org/gems/magnific-popup-rails) is for Rails. For Jekyll, use the CSS and JS files as described below.
-
-### Step 2: Add the Magnific Popup files to your Jekyll site
-You will need to add the Magnific Popup's main CSS (`magnific-popup.css`) and JS (`jquery.magnific-popup.js`) files to your Just-The-Docs repository. Both files are in the /`dist` folder in the [Magnific Popup's GitHub repository](https://github.com/dimsemenov/Magnific-Popup).
-
-1. Create a new folder in your repository root directory named `/assets`.
-2. Inside assets, create two more folders: `/css` and `/js`.
-3. Upload `magnific-popup.css` into the `/assets/css` folder and `jquery.magnific-popup.min.js` into the `/assets/js` folder.
-
-You might ask: why .min.js file not using the .js file?
-
-This reason is: [from ChatGPT 4.0]
-- The .min.js files are minified versions of regular JavaScript .js files.
-- Minification is the process of removing all unnecessary characters from the source codes without changing their functionality. These unnecessary characters usually include white spaces, new line characters, comments, and sometimes block delimiters, which are used to add readability to the code but are not required for execution.
-
-### Step 3: Override the theme's default layout
-You will need to override Just-The-Docs' default layout to include references to the CSS and JS files. You can do this in the `_layouts` directory.
-
-1. In your own repository, create a new folder at the root named `_layouts` if it's not there.
-2. Inside `_layouts`, create a new file and name it `default.html`.
-3. Go to Just-The-Docs theme repository on [GitHub](https://github.com/pmarsceill/just-the-docs).
-4. Find the `_layouts` directory in the Just-The-Docs theme repository, then find the `default.html` file.
-5. Copy all the content of `default.html` from the github repo to your own `/_layouts/default.html`.
-
-### Step 4: Include references to Magnific Popup in your template
-Now that your `default.html` is created, you need to include CSS and JS files.
-
-In `default.html`, insert this inside the existing `<head>` section:
-
-{% raw %}
-```html
-<link rel="stylesheet" href="{{ "/assets/css/magnific-popup.css" | relative_url }}">
-```
-{% endraw %}
-
-Then, scroll to the end of the document and just before the `</body>` end tag, insert these two lines:
-
-{% raw %}
-```html
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="{{ "/assets/js/jquery.magnific-popup.min.js" | relative_url }}"></script>
-```
-{% endraw %}
-
-### Step 5: Initialize the plugin
-You can either initialize the plugin in the `default.html` itself or create a new .js file
-1. Create a new main.js file in the `/assets/js` directory.
-2. In the `main.js` file, add the following JavaScript:
-```javascript
-$(document).ready(function() {
-    $('.image-link').magnificPopup({type:'image'});
-  });
-```
-
-3. Add this main.js file into your default.html, just after the previous script link:
-{% raw %}
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="{{ "/assets/js/jquery.magnific-popup.min.js" | relative_url }}"></script>
-<!-- Add it here -->
-<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
-```
-{% endraw %}
-
-### Step 6: Test with your image
-You can use raw HTML in your Markdown file like below:
-```markdown
-<a class="image-link" href="pathToYourLargeImage">
-  <img src="pathToYourThumbnailImage" alt="Image Description">
-</a>
-```
-
-And that's it, enjoy the new feature!
-
-## New layout with AI (2026)
+## New layout with AI (October 17, 2026)
 
 AI has come far enough that I can redesign this blog without being a CSS expert. Still the "500-pound website" analogy has stuck with me, so I've tried to keep this blog as minimal as possible. It now uses custom layouts instead of a prebuilt theme, though it still relies on Jekyll and a few external libraries. I have full control over the design, or perhaps Codex does. Either way, I'm very happy with how it has turned out.

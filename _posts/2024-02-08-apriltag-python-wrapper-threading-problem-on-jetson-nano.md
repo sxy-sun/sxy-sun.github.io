@@ -14,7 +14,7 @@ The project focused on implementing AprilTag detection on an Nvidia Jetson Nano 
 We are using Ubuntu 20.04 on Nvidia Jetson Nano, and the project was implemented in Python3 using a Python Wrapper from the AprilTag library.
 
 Project Pipeline:
-1. Capture the video stream using OpenCV `VideoCapture()` with an Accelerated GStream pipeline as the source.
+1. Capture the video stream using OpenCV `VideoCapture()` with an accelerated GStreamer pipeline as the source.
 2. Utilize the OpenCV & Flask for real-time video streaming in web browser. This method is chosen over remote desktop solutions like NoMachine, which tend to be slow.
 3. Install [Apriltag library](https://github.com/AprilRobotics/apriltag) from the official GitHub repository and incorporate it into the Python program.
 4. Use OpenCV `solvePnP()` function to calculate the pose based on real-time AprilTag detections.
@@ -56,7 +56,7 @@ $ ulimit -a
 These configured limits alone do not rule out a runtime thread creation limit.
 
 ### Checking number of thread creation of the program
-While we know the apriltag was creating 1 thread for the task, the exact number of threads spawned by our program remained unclear. To clarify, I implemented a thread monitoring mechanism using the `threading` library. The findings indicated a total of just four threads:
+The error message reported a detector thread count of 1, but the exact number of threads spawned by our program remained unclear. To clarify, I implemented a thread monitoring mechanism using the `threading` library. The findings indicated a total of just four threads:
 - Main thread: This is the primary execution thread of the Python application.
 - Thread 1: A daemon thread, likely initiated by Flask's development server for processing incoming web requests.
 - Thread 2: This thread is specifically responsible for managing client connections to the video streaming endpoint.
@@ -112,8 +112,8 @@ PyErr_Format(PyExc_RuntimeError, "Unable to create %d threads for detector", sel
 - `PyExc_RuntimeError` refers to Python's `RuntimeError` exception. By specifying this as the first argument to `PyErr_Format`, the function signals that it should raise a `RuntimeError` for the reported error.
 - To handle this error and avoid immediate program termination, we can add a try-except block to catch the exception in the code.
 
-## Solution
-My solution is catching the `RuntimeError` raised by the C extension, and then retrying the operation since we concluded that it might just be a temporary jump in resource usage. Therefore, if a `RuntimeError` associated with thread creation is detected, the loop will wait for a brief period before retrying. If the maximum number of retries is reached, the last exception is re-raised.
+## Workaround
+I added a bounded retry loop to handle the reported thread creation error. A temporary spike in resource usage was one possibility, but I did not confirm it. If a matching `RuntimeError` is caught, the loop waits briefly before retrying. If all attempts fail, the last exception is re-raised.
 
 The code looks like this:
 ```python
@@ -129,6 +129,6 @@ for attempt in range(max_retries):
         else:
             raise  # Re-raise the last exception if retries exhausted
 ```
-- If a `RuntimeError` is raised, the code will retry the detection process up to a maximum of 3 attempts.
+- The code makes at most 3 detection attempts: the initial attempt and up to 2 retries for the matching thread creation error. Other errors are re-raised immediately.
 
-After implementing the try-except block, the issue was resolved, and the program now runs smoothly. Introducing the 1-second wait doesn't impact the fluidity of the video stream. Although many `RuntimeError` raises were caught during the testing, the program typically resumes after the first retry.
+During testing, the program typically resumed after the first retry, and the video stream appeared smooth. The workaround allowed the program to recover in these cases, but the root cause remained unconfirmed.
