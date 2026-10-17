@@ -16,7 +16,8 @@ layout: default
       <p class="role">{{ site.tagline }}</p>
       <div class="about-copy">
         <p>I'm a robotics engineer with a M.S. in Robotics from the <a href="https://robotics.umich.edu/">University of Michigan Robotics Department</a> (2023) and a B.S. in Computer Science from <a href="https://www.cs.rutgers.edu/">Rutgers University</a> (2021).</p>
-        <p>I build full-stack robotics systems that span embedded firmware, real-time communication, and autonomous software. My day-to-day tools include ROS 2, microROS, RViz, rqt, and Foxglove, and I work with microcontrollers and Raspberry Pi systems as well.</p>
+        <p>I build robotics systems from embedded firmware to autonomous navigation. My work includes C++ development, ROS 2 and micro-ROS integration, sensor fusion, localization, mapping, and motion control, spanning microcontrollers and Raspberry Pi computers.</p>
+        <p>I believe robotics engineers should stay versatile. I'm currently expanding my skills in manufacturing and machining, and learning about vision-language models. This is where I document my learning notes and projects.</p>
       </div>
     </div>
   </section>
@@ -27,30 +28,23 @@ layout: default
     <ul class="selected-posts">
         <li>
           <article class="selected-post">
-            <p class="post-label">Debugging</p>
-            <h2><a href="{{ '/posts/apriltag-python-wrapper-threading-problem-on-jetson-nano/' | relative_url }}">AprilTag Python Wrapper Threading Problem on Jetson Nano</a></h2>
-            <p class="post-summary">Investigating thread creation errors in an AprilTag video stream on Jetson Nano.</p>
-          </article>
-        </li>
-        <li>
-          <article class="selected-post">
-            <p class="post-label">Embedded systems</p>
             <h2><a href="{{ '/posts/iot-weather-station-with-esp32/' | relative_url }}">IoT Weather Station with ESP32 and BME280</a></h2>
-            <p class="post-summary">An ESP32 weather station combining BME280 readings, online weather data, and an OLED display.</p>
+            {% assign featured_post = site.posts | where: "slug", "iot-weather-station-with-esp32" | first %}
+            <p class="post-preview">{{ featured_post.excerpt | strip_html | strip | escape }}</p>
           </article>
         </li>
         <li>
           <article class="selected-post">
-            <p class="post-label">Path planning</p>
             <h2><a href="{{ '/posts/rrt-rrt-connet-rrt-star/' | relative_url }}">RRT, RRT-connect and RRT* in Path Planning</a></h2>
-            <p class="post-summary">Notes and demos comparing RRT, RRT-Connect, and RRT*.</p>
+            {% assign featured_post = site.posts | where: "slug", "rrt-rrt-connet-rrt-star" | first %}
+            <p class="post-preview">{{ featured_post.excerpt | strip_html | strip | escape }}</p>
           </article>
         </li>
         <li>
           <article class="selected-post">
-            <p class="post-label">Learning journal</p>
             <h2><a href="{{ '/posts/beyong-code-cnc-3dprinting-welding-fabrication/' | relative_url }}">Beyond Code: CNC, 3D Printing, Soldering, Welding & Fabrication</a></h2>
-            <p class="post-summary">Ongoing notes from manufacturing training, starting with two aluminum parts and a finished pencil holder.</p>
+            {% assign featured_post = site.posts | where: "slug", "beyong-code-cnc-3dprinting-welding-fabrication" | first %}
+            <p class="post-preview">{{ featured_post.excerpt | strip_html | strip | escape }}</p>
           </article>
         </li>
     </ul>

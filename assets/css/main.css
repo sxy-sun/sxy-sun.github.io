@@ -369,6 +369,13 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-muted);
 }
 
+.post-header .post-meta {
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 .category-post-count {
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -711,7 +718,7 @@ div.highlighter-rouge pre.highlight {
   .home-profile .role { color: var(--text-muted); margin-bottom: 1.25rem; }
   .home-profile .about-copy { font-size: 0.95rem; line-height: 1.8; }
   .home-profile .about-copy p { margin-bottom: 1rem; }
-  .home-profile .portrait-column { grid-column: 2; grid-row: 1; width: 180px; }
+  .home-profile .portrait-column { grid-column: 2; grid-row: 1; width: 180px; align-self: center; }
   .home-profile .portrait { width: 180px; height: auto; border-radius: 8px; }
   .home-profile .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; font-size: 0.875rem; margin-top: 0.85rem; }
   .home-profile .selection { margin-top: 2.5rem; }
@@ -723,11 +730,18 @@ div.highlighter-rouge pre.highlight {
     border: 1px solid var(--border);
     border-radius: 8px;
   }
-  .home-profile .post-label { color: var(--text-muted); font-size: 0.75rem; margin-bottom: 0.65rem; }
   .home-profile h2 { font-size: 1rem; font-weight: 600; line-height: 1.5; margin-bottom: 0.65rem; }
   .home-profile h2 a { color: var(--text); }
   .home-profile h2 a:hover { color: var(--accent); }
-  .home-profile .post-summary { color: var(--text-muted); font-size: 0.875rem; line-height: 1.7; }
+  .home-profile .post-preview {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
   @media (max-width: 650px) {
     .home-profile .intro { grid-template-columns: minmax(0, 1fr) 130px; gap: 1.25rem; }
     .home-profile .portrait-column, .home-profile .portrait { width: 130px; }

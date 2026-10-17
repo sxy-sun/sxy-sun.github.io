@@ -81,7 +81,53 @@ This course introduces soldering, CO2 laser cutting, and 3D printing.
 ### Manual Mill
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Canvas Training:** Completed  
+**In-Person Training:** Upcoming
+
+The Canvas training introduced the basic tools and operations of a manual milling machine.
+- **Shell Mill:** Removes a large area of material from the surface of a workpiece.
+- **End Mill:** Available in different diameters. Can cut sideways, and some can plunge vertically.
+- **Boring Bar:** Used to enlarge an existing hole.
+- **Drill Chuck:** Holds drill bits for drilling. Cannot be used for sideways cutting.
+- **Auto Drawbar:** Automatically tightens and loosens the drawbar for faster tool changes.
+
+The spindle speed must be adjusted while the machine is running.
+
+#### Setting Zero
+
+The **Digital Readout (DRO)** displays the position of each axis. We need to establish the workpiece origin so we can use the DRO to position the cutter according to the drawing. The workshop's DRO only displays X and Y, so we use an **edge finder** to locate their zero positions.
+
+1. Install the edge finder in the collet and tighten it.
+2. Start the spindle and slowly move the edge finder toward the workpiece.
+3. When the edge finder touches the material, its tip begins spinning straight.
+4. Continue moving slowly until the tip suddenly deflects to the side, indicating the workpiece edge.
+
+The spindle center is still one edge finder radius away from the actual edge. If the edge finder's radius is 0.100", we can compensate by:
+
+1. Moving the spindle center 0.100" toward the edge, then setting the DRO to zero.
+2. Or setting the current DRO position to -0.100" when approaching from the negative direction.
+
+For the **Z-axis**, there are two methods:
+
+1. **Cutting to Dimension:** Slowly move the spinning cutter toward the workpiece surface until it produces a small chip, then set the Z reference to zero. This removes a small amount of material.
+2. **Setting Z-Height:** Use the knee and its mechanical dial. Raise the knee until the workpiece lightly touches the cutter, then set the dial to zero. Lower the knee for clearance. When ready to cut, raise it back to the reference height, then continue by the desired cutting depth.
+
+#### Reaming
+
+Reaming improves the size and finish of an existing hole.
+- Use a slower RPM.
+- Do not peck drill.
+- Use cutting fluid.
+- Feed slowly and steadily.
+
+#### Tapping
+
+Tapping creates internal threads in a previously drilled hole.
+
+1. Use a tap guide to keep the tap aligned with the hole.
+2. Apply gentle pressure with the guide while starting the tap.
+3. Turn the tap approximately one full turn forward and half a turn backward to break the chips.
+4. Repeat until the required thread depth is reached.
 
 ### Manual Lathe
 
