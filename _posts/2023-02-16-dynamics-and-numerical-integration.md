@@ -69,7 +69,7 @@ A related, and more commonly used, algorithm is the [velocity Verlet](https://en
 
 
 ### Runge-Kutta methods
-[Runge-Kutta methods](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) are a family of implicit and explicit iterative methods, which include the Euler method (RK1), used in temporal discretization for the approximate solutions of simultaneous nonlinear equations. 
+[Runge-Kutta methods](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) are a family of implicit and explicit iterative methods, which include the Euler method (RK1), used in temporal discretization for the approximate solutions of ordinary differential equations.
 - The most widely known member of the Runge–Kutta family is generally referred to as **"RK4"**, the "classic Runge–Kutta method" or simply as "the Runge–Kutta method".
 
 ##### The "RK4" - Simpson's Rule

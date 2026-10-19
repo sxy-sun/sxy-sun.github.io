@@ -54,7 +54,7 @@ $$
 X(\omega)=F[x(t)] =\int^{\infty}_{-\infty}x(t)e^{-j\omega t}dt
 $$
 
-The Fourier transform simply states that that the non periodic signals whose area under the curve is finite can also be represented into integrals of the sines and cosines after being multiplied by a certain weight.
+The Fourier transform simply states that the non periodic signals whose area under the curve is finite can also be represented into integrals of the sines and cosines after being multiplied by a certain weight.
 
 Although both Fourier series and Fourier transform are given by Fourier, but the difference between them is Fourier series is applied on periodic signals and Fourier transform is applied for non periodic signals.
 
@@ -83,10 +83,10 @@ $$
 The inverse DTFT is used to transform a frequency-domain representation back to the time-domain. It is defined as: 
 
 $$
-\frac{1}{2\pi} \int_{0}^{2\pi} X(\omega)e^{j\omega n} d\omega
+x[n] = \frac{1}{2\pi} \int_{0}^{2\pi} X(\omega)e^{j\omega n} d\omega
 $$
 
-The DTFT applies to both finite sequences and infinite sequences for which the transform is defined. In practice, we are usually dealing with finite sequences, so we use the Discrete Fourier Transform (DFT) instead, which is a discrete approximation of the DTFT.
+The DTFT applies to both finite sequences and infinite sequences for which the transform is defined. In practice, we are usually dealing with finite sequences, so we use the Discrete Fourier Transform (DFT) instead, which gives equally spaced samples of the DTFT of the finite sequence.
 
 ### Discrete Fourier transform (DFT)
 The [Discrete Fourier Transform (DFT)](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) is a **mathematical formula** used to transform a discrete-time signal from the time-domain into its frequency-domain representation. It is a finite version of the Discrete-Time Fourier Transform (DTFT), and is typically used for signals that are sampled at a finite number of intervals.

@@ -21,7 +21,7 @@ A Cruise Control System consists of:
 
 From robotics' perspective, control is one of the most important aspects of robotics because it is the process by which a robot's behavior is regulated and optimized. Control is essential in order to ensure that the robot can perform tasks accurately, efficiently, and safely. 
 
-In this post, we are going to discuss how to desgin a controller for a system.
+In this post, we are going to discuss how to design a controller for a system.
 
 ## Terminology
 
@@ -73,7 +73,7 @@ $u(t) \rightarrow y(t), \quad u(t-c) \rightarrow y(t-c)$
 In control systems, the system response refers to the output of a system as a function of time, given a specific input signal. The system response can be decomposed into two components: the free response and the forced response.
 - Free response: input u(t) = 0 for all t >= 0
     - The free response can be thought of as the natural behavior of the system, in the absence of any external forcing. 
-- Force response: input u(t) != 0 for all t >= 0
+- Forced response: response to input u(t) with zero initial conditions
     - The forced response is the component of the system response that is directly influenced by the input signal. It represents the effect of the input on the system's output.
 
 Transfer function $ G(s) := \frac{b_ms^{m}+...+b_1s+b_0}{a_ns^n + a_{n-1}s^{n-1}+ ... + a_1s + a_0} $ 
@@ -165,7 +165,7 @@ $$
 
 - where u is input, e is error, r is reference, y is measured output, Kp is the gain to be selected. 
 
-If we substitude the equation above into a first-order system, we have:
+If we substitute the equation above into a first-order system, we have:
 
 $$
 \dot{y}(t)+(a_0+b_0K_p)y(t)=(b_0K_p)r(t)+b_0d(t)
