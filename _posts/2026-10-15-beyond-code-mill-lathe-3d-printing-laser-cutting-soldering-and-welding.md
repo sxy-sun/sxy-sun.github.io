@@ -1,5 +1,5 @@
 ---
-title: "Beyond Code: CNC, 3D Printing, Soldering, Welding & Fabrication"
+title: "Beyond Code: Mill, Lathe, 3D Printing, Laser Cutting, Soldering & Welding"
 date: 2026-10-15 00:00:00 -0400
 last_modified_at: 2026-10-19
 categories: [Tech Blog]
@@ -148,28 +148,28 @@ For **finishing**, the workpiece rotates at a low speed (80–120 RPM) while we 
 ### CNC ProtoTRAK Mill
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not currently planned
 
 This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
 
 ### Haas VF-2 Mill
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not currently planned
 
 This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
 
 ### CNC TL-1 Lathe
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not currently planned
 
 This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
 
 ### Haas SL-20 Lathe
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not currently planned
 
 This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
 

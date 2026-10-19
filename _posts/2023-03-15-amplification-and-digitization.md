@@ -64,7 +64,7 @@ Since the world is continuous but the computers can only perform operations on d
 
 ![](https://static4.arrow.com/-/media/arrow/images/miscellaneous/0/0418_adc_signal_2.jpg?h=344&w=922&hash=536BD79A2AEF04E0C4A81ADBD89D7D0C)
 
-ADCs first sample the signal, then quantify it to determine the resolution of the signal, and finally set binary values and send it to the system to read the digital signal. Two important aspects of the ADC are its sampling rate and resolution.
+ADCs first sample the signal, then quantize it to one of the available levels, and finally set binary values and send it to the system to read the digital signal. Two important aspects of the ADC are its sampling rate and resolution.
 
 *Sampling rate*: The sampling rate is measured by using “samples per second”. This simply means how many samples or data points it takes within a second. The more samples the ADC takes, the higher input frequencies it can handle.
 

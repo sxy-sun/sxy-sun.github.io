@@ -61,7 +61,7 @@ BFS is *complete* for finite branching and *optimal* when all edges have equal c
 |path length: 8.00 |path length: 9.80 |
 |visited nodes: 3501|visited nodes: 3235 |
 
-BFS also goes without a sense of where it should go, but it can find the optimal path when all edges have equal cost. Unlike DFS, the optimal solution is not guaranteed.
+BFS also goes without a sense of where it should go, but it can find the optimal path when all edges have equal cost. DFS does not provide this guarantee.
 
 ## Greedy best-first search
 
@@ -86,7 +86,7 @@ Depth-first search, Breadth-first search, and Dijkstra's are all uninformed sear
 
 ## Dijkstra
 
-[Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) is used to find the shortest path from the `source` node to all other nodes in the graph. Starts by labeling all the distance to the source be infinity, then updated parent node and current cost for each node based on priority queue later, until no more update needed.
+[Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) is used to find the shortest path from the `source` node to all other nodes in the graph. Starts by labeling the distance to the source as zero and all other distances as infinity, then updated parent node and current cost for each node based on priority queue later, until no more update needed.
 - [Best explanation video](https://www.youtube.com/watch?v=pVfj6mxhdMw)
 - The evaluation function is $f(n)=g(n)$
   - g(n) is the cost of the path from the start node to n
