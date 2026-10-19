@@ -42,7 +42,7 @@ After deleting the old `.git` folder and initializing a new Git repository, the 
 
 Simply running `mkdir -p lib/pico-sdk` will restore the directory after pulling the new repository from the remote, but pulling the submodule still didn't work.
 
-> At this point, it doesn't even matter if I had the path. The path is already defined in `.gitmodules`, and the command `git submodule update --init` will create it if it doesn't already exist.
+> At this point, it doesn't even matter if I had the path. The path is already defined in `.gitmodules`, and the command `git submodule update --init` will create it if it doesn't already exist, provided the submodule's gitlink is still tracked. `.gitmodules` alone is not enough.
 {: .prompt-tip }
 
 ### Where did the submodule go
@@ -72,13 +72,13 @@ If you want to start a new branch in a Git repository without any commit history
 ```bash
 git checkout --orphan new_branch
 ```
-To test if the history is indeed gone:
+To check that the new branch has no commits yet:
 ```bash
 git log
 ```
 you'll get an error since there are no commits.
 
-The new branch has no commit history, but the old history still exists in the repository. The files and folders from your project remain intact. To Git, it appears as if you've freshly added everything. All the files and directories from the previous branch are staged, awaiting commitment to this new orphan branch.
+The new branch has no commit history, but the old history still exists in the repository. The files and folders from your project remain intact. To Git, it appears as if you've freshly added everything. With a clean working tree, the tracked files and submodule references from the previous branch are staged, awaiting commitment to this new orphan branch. Untracked files are not automatically included.
 
 To commit the entire project, simply use the command following, and it will be the first ever commit in the current branch.
 ```bash

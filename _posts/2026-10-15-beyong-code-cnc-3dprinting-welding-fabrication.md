@@ -1,6 +1,7 @@
 ---
 title: "Beyond Code: CNC, 3D Printing, Soldering, Welding & Fabrication"
 date: 2026-10-15 00:00:00 -0400
+last_modified_at: 2026-10-19
 categories: [Tech Blog]
 media_subpath: /assets/figures/2026-images/2026-10-15-beyong-code-cnc-3dprinting-welding-fabricatoin
 ---
