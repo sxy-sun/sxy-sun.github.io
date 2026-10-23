@@ -1,6 +1,6 @@
 ---
 title: Graph Search Algorithms in Path Planning
-date: 2023-02-07 17:55:00 -0500
+date: 2023-02-07
 categories: [Robotics]
 
 math: true

@@ -1,6 +1,6 @@
 ---
 title: "Forward Kinematics and Inverse Kinematics"
-date: 2023-02-23 23:43:00 -0500
+date: 2023-02-23
 last_modified_at: 2023-04-02 02:30:00 -0400
 categories: [Robotics]
 math: true

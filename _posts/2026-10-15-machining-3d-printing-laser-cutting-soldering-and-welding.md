@@ -1,9 +1,9 @@
 ---
-title: "Beyond Code: Mill, Lathe, 3D Printing, Laser Cutting, Soldering & Welding"
-date: 2026-10-15 00:00:00 -0400
-last_modified_at: 2026-10-19
+title: "Machining, 3D Printing, Laser Cutting, Soldering, and Welding"
+date: 2026-10-15
+last_modified_at: 2026-10-22
 categories: [Tech Blog]
-media_subpath: /assets/figures/2026-images/2026-10-15-beyong-code-cnc-3dprinting-welding-fabricatoin
+media_subpath: /assets/figures/2026-images/2026-10-15-machining-3d-printing-laser-cutting-soldering-and-welding
 ---
 
 Recently, I’ve been thinking that versatility is the most important skill for a robotics engineer in the age of AI. The University of Michigan has two places to learn manufacturing skills, from basic machining and 3D printing to CNC and welding, so I decided to learn everything they offer. The training map is below. This post is where I keep track of what I’ve learned and built.
@@ -15,41 +15,36 @@ Recently, I’ve been thinking that versatility is the most important skill for 
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-  - [Basic Workshop Safety I](#basic-workshop-safety-i)
-  - [Wilson Center Basics II](#wilson-center-basics-ii)
-  - [FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing](#frb-basics-ii)
+- [Workshop Basics](#workshop-basics)
+  - [Basic Workshop Safety I](#basic-workshop-safety-i) <span class="training-status training-status--completed">Completed</span>
+  - [Wilson Center Basics II](#wilson-center-basics-ii) <span class="training-status training-status--completed">Completed</span>
+  - [FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing](#frb-basics-ii) <span class="training-status training-status--planned">Planned</span>
 - [Machining](#machining)
-  - [Manual Mill](#manual-mill)
-  - [Manual Lathe](#manual-lathe)
-  - [CNC ProtoTRAK Mill](#cnc-prototrak-mill)
-  - [Haas VF-2 Mill](#haas-vf-2-mill)
-  - [CNC TL-1 Lathe](#cnc-tl-1-lathe)
-  - [Haas SL-20 Lathe](#haas-sl-20-lathe)
-- [Laser Cutting & Fabrication](#laser-cutting--fabrication)
-  - [Universal R9000](#universal-r9000)
-  - [Fablight Metal Laser Cutter](#fablight-metal-laser-cutter)
-  - [ProtoMAX Waterjet](#protomax-waterjet)
-  - [ShopBot CNC Router](#shopbot-cnc-router)
+  - [Manual Mill](#manual-mill) <span class="training-status training-status--planned">Planned</span>
+  - [Manual Lathe](#manual-lathe) <span class="training-status training-status--planned">Planned</span>
+- [Digital Fabrication](#digital-fabrication)
+  - [Universal R9000](#universal-r9000) <span class="training-status training-status--inactive">Not scheduled</span>
+  - [ProtoMAX Waterjet](#protomax-waterjet) <span class="training-status training-status--planned">Planned</span>
+  - [ShopBot CNC Router](#shopbot-cnc-router) <span class="training-status training-status--completed">Completed</span>
 - [Welding](#welding)
-  - [TIG 1](#tig-1)
-  - [TIG 2](#tig-2)
-  - [MIG Welding](#mig-welding)
-  - [Aluminum Welding](#aluminum-welding)
+  - [TIG 1](#tig-1) <span class="training-status training-status--planned">Planned</span>
+  - [TIG 2](#tig-2) <span class="training-status training-status--inactive">Not scheduled</span>
+  - [MIG Welding](#mig-welding) <span class="training-status training-status--inactive">Not scheduled</span>
+  - [Aluminum Welding](#aluminum-welding) <span class="training-status training-status--inactive">Not scheduled</span>
 
-## Getting Started
+## Workshop Basics
 
 ### Basic Workshop Safety I
 
 **Location:** Canvas  
-**Completed:** October 13, 2026
+**Status:** Completed · October 13, 2026
 
 This is the starting point for all training sessions. It introduces basic workshop safety rules through Canvas modules and quizzes that must be passed.
 
 ### Wilson Center Basics II
 
 **Location:** Wilson Student Team Project Center  
-**Completed:** October 15, 2026
+**Status:** Completed · October 21, 2026
 
 This is the starting point for all hands-on training at the Wilson Center. It consists of two parts. The first is on Canvas, with videos and quizzes covering the basics and introducing the final project.
 
@@ -73,7 +68,7 @@ Dial calipers were used to measure the pieces and mark cut lines and hole locati
 ### FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing {#frb-basics-ii}
 
 **Location:** Ford Robotics Building  
-**Planned:** October 23, 2026
+**Status:** Planned · October 23, 2026
 
 This course introduces soldering, CO2 laser cutting, and 3D printing.
 
@@ -82,8 +77,8 @@ This course introduces soldering, CO2 laser cutting, and 3D printing.
 ### Manual Mill
 
 **Location:** Wilson Center  
-**Canvas Training:** Completed  
-**In-Person Training:** Upcoming
+**Canvas Training:** Completed<br>
+**In-Person Training:** Planned · November 11, 2026
 
 A manual mill rotates the cutting tool while the workpiece stays in place. The main tools include:
 - **Shell Mill:** Removes material from a large surface area.
@@ -106,8 +101,8 @@ A manual mill rotates the cutting tool while the workpiece stays in place. The m
 ### Manual Lathe
 
 **Location:** Wilson Center  
-**Canvas Training:** Completed  
-**In-Person Training:** Upcoming
+**Canvas Training:** Completed<br>
+**In-Person Training:** Planned · November 3, 2026
 
 We use a Harrison M300 manual lathe. Unlike a mill where the cutting tool rotates, a lathe rotates the workpiece while the cutting tool removes material.
 
@@ -145,66 +140,56 @@ For **finishing**, the workpiece rotates at a low speed (80–120 RPM) while we 
 **Parting** uses a **parting blade** to cut a finished part off the stock. Unlike turning, the blade moves along the X-axis toward the center until the part is separated. If using the paper trick to find the cutting position, also account for the paper thickness (0.003–0.004").
 
 
-### CNC ProtoTRAK Mill
+**Further CNC training:** Not currently planned
 
-**Location:** Wilson Center  
-**Status:** Not currently planned
+CNC mill and lathe courses require operator status, including 30 hours of machine time and 10 completed parts. These are outside my current training plan.
 
-This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
-
-### Haas VF-2 Mill
-
-**Location:** Wilson Center  
-**Status:** Not currently planned
-
-This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
-
-### CNC TL-1 Lathe
-
-**Location:** Wilson Center  
-**Status:** Not currently planned
-
-This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
-
-### Haas SL-20 Lathe
-
-**Location:** Wilson Center  
-**Status:** Not currently planned
-
-This requires operator status, which will be gained after 30 hours of machine time and 10 parts.
-
-## Laser Cutting & Fabrication
+## Digital Fabrication
 
 ### Universal R9000
 
 **Location:** FRB Robotics Makerspace  
-**Completed:** TBD
+**Status:** Not scheduled
 
 This course introduces the Universal R9000 laser cutter.
-
-### Fablight Metal Laser Cutter
-
-**Location:** FRB Robotics Makerspace  
-**Completed:** TBD
-
-This course introduces the Fablight FL4500 Tube & Sheet fiber laser cutter.
 
 ### ProtoMAX Waterjet
 
 **Location:** FRB Robotics Makerspace  
-**Completed:** TBD
+**Status:** Planned · October 28, 2026
 
 This course introduces the ProtoMAX abrasive waterjet cutter.
 
 ### ShopBot CNC Router
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Completed · October 22, 2026
+
+**Software:** The workflow is CAD → CAM → machine control. Create the design in Fusion 360, then use [VCarve Pro](https://www.shopbotdocs.com/products/software) to create and preview toolpaths. VCarve also supports drawing simple 2D designs directly. Export a ShopBot `.sbp` file and load it into ShopBot's control software. The workshop mainly covers machine operation, so we'll need to learn more of the software outside.
+
+**Machine:** We use an older ShopBot PRSalpha CNC router. Its spindle moves along X, Y, and Z to cut material on a large bed. The brush skirt and hose collect dust around the cutter.
+
+**Setup notes:** With the spindle disabled, install the cutter and secure the workpiece. Power on and reset the machine. In keypad mode, arrow keys move X/Y; Page Up/Down move Z. Set the X/Y origin to match the CAM setup. With the cutter installed, use the [Z-zero plate](https://store.shopbottools.com/collections/top-sellers/products/z-zero-plate) to set the tool height from the material or bed surface, matching the CAM setting. Remove the plate and turn on dust collection before cutting.
+
+| ShopBot PRSalpha CNC Router | Router Tools |
+| --- | --- |
+| ![ShopBot PRSalpha CNC router with dust collection](cnc-shopbot-router.JPG){: width="300"} | ![Collets, wrenches, and cutters at the ShopBot station](shopbot-router-tools.JPG){: width="300"} |
+{: .photo-table}
+
+Tools in the photo:
+
+- **Collets:** The slotted sleeves hold different cutter shank sizes in the spindle.
+- **Wrenches:** The smaller wrench holds the spindle shaft; the larger one turns the collet nut to tighten or release the cutter.
+- **V-bit:** The pointed cutter makes V-shaped grooves, lettering, and chamfers.
+- **Surfacing bit:** The wide cutter on the right flattens the spoilboard, the sacrificial board under the workpiece.
+- **Drill bits and end mills:** The tray contains both. Drill bits make holes; end mills cut sideways to make slots, pockets, and outlines.
+
+We were advised to bring our own router bits.
 
 ## Welding
 
 **Location:** Canvas  
-**Completed:** Completed
+**Canvas Training:** Completed
 
 Welding training also starts with an online Canvas module, followed by in-person training at the Wilson Center. The module introduces the basics of arc welding.
 
@@ -217,7 +202,7 @@ There are two main types of welding:
 ### TIG 1
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Planned · November 30, 2026
 
 TIG 1 is the prerequisite for the other welding sessions.
 
@@ -240,15 +225,15 @@ TIG 1 is the prerequisite for the other welding sessions.
 ### TIG 2
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not scheduled
 
 
 ### MIG Welding
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not scheduled
 
 ### Aluminum Welding
 
 **Location:** Wilson Center  
-**Completed:** TBD
+**Status:** Not scheduled

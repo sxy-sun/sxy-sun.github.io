@@ -1,6 +1,6 @@
 ---
 title: Set up an Elgato Stream Deck for Ubuntu 20.04
-date: 2022-11-24 00:03:00 -0500
+date: 2022-11-24
 categories: [Tech Blog]
 media_subpath: /assets/figures/2022-images/
 ---

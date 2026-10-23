@@ -1,6 +1,6 @@
 ---
 title: Network-Attached Storage (NAS) Setup
-date: 2022-12-16 01:10:17 -0500
+date: 2022-12-16
 categories: [Tech Blog]
 ---
 ## Motivation

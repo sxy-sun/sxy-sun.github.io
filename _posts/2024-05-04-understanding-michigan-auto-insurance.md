@@ -1,6 +1,6 @@
 ---
 title: Understanding Michigan Auto Insurance
-date: 2024-05-04 20:55:00 -0400
+date: 2024-05-04
 categories: [Life]
 ---
 

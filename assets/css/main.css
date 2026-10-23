@@ -452,6 +452,21 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 600;
 }
 
+/* Training progress labels */
+.post-body .training-status {
+  display: inline-block;
+  padding: 0.1em 0.55em;
+  border-radius: 0.3rem;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.post-body .training-status--completed { color: #166534; background: #dcfce7; }
+.post-body .training-status--planned { color: #854d0e; background: #fef9c3; }
+.post-body .training-status--inactive { color: #4b5563; background: #f3f4f6; }
+[data-theme="dark"] .post-body .training-status--completed { color: #bbf7d0; background: #14532d; }
+[data-theme="dark"] .post-body .training-status--planned { color: #fef08a; background: #713f12; }
+[data-theme="dark"] .post-body .training-status--inactive { color: #d1d5db; background: #374151; }
+
 /* Images in posts */
 .post-body img {
   margin: 1.5rem auto;

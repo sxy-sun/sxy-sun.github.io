@@ -1,6 +1,6 @@
 ---
 title: Dynamics and Numerical Integration
-date: 2023-02-16 21:49:00 -0500
+date: 2023-02-16
 categories: [Robotics]
 
 math: true

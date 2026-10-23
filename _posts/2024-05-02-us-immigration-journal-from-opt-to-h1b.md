@@ -1,6 +1,6 @@
 ---
 title: US Immigration Journal - From F1 OPT to H1B
-date: 2024-05-02 22:19:00 -0400
+date: 2024-05-02
 categories: [Life, Immigration]
 ---
 

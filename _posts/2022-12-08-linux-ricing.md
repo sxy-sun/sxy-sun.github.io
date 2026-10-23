@@ -1,6 +1,6 @@
 ---
 title: Linux Ricing
-date: 2022-12-08 02:03:00 -0500
+date: 2022-12-08
 last_modified_at: 2023-11-03 00:07:00 -0400
 categories: [Tech Blog]
 media_subpath: /assets/figures/2022-images/

@@ -1,6 +1,6 @@
 ---
 title: AprilTag Python Wrapper Threading Problem on Jetson Nano
-date: 2024-02-08 02:19:00 -0400
+date: 2024-02-08
 categories: [Tech Blog]
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: RRT, RRT-connect and RRT* in Path Planning
-date: 2023-04-22 04:00:00 -0400
+date: 2023-04-22
 categories: [Robotics]
 
 math: true

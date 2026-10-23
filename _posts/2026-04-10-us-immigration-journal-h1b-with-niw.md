@@ -1,6 +1,6 @@
 ---
 title: US Immigration Journal - H1B to EB2 NIW
-date: 2026-04-11 19:19:00 -0400
+date: 2026-04-11
 categories: [Life, Immigration]
 ---
 

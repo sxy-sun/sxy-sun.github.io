@@ -1,6 +1,6 @@
 ---
 title: Amplification (OPAMP) and Digitization (ADC)
-date: 2023-03-15 21:09:00 -0500
+date: 2023-03-15
 categories: [Robotics]
 
 math: true

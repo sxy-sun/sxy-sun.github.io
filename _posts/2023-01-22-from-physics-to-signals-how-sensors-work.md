@@ -1,6 +1,6 @@
 ---
 title: "From Physics to Signals: How Sensors Work"
-date: 2023-01-22 18:30:00 -0500
+date: 2023-01-22
 last_modified_at: 2023-02-20 19:37:00 -0500
 categories: [Robotics]
 math: true

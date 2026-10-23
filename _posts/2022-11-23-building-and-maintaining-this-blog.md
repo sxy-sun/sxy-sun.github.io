@@ -1,6 +1,6 @@
 ---
 title: Building and Maintaining This Blog - Jekyll & GitHub Pages
-date: 2022-11-23 04:16:17 -0500
+date: 2022-11-23
 last_modified_at: 2026-10-17
 categories: [Tech Blog]
 

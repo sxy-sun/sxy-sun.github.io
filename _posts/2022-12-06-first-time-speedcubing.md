@@ -1,6 +1,6 @@
 ---
 title: First Time Speedcubing
-date: 2022-12-06 00:22:04:00 -0500
+date: 2022-12-06
 categories: [Life]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: PID Control
-date: 2023-02-17 19:09:00 -0500
+date: 2023-02-17
 categories: [Robotics]
 
 math: true

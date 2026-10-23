@@ -1,6 +1,6 @@
 ---
 title: US Immigration Journal - From F1 to F1 OPT
-date: 2024-02-22 19:19:00 -0400
+date: 2024-02-22
 categories: [Life, Immigration]
 ---
 
