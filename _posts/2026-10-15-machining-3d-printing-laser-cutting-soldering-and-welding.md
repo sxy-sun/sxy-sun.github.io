@@ -1,12 +1,12 @@
 ---
 title: "Machining, 3D Printing, Laser Cutting, Soldering, and Welding"
 date: 2026-10-15
-last_modified_at: 2026-10-22
+last_modified_at: 2026-10-24
 categories: [Tech Blog]
 media_subpath: /assets/figures/2026-images/2026-10-15-machining-3d-printing-laser-cutting-soldering-and-welding
 ---
 
-Recently, I’ve been thinking that versatility is the most important skill for a robotics engineer in the age of AI. The University of Michigan has two places to learn manufacturing skills, from basic machining and 3D printing to CNC and welding, so I decided to learn everything they offer. The training map is below. This post is where I keep track of what I’ve learned and built.
+Recently, I’ve been thinking that versatility is a very important skill for a robotics engineer in the age of AI. The University of Michigan has two places to learn manufacturing skills, from basic machining and 3D printing to CNC and welding, the training map is below. This post is where I keep track of what I’ve learned and built.
 
 - [Wilson Center Training](https://teamprojects.engin.umich.edu/home/training/)
 - [Robotics Makerspace Training](https://teamprojects.engin.umich.edu/makerspace-training/) 
@@ -18,7 +18,7 @@ Recently, I’ve been thinking that versatility is the most important skill for 
 - [Workshop Basics](#workshop-basics)
   - [Basic Workshop Safety I](#basic-workshop-safety-i) <span class="training-status training-status--completed">Completed</span>
   - [Wilson Center Basics II](#wilson-center-basics-ii) <span class="training-status training-status--completed">Completed</span>
-  - [FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing](#frb-basics-ii) <span class="training-status training-status--planned">Planned</span>
+  - [FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing](#frb-basics-ii) <span class="training-status training-status--completed">Completed</span>
 - [Machining](#machining)
   - [Manual Mill](#manual-mill) <span class="training-status training-status--planned">Planned</span>
   - [Manual Lathe](#manual-lathe) <span class="training-status training-status--planned">Planned</span>
@@ -68,9 +68,55 @@ Dial calipers were used to measure the pieces and mark cut lines and hole locati
 ### FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing {#frb-basics-ii}
 
 **Location:** Ford Robotics Building  
-**Status:** Planned · October 23, 2026
+**Status:** Completed · October 23, 2026
 
-This course introduces soldering, CO2 laser cutting, and 3D printing.
+I built a small battery-powered light box with an engraved Michigan "M" on a clear acrylic panel.
+
+| Finished Light Box | LEDs On |
+| --- | --- |
+| ![Completed Michigan M light box with LEDs off](frb-basic-result1.png){: width="300"} | ![Completed light box with five blue LEDs on](frb-basic-result2.png){: width="300"} |
+{: .photo-table}
+
+**Kit components**
+
+![Light box kit with enclosure, acrylic panel, PCB, LEDs, resistors, switch, coin-cell battery and holder, and hardware](frb-basic2-components.JPG){: width="400"}
+
+The kit included the designs, a preprinted enclosure, inserts, screws, and electronic components.
+
+**3D printing**
+
+The workflow is **CAD model → slicer → printer**. We used [Bambu Studio](https://github.com/bambulab/BambuStudio) to turn the supplied switch-cover model into print instructions for a Bambu Lab printer.
+
+I've used Fusion 360 and Bambu Studio before. Below is an earlier Chiikawa print I made with that workflow on a Bambu Lab X1 Carbon.
+
+![](hachi-3dprinting.JPG){: width="400"}
+
+**CO2 laser cutting**
+
+We cut and engraved the acrylic panel on a Universal Laser Systems VLS CO2 laser cutter. **Adobe Illustrator** is used to prepare the drawing; **Universal Control Panel (UCP)** handles job settings, previews, and machine control. [VLS user guide](https://ulsinc.com/assets/pdf/VLS_Platform_User_Guide_2026.02.0103.pdf).
+
+| ULS VLS Laser Cutter | Acrylic Panel in the Machine |
+| --- | --- |
+| ![Universal Laser Systems VLS CO2 laser cutter](uls-vls-laser-cutter.JPG){: width="300"} | ![Acrylic panel with the Michigan M engraved in the laser cutter](co2-laser-cutting.JPG){: width="300"} |
+{: .photo-table}
+
+The sample board shows three operations:
+
+- **Raster engraving:** The laser scans back and forth, removing surface material across a filled area. This works for text, logos, and images, such as the filled "M" on the acrylic panel.
+- **Vector engraving / scoring:** The laser follows the lines and curves in the drawing, leaving a shallow mark without cutting through. This works for outlines, borders, and reference marks.
+- **Vector cutting:** The laser follows a path with settings that cut through the full material thickness. This creates the part's outer shape and openings, such as the acrylic panel's screw holes.
+
+![Sample board showing raster engraving, vector engraving, and vector cutting](laser-functions.JPG){: width="400"}
+
+**Soldering and assembly**
+
+I soldered the LEDs, resistors, switch, and coin-cell battery holder onto the PCB. I had soldered before but hadn't done it in a while. I messed up the first joint, then got the skill back for the rest.
+
+| Battery Holder and Switch | LEDs and Resistors |
+| --- | --- |
+| ![Coin-cell battery holder and switch soldered onto the back of the PCB](soldering1.JPG){: width="225"} | ![Front of the PCB with the first LED and resistor soldered in place](soldering2.JPG){: width="225"} |
+{: .photo-table}
+
 
 ## Machining
 
