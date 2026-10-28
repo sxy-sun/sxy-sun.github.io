@@ -11,7 +11,7 @@ Recently, I’ve been thinking that versatility is a very important skill for a 
 - [Wilson Center Training](https://teamprojects.engin.umich.edu/home/training/)
 - [Robotics Makerspace Training](https://teamprojects.engin.umich.edu/makerspace-training/) 
 
-![](training-map.png){: width="600"} 
+![My workshop training roadmap, showing prerequisites and progress through Wilson Center and FRB courses](training-roadmap.svg){: width="1380"}
 
 ## Table of Contents
 
@@ -19,6 +19,7 @@ Recently, I’ve been thinking that versatility is a very important skill for a 
   - [Basic Workshop Safety I](#basic-workshop-safety-i) <span class="training-status training-status--completed">Completed</span>
   - [Wilson Center Basics II](#wilson-center-basics-ii) <span class="training-status training-status--completed">Completed</span>
   - [FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing](#frb-basics-ii) <span class="training-status training-status--completed">Completed</span>
+  - [Introduction to Soft Goods](#introduction-to-soft-goods) <span class="training-status training-status--planned">Planned</span>
 - [Machining](#machining)
   - [Manual Mill](#manual-mill) <span class="training-status training-status--planned">Planned</span>
   - [Manual Lathe](#manual-lathe) <span class="training-status training-status--planned">Planned</span>
@@ -117,6 +118,10 @@ I soldered the LEDs, resistors, switch, and coin-cell battery holder onto the PC
 | ![Coin-cell battery holder and switch soldered onto the back of the PCB](soldering1.JPG){: width="225"} | ![Front of the PCB with the first LED and resistor soldered in place](soldering2.JPG){: width="225"} |
 {: .photo-table}
 
+
+### Introduction to Soft Goods
+
+**Status:** Planned · October 29, 2026
 
 ## Machining
 

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="1000" viewBox="0 0 1380 1000" role="img" aria-labelledby="title desc">
+<title id="title">My workshop training roadmap</title>
+<desc id="desc">Basics I on Canvas leads to Wilson Basics II and FRB Basics II. Wilson Basics II leads to manual mill, manual lathe, TIG 1, ProtoMAX Waterjet, and ShopBot CNC Router. Manual mill and lathe lead to their respective CNC courses, which also require operator status. TIG 1 leads to TIG 2, MIG Welding, and Aluminum Welding. FRB Basics II covers soldering, 3D printing, and CO2 laser cutting, and leads to the R9000 Laser and Introduction to Soft Goods. Soft Goods is planned for October 29. Statuses are as of October 28, 2026.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#8b9bab" stroke-width="1.5"/></marker></defs>
+<style>
+text {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; fill:#243447;}
+.name {font-size:21px; font-weight:600;}
+.detail {font-size:18px; fill:#526477;}
+.status {font-size:17px; fill:#526477;}
+.edge {fill:none; stroke:#8b9bab; stroke-width:2; stroke-linejoin:round; marker-end:url(#arrow);}
+</style>
+<rect width="1380" height="1000" rx="24" fill="#f5f7fa"/>
+<text x="40" y="56" font-size="30" font-weight="650">My workshop training</text>
+<text x="1340" y="54" text-anchor="end" class="detail">October 28, 2026</text>
+
+<path class="edge" d="M690 196 V220 H490 V250"/>
+<path class="edge" d="M690 196 V220 H1230 V250"/>
+<path class="edge" d="M490 404 V444 H130 V490"/>
+<path class="edge" d="M490 404 V444 H350 V490"/>
+<path class="edge" d="M490 404 V444 H570 V490"/>
+<path class="edge" d="M490 404 V444 H790 V490"/>
+<path class="edge" d="M490 404 V444 H1010 V490"/>
+<path class="edge" d="M1230 404 V490"/>
+<path class="edge" d="M1230 444 H1340 V707 H1320"/>
+<path class="edge" d="M130 596 V654"/>
+<path class="edge" d="M350 596 V654"/>
+<path class="edge" d="M570 596 V790 H570 V830"/>
+<path class="edge" d="M570 596 V790 H790 V830"/>
+<path class="edge" d="M570 596 V790 H1010 V830"/>
+<rect x="550" y="100" width="280" height="96" rx="12" fill="#243e52" stroke="#243e52" stroke-width="1.5"/>
+<text x="690.0" y="131" text-anchor="middle" class="name" style="fill:#fff">Basics I · Canvas</text>
+<text x="690.0" y="178" text-anchor="middle" class="status" style="fill:#d4e2ec">Completed · Oct 13</text>
+<rect x="350" y="250" width="280" height="154" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="490.0" y="281" text-anchor="middle" class="name">Wilson Basics II</text>
+<text x="490.0" y="307" text-anchor="middle" class="detail">Workshop basics</text>
+<text x="490.0" y="386" text-anchor="middle" class="status">Completed · Oct 21</text>
+<rect x="1110" y="250" width="240" height="154" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="1230.0" y="281" text-anchor="middle" class="name">FRB Basics II</text>
+<text x="1230.0" y="307" text-anchor="middle" class="detail">Soldering · 3D printing</text>
+<text x="1230.0" y="332" text-anchor="middle" class="detail">CO₂ laser cutting</text>
+<text x="1230.0" y="386" text-anchor="middle" class="status">Completed · Oct 23</text>
+<rect x="40" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="130.0" y="521" text-anchor="middle" class="name">Manual Mill</text>
+<text x="130.0" y="578" text-anchor="middle" class="status">Planned · Nov 11</text>
+<rect x="260" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="350.0" y="521" text-anchor="middle" class="name">Manual Lathe</text>
+<text x="350.0" y="578" text-anchor="middle" class="status">Planned · Nov 3</text>
+<rect x="480" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="570.0" y="521" text-anchor="middle" class="name">TIG 1</text>
+<text x="570.0" y="578" text-anchor="middle" class="status">Planned · Nov 30</text>
+<rect x="700" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="790.0" y="521" text-anchor="middle" class="name">ProtoMAX</text>
+<text x="790.0" y="547" text-anchor="middle" class="name">Waterjet</text>
+<text x="790.0" y="578" text-anchor="middle" class="status">Planned · Nov 3</text>
+<rect x="920" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="1010.0" y="521" text-anchor="middle" class="name">ShopBot</text>
+<text x="1010.0" y="547" text-anchor="middle" class="name">CNC Router</text>
+<text x="1010.0" y="578" text-anchor="middle" class="status">Completed · Oct 22</text>
+<rect x="1140" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="1230.0" y="521" text-anchor="middle" class="name">R9000 Laser</text>
+<text x="1230.0" y="578" text-anchor="middle" class="status">Completed · Oct 28</text>
+<rect x="1140" y="654" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="1230" y="685" text-anchor="middle" class="name">Soft Goods</text>
+<text x="1230" y="742" text-anchor="middle" class="status">Planned · Oct 29</text>
+<rect x="40" y="654" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="130.0" y="685" text-anchor="middle" class="name">CNC Mill</text>
+<text x="130.0" y="742" text-anchor="middle" class="status">Not planned</text>
+<rect x="260" y="654" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="350.0" y="685" text-anchor="middle" class="name">CNC Lathe</text>
+<text x="350.0" y="742" text-anchor="middle" class="status">Not planned</text>
+<text x="240" y="798" text-anchor="middle" class="detail">CNC requires operator status</text>
+<text x="240" y="825" text-anchor="middle" class="detail">30 machine hours + 10 parts</text>
+<rect x="480" y="830" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="570.0" y="861" text-anchor="middle" class="name">TIG 2</text>
+<text x="570.0" y="918" text-anchor="middle" class="status">Not scheduled</text>
+<rect x="700" y="830" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="790.0" y="861" text-anchor="middle" class="name">MIG Welding</text>
+<text x="790.0" y="918" text-anchor="middle" class="status">Not scheduled</text>
+<rect x="920" y="830" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
+<text x="1010.0" y="861" text-anchor="middle" class="name">Aluminum</text>
+<text x="1010.0" y="887" text-anchor="middle" class="name">Welding</text>
+<text x="1010.0" y="918" text-anchor="middle" class="status">Not scheduled</text>
+<text x="40" y="974" class="detail">Arrows show course prerequisites. Statuses reflect my training progress.</text></svg>
