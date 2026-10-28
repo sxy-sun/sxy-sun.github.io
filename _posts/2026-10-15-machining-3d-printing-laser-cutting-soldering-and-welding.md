@@ -1,7 +1,7 @@
 ---
 title: "Machining, 3D Printing, Laser Cutting, Soldering, and Welding"
 date: 2026-10-15
-last_modified_at: 2026-10-24
+last_modified_at: 2026-10-28
 categories: [Tech Blog]
 media_subpath: /assets/figures/2026-images/2026-10-15-machining-3d-printing-laser-cutting-soldering-and-welding
 ---
@@ -23,7 +23,7 @@ Recently, I’ve been thinking that versatility is a very important skill for a 
   - [Manual Mill](#manual-mill) <span class="training-status training-status--planned">Planned</span>
   - [Manual Lathe](#manual-lathe) <span class="training-status training-status--planned">Planned</span>
 - [Digital Fabrication](#digital-fabrication)
-  - [Universal R9000](#universal-r9000) <span class="training-status training-status--inactive">Not scheduled</span>
+  - [Universal R9000](#universal-r9000) <span class="training-status training-status--completed">Completed</span>
   - [ProtoMAX Waterjet](#protomax-waterjet) <span class="training-status training-status--planned">Planned</span>
   - [ShopBot CNC Router](#shopbot-cnc-router) <span class="training-status training-status--completed">Completed</span>
 - [Welding](#welding)
@@ -103,7 +103,7 @@ We cut and engraved the acrylic panel on a Universal Laser Systems VLS CO2 laser
 The sample board shows three operations:
 
 - **Raster engraving:** The laser scans back and forth, removing surface material across a filled area. This works for text, logos, and images, such as the filled "M" on the acrylic panel.
-- **Vector engraving / scoring:** The laser follows the lines and curves in the drawing, leaving a shallow mark without cutting through. This works for outlines, borders, and reference marks.
+- **Line engraving:** The laser follows the lines and curves in the drawing, leaving a shallow mark without cutting through. This works for outlines, borders, and reference marks.
 - **Vector cutting:** The laser follows a path with settings that cut through the full material thickness. This creates the part's outer shape and openings, such as the acrylic panel's screw holes.
 
 ![Sample board showing raster engraving, vector engraving, and vector cutting](laser-functions.JPG){: width="400"}
@@ -195,14 +195,41 @@ CNC mill and lathe courses require operator status, including 30 hours of machin
 ### Universal R9000
 
 **Location:** FRB Robotics Makerspace  
-**Status:** Not scheduled
+**Status:** Completed · October 28, 2026
 
-This course introduces the Universal R9000 laser cutter.
+I really enjoyed this workshop. The **Universal R9000** feels much more modern than the laser in Basics II. The touchscreen and FRB's operating handbook made it easy to follow along.
+
+The machine has both **CO2 and fiber lasers** for cutting and engraving materials such as wood and acrylic, as well as marking metal surfaces. There is also a **rotary attachment** for engraving cylindrical objects.
+
+| ULTRA R9000 | Rotary Attachment |
+| --- | --- |
+| ![Universal Laser Systems ULTRA R9000 at FRB Makerspace](R9000.JPG){: width="300"} | ![Rotary attachment inside the R9000 for holding cylindrical objects](R9000-rotary.JPG){: width="300"} |
+{: .photo-table}
+
+There are **two cameras**. The lid camera gives a bird's-eye view of the whole work area. The camera on the moving laser head captures a closer view. Both help show where the material is and make it easier to line up the design on it.
+
+The design is loaded from a USB drive through the touchscreen. Drawings can be made in Illustrator and exported as **PDFs**, a format the machine accepts.
+
+**Drawing colors separate the operations.** A common convention is:
+
+| Color | Operation | What the laser does |
+| --- | --- | --- |
+| Black | Raster engraving | Engraves filled areas, such as text and images |
+| Red | Cutting | Follows lines to cut through the material |
+| Blue | Line engraving | Follows lines to mark the surface without cutting through |
+
+Each color is assigned an operation in the software. These assignments can be changed, as explained in the [R9000 user guide](https://ulsinc.com/assets/pdf/ultra_r_series_laser_system_user_guide_2021.03.0101.pdf).
+
+The finished samples below show the same design engraved on wood and marked on metal.
+
+- Backstory of the design: the guy in the middle represents a medieval fencing master. The four animals (elephant, lion, lynx, and tiger) represent four qualities of a good fighter. Very interesting and inspiring.
+
+![Matching artwork engraved on wood and marked on metal during R9000 training](R9000-final.JPG){: width="400"}
 
 ### ProtoMAX Waterjet
 
 **Location:** FRB Robotics Makerspace  
-**Status:** Planned · October 28, 2026
+**Status:** Planned · November 03, 2026
 
 This course introduces the ProtoMAX abrasive waterjet cutter.
 
