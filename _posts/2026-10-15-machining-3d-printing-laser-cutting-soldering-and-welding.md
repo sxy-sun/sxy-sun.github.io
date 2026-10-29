@@ -1,7 +1,7 @@
 ---
 title: "Machining, 3D Printing, Laser Cutting, Soldering, and Welding"
 date: 2026-10-15
-last_modified_at: 2026-10-28
+last_modified_at: 2026-10-29
 categories: [Tech Blog]
 media_subpath: /assets/figures/2026-images/2026-10-15-machining-3d-printing-laser-cutting-soldering-and-welding
 ---
@@ -19,7 +19,7 @@ Recently, I’ve been thinking that versatility is a very important skill for a 
   - [Basic Workshop Safety I](#basic-workshop-safety-i) <span class="training-status training-status--completed">Completed</span>
   - [Wilson Center Basics II](#wilson-center-basics-ii) <span class="training-status training-status--completed">Completed</span>
   - [FRB Basics II - Soldering, CO2 Laser Cutting, 3D Printing](#frb-basics-ii) <span class="training-status training-status--completed">Completed</span>
-  - [Introduction to Soft Goods](#introduction-to-soft-goods) <span class="training-status training-status--planned">Planned</span>
+  - [Introduction to Soft Goods](#introduction-to-soft-goods) <span class="training-status training-status--completed">Completed</span>
 - [Machining](#machining)
   - [Manual Mill](#manual-mill) <span class="training-status training-status--planned">Planned</span>
   - [Manual Lathe](#manual-lathe) <span class="training-status training-status--planned">Planned</span>
@@ -121,7 +121,23 @@ I soldered the LEDs, resistors, switch, and coin-cell battery holder onto the PC
 
 ### Introduction to Soft Goods
 
-**Status:** Planned · October 29, 2026
+**Status:** Completed · October 29, 2026
+
+I made a stuffed cat head, practicing hand stitches and using a sewing machine to join the fabric pieces.
+
+| Sewing Setup | Finished Cat |
+| --- | --- |
+| ![Singer sewing machine, fabric, and sewing tools](softgood-setup.JPG){: width="400"} | ![Finished stuffed cat head with button eyes and a blue fabric mouth](softgood-final-result.JPG){: width="400"} |
+{: .photo-table}
+
+The whole process took me 3.5 hours:
+
+1. Traced the pattern onto the fabric and cut out the front and back of the head, plus the front and back pieces for the ears. Cut the mouth from blue fabric.
+2. Picked two buttons for the eyes and sewed them onto the front piece. Passed the needle through from the back and through the button holes, making two passes to secure each button.
+3. Sewed the mouth onto the front piece with a **whip stitch**.
+4. Pinned the ears to the front piece and attached them with a **running stitch**.
+5. Used the **sewing machine** to sew the front and back together, leaving an opening for stuffing. Filled the head with cotton and leftover fabric.
+6. Finally, closed the opening with a **ladder stitch**, also called an invisible stitch.
 
 ## Machining
 
