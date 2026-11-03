@@ -10,9 +10,6 @@
       <a href="{{ '/' | relative_url }}"{% if page.layout == 'home' %} class="active"{% endif %}>Home</a>
       <a href="{{ '/posts/' | relative_url }}"{% if page.url == '/posts/' %} class="active"{% endif %}>Posts</a>
       <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>About Me</a>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon" id="theme-icon"></i>
-      </button>
     </nav>
   </div>
 </header>

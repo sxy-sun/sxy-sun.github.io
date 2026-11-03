@@ -3,10 +3,6 @@ layout: default
 ---
 
 <div class="page">
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
-  </header>
-
   {%- assign technical_posts = site.posts | where_exp: "post", "post.categories contains 'Tech Blog' or post.categories contains 'Robotics'" -%}
   {%- assign posts_by_year = technical_posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
   {%- for year_group in posts_by_year -%}

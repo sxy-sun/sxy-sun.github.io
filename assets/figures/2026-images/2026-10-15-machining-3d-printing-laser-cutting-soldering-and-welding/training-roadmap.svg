@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1380" height="1000" viewBox="0 0 1380 1000" role="img" aria-labelledby="title desc">
 <title id="title">My workshop training roadmap</title>
-<desc id="desc">Basics I on Canvas leads to Wilson Basics II and FRB Basics II. Wilson Basics II leads to manual mill, manual lathe, TIG 1, ProtoMAX Waterjet, and ShopBot CNC Router. Manual mill and lathe lead to their respective CNC courses, which also require operator status. TIG 1 leads to TIG 2, MIG Welding, and Aluminum Welding. FRB Basics II covers soldering, 3D printing, and CO2 laser cutting, and leads to the R9000 Laser and Introduction to Soft Goods. Soft Goods was completed on October 29. Statuses are as of October 29, 2026.</desc>
+<desc id="desc">Basics I on Canvas leads to Wilson Basics II and FRB Basics II. Wilson Basics II leads to manual mill, manual lathe, TIG 1, ProtoMAX Waterjet, and ShopBot CNC Router. Manual mill and lathe lead to their respective CNC courses, which also require operator status. TIG 1 leads to TIG 2, MIG Welding, and Aluminum Welding. FRB Basics II covers soldering, 3D printing, and CO2 laser cutting, and leads to the R9000 Laser and Introduction to Soft Goods. Soft Goods was completed on October 29. Manual Lathe and ProtoMAX Waterjet were completed on November 3. Statuses are as of November 3, 2026.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#8b9bab" stroke-width="1.5"/></marker></defs>
 <style>
 text {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; fill:#243447;}
@@ -11,7 +11,7 @@ text {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-se
 </style>
 <rect width="1380" height="1000" rx="24" fill="#f5f7fa"/>
 <text x="40" y="56" font-size="30" font-weight="650">My workshop training</text>
-<text x="1340" y="54" text-anchor="end" class="detail">October 29, 2026</text>
+<text x="1340" y="54" text-anchor="end" class="detail">November 3, 2026</text>
 
 <path class="edge" d="M690 196 V220 H490 V250"/>
 <path class="edge" d="M690 196 V220 H1230 V250"/>
@@ -44,14 +44,14 @@ text {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-se
 <text x="130.0" y="578" text-anchor="middle" class="status">Planned · Nov 11</text>
 <rect x="260" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
 <text x="350.0" y="521" text-anchor="middle" class="name">Manual Lathe</text>
-<text x="350.0" y="578" text-anchor="middle" class="status">Planned · Nov 3</text>
+<text x="350.0" y="578" text-anchor="middle" class="status">Completed · Nov 3</text>
 <rect x="480" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
 <text x="570.0" y="521" text-anchor="middle" class="name">TIG 1</text>
 <text x="570.0" y="578" text-anchor="middle" class="status">Planned · Nov 30</text>
 <rect x="700" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
 <text x="790.0" y="521" text-anchor="middle" class="name">ProtoMAX</text>
 <text x="790.0" y="547" text-anchor="middle" class="name">Waterjet</text>
-<text x="790.0" y="578" text-anchor="middle" class="status">Planned · Nov 3</text>
+<text x="790.0" y="578" text-anchor="middle" class="status">Completed · Nov 3</text>
 <rect x="920" y="490" width="180" height="106" rx="12" fill="#fff" stroke="#ccd6df" stroke-width="1.5"/>
 <text x="1010.0" y="521" text-anchor="middle" class="name">ShopBot</text>
 <text x="1010.0" y="547" text-anchor="middle" class="name">CNC Router</text>

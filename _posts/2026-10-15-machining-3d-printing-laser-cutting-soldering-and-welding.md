@@ -1,7 +1,7 @@
 ---
 title: "Machining, 3D Printing, Laser Cutting, Soldering, and Welding"
 date: 2026-10-15
-last_modified_at: 2026-10-29
+last_modified_at: 2026-11-03
 categories: [Tech Blog]
 media_subpath: /assets/figures/2026-images/2026-10-15-machining-3d-printing-laser-cutting-soldering-and-welding
 ---
@@ -22,10 +22,10 @@ Recently, I’ve been thinking that versatility is a very important skill for a 
   - [Introduction to Soft Goods](#introduction-to-soft-goods) <span class="training-status training-status--completed">Completed</span>
 - [Machining](#machining)
   - [Manual Mill](#manual-mill) <span class="training-status training-status--planned">Planned</span>
-  - [Manual Lathe](#manual-lathe) <span class="training-status training-status--planned">Planned</span>
+  - [Manual Lathe](#manual-lathe) <span class="training-status training-status--completed">Completed</span>
 - [Digital Fabrication](#digital-fabrication)
   - [Universal R9000](#universal-r9000) <span class="training-status training-status--completed">Completed</span>
-  - [ProtoMAX Waterjet](#protomax-waterjet) <span class="training-status training-status--planned">Planned</span>
+  - [ProtoMAX Waterjet](#protomax-waterjet) <span class="training-status training-status--completed">Completed</span>
   - [ShopBot CNC Router](#shopbot-cnc-router) <span class="training-status training-status--completed">Completed</span>
 - [Welding](#welding)
   - [TIG 1](#tig-1) <span class="training-status training-status--planned">Planned</span>
@@ -169,9 +169,25 @@ A manual mill rotates the cutting tool while the workpiece stays in place. The m
 
 **Location:** Wilson Center  
 **Canvas Training:** Completed<br>
-**In-Person Training:** Planned · November 3, 2026
+**In-Person Training:** Completed · November 3, 2026
 
 We use a Harrison M300 manual lathe. Unlike a mill where the cutting tool rotates, a lathe rotates the workpiece while the cutting tool removes material.
+
+| Harrison M300 Lathe | Training Drawing |
+| --- | --- |
+| ![Harrison M300 manual lathe with digital readout](lathe-machine.JPG){: width="300"} | ![Dimensioned drawing for the aluminum lathe training part](lathe-training-diagram.JPG){: width="300"} |
+{: .photo-table}
+
+**Reading the training drawing:**
+
+All dimensions are in inches. The part is **1.50 inches long**, with a **0.65-inch outer diameter** stepped down to **0.55 inches** for the last **0.75 inches**. The `Ø` symbol means diameter. 
+
+The two lines pointing to the center hole describe drilling and tapping separately:
+
+| Drawing Callout | Meaning |
+| --- | --- |
+| `Ø 5/16`, depth `1.30` | Drill a **5/16-inch hole** to the specified **1.30-inch depth**. It is a blind hole, so it stops inside the part. |
+| `3/8-16 UNC`, depth `0.60` | Use a **3/8-16 UNC tap** to cut **0.60 inches of thread**. `3/8` is the nominal thread diameter, `16` means 16 threads per inch, and `UNC` means Unified National Coarse. |
 
 The lathe has two main axes:
 - **X-axis:** Moves toward or away from the workpiece center, controlling the diameter.
@@ -206,6 +222,11 @@ For **finishing**, the workpiece rotates at a low speed (80–120 RPM) while we 
 
 **Parting** uses a **parting blade** to cut a finished part off the stock. Unlike turning, the blade moves along the X-axis toward the center until the part is separated. If using the paper trick to find the cutting position, also account for the paper thickness (0.003–0.004").
 
+
+| Finished Part | Threaded Hole |
+| --- | --- |
+| ![Side view of the finished aluminum lathe training part](lathe-final1.JPG){: width="300"} | ![Close-up of the threaded hole in the finished part](lathe-final2.JPG){: width="300"} |
+{: .photo-table}
 
 **Further CNC training:** Not currently planned
 
@@ -242,17 +263,39 @@ The design is loaded from a USB drive through the touchscreen. Drawings can be m
 Each color is assigned an operation in the software. These assignments can be changed, as explained in the [R9000 user guide](https://ulsinc.com/assets/pdf/ultra_r_series_laser_system_user_guide_2021.03.0101.pdf).
 
 The finished samples below show the same design engraved on wood and marked on metal.
-
-- Backstory of the design: the guy in the middle represents a medieval fencing master. The four animals (elephant, lion, lynx, and tiger) represent four qualities of a good fighter. Very interesting and inspiring.
+- Very cool design from the instructor Alyssa: the guy in the middle represents a medieval fencing master. The four animals (elephant, lion, lynx, and tiger) represent four qualities of a good fighter. Very interesting and inspiring.
 
 ![Matching artwork engraved on wood and marked on metal during R9000 training](R9000-final.JPG){: width="400"}
 
 ### ProtoMAX Waterjet
 
 **Location:** FRB Robotics Makerspace  
-**Status:** Planned · November 03, 2026
+**Status:** Completed · November 3, 2026
 
-This course introduces the ProtoMAX abrasive waterjet cutter.
+The **[OMAX ProtoMAX](https://www.omax.com/en/omax/protomax/protomax/)** has a **12 × 12 inch cutting area**. It cuts with high-pressure water mixed with garnet abrasive, also called **media**. The plan for this class was to cut a small cat shape from a sheet.
+
+Why use waterjet instead of laser? Abrasive waterjets can cut many materials, including metals, glass, stone, and plastics. They remove material without melting or burning it, so there is no heat-affected zone around the cut. This is useful when heat could damage or distort a part. Laser can be faster for suitable thin sheets, so the choice depends on the material and the job. [OMAX comparison](https://www.omax.com/en/learn/waterjet-cutting-compared/).
+
+| Lid Open | Lid Closed |
+| --- | --- |
+| ![OMAX ProtoMAX waterjet with the lid open](waterjet-open.JPG){: width="300"} | ![OMAX ProtoMAX waterjet with the lid closed](waterjet-close.JPG){: width="300"} |
+{: .photo-table}
+
+The software workflow is **ProtoMAX LAYOUT → ProtoMAX MAKE**:
+
+- **LAYOUT:** Draw a part or import a `.dxf` file, add tabs, and generate the toolpath.
+- **MAKE:** Preview the toolpath, set the material and thickness, and run the cut. [Software guide](https://knowledgebase.omax.com/protomax/content/wh-protomax/main.htm).
+
+The cat had two **tabs**, one on each side. These are small bridges of uncut material that keep the part attached to the sheet, preventing it from tipping or falling through the cutting bed. The plan was to drill through the tabs after removing the sheet to free the cat. [Tab tool](https://webhelp.omax.com/webhelp/protomax/content/wh-protomax/layout/create_tab.htm).
+
+With the toolpath ready, the sheet was clamped to the cutting bed and the cut started with the lid closed. It stopped partway through because of a clog. The instructor ended the session so nobody had to keep waiting, leaving the cat unfinished.
+
+| Cat Toolpath | Unfinished Cut |
+| --- | --- |
+| ![Cat-shaped toolpath with two tabs in ProtoMAX software](waterjet-software.JPG){: width="300"} | ![Partially cut sheet clamped in the ProtoMAX cutting bed](waterjet-halfway.JPG){: width="300"} |
+{: .photo-table}
+
+The abrasive must stay **clean and dry until it mixes with water at the nozzle**. Moisture in the hopper or feed tube can make it clump and clog, requiring cleaning and drying. [ProtoMAX operation guide](https://knowledgebase.omax.com/protomax/content/401434/401434-operation-guide.htm).
 
 ### ShopBot CNC Router
 

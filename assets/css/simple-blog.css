@@ -1,0 +1,117 @@
+/* Bear-inspired prototype. Layout and content remain in the existing templates. */
+:root,
+[data-theme="light"] {
+  --bg: #fff;
+  --bg-secondary: #f5f5f5;
+  --text: #444;
+  --text-muted: #666;
+  --accent: #245daf;
+  --accent-hover: #17427d;
+  --border: #ddd;
+  --shadow: none;
+}
+
+html { scroll-padding-top: 1rem; color-scheme: light; }
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+  transition: none;
+}
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.site-header {
+  position: static;
+  background: none;
+  backdrop-filter: none;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  height: auto;
+  padding: 0;
+}
+.site-title { font-size: 1.5rem; font-weight: 700; letter-spacing: normal; }
+.site-nav,
+.site-nav.open {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  margin-top: 0;
+  margin-left: auto;
+  justify-content: flex-end;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.site-nav a,
+.site-nav a.active {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  border-radius: 0;
+  text-decoration: none;
+}
+.site-nav a:hover { background: none; color: var(--text); text-decoration: none; }
+.nav-toggle { display: none; }
+
+.main-content { max-width: none; padding: 2rem 0 0; }
+.post, .page { max-width: none; }
+.home-profile { padding: 0; }
+.home-profile .intro { display: block; }
+.home-profile .intro::after { content: ""; display: block; clear: both; }
+.home-profile .portrait-column {
+  float: right;
+  width: 144px;
+  margin: 0 0 1rem 1.5rem;
+}
+.home-profile .portrait { width: 144px; border-radius: 0; }
+.home-profile h1 { font-size: 1.5rem; line-height: 1.35; letter-spacing: normal; }
+.home-profile .about-copy,
+.home-profile .post-index,
+.home-profile .selection-links { font-size: 0.95rem; line-height: 1.8; }
+.home-profile .selection { margin-top: 1rem; }
+.home-profile #highlights-title { font-size: 1.1rem; font-weight: 700; }
+.home-profile .post-index h3,
+.post-body .post-index h3 { line-height: 1.8; }
+.home-profile .post-index > li,
+.post-body .post-index > li { margin-bottom: 0.4rem; }
+
+.post-header, .page-header { border: 0; padding-bottom: 0; margin-bottom: 1.5rem; }
+.post-body { line-height: 1.8; }
+.post-body h2 { border: 0; padding: 0; }
+.post-body blockquote { background: none; border-color: var(--border); border-radius: 0; }
+.post-body img { border-radius: 0; box-shadow: none; }
+code { border: 0; border-radius: 0; }
+div.highlighter-rouge { border: 1px solid var(--border); border-radius: 0; }
+.archive-item, .post-item { border: 0; }
+.archive-item a, .post-title-link { color: var(--accent); text-decoration: none; }
+.archive-item a:hover, .post-title-link:hover { text-decoration: none; }
+.archive-cat, .post-subcategory { background: none; border: 0; padding: 0; }
+.archive-year-title, .category-title { letter-spacing: normal; text-transform: none; }
+.post-nav-prev, .post-nav-next { padding: 0; border: 0; border-radius: 0; }
+.post-nav-prev:hover, .post-nav-next:hover { background: none; }
+.post-nav .nav-title { text-decoration: none; }
+.site-footer { margin-top: 3rem; padding: 1rem 0; border: 0; }
+.footer-inner { justify-content: flex-start; gap: 1rem; }
+
+@media (max-width: 450px) {
+  body { padding: 20px 16px; }
+  .home-profile .portrait-column { width: 96px; margin-left: 1rem; }
+  .home-profile .portrait { width: 96px; }
+}

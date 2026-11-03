@@ -27,29 +27,6 @@
       $('.img-popup').magnificPopup({ type: 'image', closeOnContentClick: true });
     });
 
-    // Dark mode toggle
-    const toggle = document.getElementById('theme-toggle');
-    const icon = document.getElementById('theme-icon');
-    const html = document.documentElement;
-
-    const saved = localStorage.getItem('theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    html.setAttribute('data-theme', saved);
-    icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-
-    const rougeTheme = document.getElementById('rouge-theme');
-    const rougeLight = '{{ "/assets/css/rouge.css" | relative_url }}';
-    const rougeDark  = '{{ "/assets/css/rouge-dark.css" | relative_url }}';
-    if (rougeTheme) rougeTheme.href = saved === 'dark' ? rougeDark : rougeLight;
-
-    toggle.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-      if (rougeTheme) rougeTheme.href = next === 'dark' ? rougeDark : rougeLight;
-    });
-
     // Mobile nav toggle
     const navToggle = document.querySelector('.nav-toggle');
     const siteNav = document.querySelector('.site-nav');

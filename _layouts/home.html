@@ -3,50 +3,30 @@ layout: default
 ---
 
 <div class="home-profile">
-  <section class="intro" aria-labelledby="home-name">
+  <section class="intro" aria-label="Introduction">
     <div class="portrait-column">
       <img class="portrait" src="{{ '/assets/figures/profile.JPG' | relative_url }}" width="720" height="1080" alt="Portrait of Shaw Sun">
-      <div class="links">
-        <a href="https://github.com/{{ site.github.username }}">GitHub</a>
-        <a href="{{ site.social.links[1] }}">LinkedIn</a>
-      </div>
     </div>
-    <div style="grid-column: 1; grid-row: 1;">
-      <h1 id="home-name">{{ site.title }}</h1>
-      <p class="role">{{ site.tagline }} <span class="pronouns">· she/her</span></p>
       <div class="about-copy">
         <p>I'm a robotics engineer with a M.S. in Robotics from the <a href="https://robotics.umich.edu/">University of Michigan Robotics Department</a> (2023) and a B.S. in Computer Science from <a href="https://www.cs.rutgers.edu/">Rutgers University</a> (2021).</p>
         <p>I build robotics systems from embedded firmware to autonomous navigation. My work includes C++ development, ROS 2 and micro-ROS integration, sensor fusion, localization, mapping, and motion control, spanning microcontrollers and Raspberry Pi computers.</p>
         <p>I believe robotics engineers should stay versatile. I'm currently expanding my skills in manufacturing and machining, and learning about vision-language models. This is where I document my learning notes and projects.</p>
       </div>
-    </div>
   </section>
-  <section class="selection" aria-label="Selected posts">
-    <div class="selection-links">
-      <a href="{{ '/posts/' | relative_url }}">All tech posts &rarr;</a>
-    </div>
-    <ul class="selected-posts">
-        <li>
-          <article class="selected-post">
-            <h2><a href="{{ '/posts/iot-weather-station-with-esp32/' | relative_url }}">IoT Weather Station with ESP32 and BME280</a></h2>
-            {% assign featured_post = site.posts | where: "slug", "iot-weather-station-with-esp32" | first %}
-            <p class="post-preview">{{ featured_post.excerpt | strip_html | strip | escape }}</p>
-          </article>
-        </li>
-        <li>
-          <article class="selected-post">
-            <h2><a href="{{ '/posts/stanford-cs336-notes/' | relative_url }}">Stanford CS336: Language Modeling from Scratch - What I've learned</a></h2>
-            {% assign featured_post = site.posts | where: "slug", "stanford-cs336-notes" | first %}
-            <p class="post-preview">{{ featured_post.excerpt | strip_html | strip | escape }}</p>
-          </article>
-        </li>
-        <li>
-          <article class="selected-post">
-            <h2><a href="{{ '/posts/machining-3d-printing-laser-cutting-soldering-and-welding/' | relative_url }}">Machining, 3D Printing, Laser Cutting, Soldering, and Welding</a></h2>
-            {% assign featured_post = site.posts | where: "slug", "machining-3d-printing-laser-cutting-soldering-and-welding" | first %}
-            <p class="post-preview">{{ featured_post.excerpt | strip_html | strip | escape }}</p>
-          </article>
-        </li>
+  <section class="selection" aria-labelledby="highlights-title">
+    <h2 id="highlights-title">Highlights</h2>
+    <ul class="post-index">
+      <li>
+        <h3><a href="{{ '/posts/iot-weather-station-with-esp32/' | relative_url }}">IoT Weather Station with ESP32 and BME280</a></h3>
+      </li>
+      <li>
+        {% assign featured_post = site.posts | where: "slug", "stanford-cs336-notes" | first %}
+        <h3><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title | escape }}</a></h3>
+      </li>
+      <li>
+        <h3><a href="{{ '/posts/machining-3d-printing-laser-cutting-soldering-and-welding/' | relative_url }}">Machining, 3D Printing, Laser Cutting, Soldering, and Welding</a></h3>
+      </li>
     </ul>
+    <p class="selection-links"><a href="{{ '/posts/' | relative_url }}">All posts &rarr;</a></p>
   </section>
 </div>
