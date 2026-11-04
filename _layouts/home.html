@@ -15,17 +15,14 @@ layout: default
   </section>
   <section class="selection" aria-labelledby="highlights-title">
     <h2 id="highlights-title">Highlights</h2>
+    {% assign featured_slugs = "iot-weather-station-with-esp32,stanford-cs336-notes,machining-3d-printing-laser-cutting-soldering-and-welding" | split: "," %}
     <ul class="post-index">
+      {% for slug in featured_slugs %}
+      {% assign featured_post = site.posts | where: "slug", slug | first %}
       <li>
-        <h3><a href="{{ '/posts/iot-weather-station-with-esp32/' | relative_url }}">IoT Weather Station with ESP32 and BME280</a></h3>
-      </li>
-      <li>
-        {% assign featured_post = site.posts | where: "slug", "stanford-cs336-notes" | first %}
         <h3><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title | escape }}</a></h3>
       </li>
-      <li>
-        <h3><a href="{{ '/posts/machining-3d-printing-laser-cutting-soldering-and-welding/' | relative_url }}">Machining, 3D Printing, Laser Cutting, Soldering, and Welding</a></h3>
-      </li>
+      {% endfor %}
     </ul>
     <p class="selection-links"><a href="{{ '/posts/' | relative_url }}">All posts &rarr;</a></p>
   </section>
